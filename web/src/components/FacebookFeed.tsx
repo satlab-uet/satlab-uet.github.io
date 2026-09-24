@@ -19,14 +19,14 @@ export const FacebookFeed: React.FC<FacebookFeedProps> = ({
 
   return (
     <div
-      className={`rounded-3xl border border-sky-200/90 bg-white/95 p-5 sm:p-6 shadow-soft backdrop-blur-md flex flex-col ${className}`}
+      className={`rounded-3xl border border-slate-200/90 bg-white/95 p-4 sm:p-5 shadow-soft backdrop-blur-md flex flex-col ${className}`}
     >
       {/* Header bar */}
-      <div className="flex items-center justify-between gap-3 pb-4 mb-4 border-b border-slate-100">
-        <div className="flex items-center gap-3">
-          <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#1877F2] text-white shadow-sm shadow-[#1877F2]/30">
+      <div className="flex items-center justify-between gap-3 pb-3 mb-3 border-b border-slate-100">
+        <div className="flex items-center gap-2.5">
+          <div className="grid h-9 w-9 place-items-center rounded-xl bg-[#1877F2] text-white shadow-sm shadow-[#1877F2]/25">
             <svg
-              className="h-5 w-5 fill-current"
+              className="h-4.5 w-4.5 fill-current"
               viewBox="0 0 24 24"
               aria-hidden="true"
             >
@@ -38,13 +38,10 @@ export const FacebookFeed: React.FC<FacebookFeedProps> = ({
             </svg>
           </div>
           <div>
-            <div className="flex items-center gap-1.5">
-              <h3 className="font-editorial text-base font-bold text-slate-950 leading-none">
-                SATLab UET Fanpage
-              </h3>
-              <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" title="Live stream active" />
-            </div>
-            <p className="font-mono text-xs text-slate-500 mt-1">@satlab.uet · Live Feed</p>
+            <h3 className="font-editorial text-sm font-bold text-slate-950 leading-none">
+              SATLab UET
+            </h3>
+            <p className="font-mono text-[11px] text-slate-500 mt-1">@satlab.uet</p>
           </div>
         </div>
 
@@ -52,26 +49,10 @@ export const FacebookFeed: React.FC<FacebookFeedProps> = ({
           href={fanpageUrl}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-xl bg-sky-50 border border-sky-200 px-3 py-1.5 font-editorial text-xs font-bold text-sky-800 hover:bg-sky-100 transition focus-ring"
+          className="inline-flex items-center gap-1 rounded-xl bg-sky-50 border border-sky-200 px-3 py-1 font-editorial text-xs font-semibold text-sky-800 hover:bg-sky-100 transition focus-ring"
         >
-          <span>Follow Page</span>
+          <span>Follow</span>
           <Icon name="open_in_new" className="h-3 w-3" />
-        </a>
-      </div>
-
-      {/* Live Notice */}
-      <div className="mb-4 rounded-xl bg-slate-50 border border-slate-200/70 px-3.5 py-2 text-[11px] font-editorial text-slate-600 flex items-center justify-between">
-        <span className="flex items-center gap-1.5">
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-          <span>Real-time posts stream directly from Facebook</span>
-        </span>
-        <a
-          href={fanpageUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="text-sky-700 hover:underline font-semibold"
-        >
-          Open Facebook ↗
         </a>
       </div>
 
@@ -81,9 +62,8 @@ export const FacebookFeed: React.FC<FacebookFeedProps> = ({
         style={{ minHeight: `${height}px` }}
       >
         {!iframeLoaded && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-slate-50 text-slate-400 font-editorial text-xs">
+          <div className="absolute inset-0 flex items-center justify-center bg-slate-50">
             <div className="h-6 w-6 rounded-full border-2 border-sky-600 border-t-transparent animate-spin" />
-            <span>Connecting to Facebook live feed...</span>
           </div>
         )}
         <iframe
@@ -96,22 +76,9 @@ export const FacebookFeed: React.FC<FacebookFeedProps> = ({
           allowFullScreen={true}
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           onLoad={() => setIframeLoaded(true)}
-          title="SATLab UET Official Facebook Fanpage"
+          title="SATLab UET Facebook Fanpage"
           className="w-full rounded-2xl"
         />
-      </div>
-
-      {/* Footer Info */}
-      <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
-        <span>VNU-UET Satisfiability &amp; Reasoning Lab</span>
-        <a
-          href="https://m.me/satlab.uet"
-          target="_blank"
-          rel="noreferrer"
-          className="text-sky-700 hover:text-sky-900 font-semibold"
-        >
-          Send Message ↗
-        </a>
       </div>
     </div>
   );

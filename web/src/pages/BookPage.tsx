@@ -67,8 +67,8 @@ export const BookPage: React.FC = () => {
                 <em>Pesquisa Operacional</em> (SciELO), and the <em>Journal of Combinatorial Optimization</em> (JCO, Springer).
               </p>
               <p>
-                The volume features rigorous standardized terminology for combinatorial constraints, validated against
-                extensive industrial benchmarks and backed by 100% reproducible automated LuaLaTeX CI/CD verification pipelines.
+                The volume presents standardized mathematical formulations and constraint models,
+                validated across benchmark problem suites.
               </p>
             </div>
 

@@ -15,7 +15,7 @@ export const EventsPage: React.FC = () => {
 
   const categories = [
     { id: 'all', label: 'All News & Briefs' },
-    { id: 'facebook', label: 'Live Facebook Feed' },
+    { id: 'facebook', label: 'Facebook Feed' },
     { id: 'workshop', label: 'Workshops & Training' },
     { id: 'breakthrough', label: 'Scientific Breakthroughs' },
     { id: 'placement', label: 'Scholarships & Placements' },
@@ -151,11 +151,10 @@ export const EventsPage: React.FC = () => {
           <span>Events &amp; Research Briefs</span>
         </div>
         <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">
-          News Briefs &amp; Milestones
+          News &amp; Announcements
         </h1>
-        <p className="mt-4 font-editorial text-lg text-slate-600 leading-relaxed max-w-3xl">
-          Stay updated with the latest breakthroughs, international journal publications, conference acceptances,
-          and research milestones driven by the faculty and researchers of SATLab UET.
+        <p className="mt-3 font-editorial text-base text-slate-600 leading-relaxed max-w-3xl">
+          Recent publications, conference acceptances, workshops, and updates from SATLab UET.
         </p>
       </div>
 
@@ -230,22 +229,6 @@ export const EventsPage: React.FC = () => {
       {/* Content Layout */}
       {selectedCategory === 'facebook' ? (
         <div className="mt-8 mx-auto max-w-2xl">
-          <div className="mb-6 rounded-2xl border border-sky-200 bg-gradient-to-r from-sky-50 via-cyan-50/40 to-white p-5 text-center shadow-xs">
-            <div className="inline-flex items-center gap-1.5 rounded-full bg-sky-100 px-3 py-1 font-mono text-[11px] font-bold text-sky-900 mb-2">
-              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Real-Time Facebook Stream</span>
-            </div>
-            <h3 className="font-editorial text-lg font-bold text-slate-950">
-              Official SATLab UET Fanpage Feed
-            </h3>
-            <p className="mt-1 font-editorial text-xs sm:text-sm text-slate-600 max-w-xl mx-auto">
-              All research seminars, notifications, student awards, and lab activities published at{' '}
-              <a href="https://www.facebook.com/satlab.uet/" target="_blank" rel="noreferrer" className="text-sky-700 underline font-semibold">
-                facebook.com/satlab.uet
-              </a>{' '}
-              are synchronized live below.
-            </p>
-          </div>
           <FacebookFeed height={780} />
         </div>
       ) : (
@@ -417,12 +400,8 @@ export const EventsPage: React.FC = () => {
           </aside>
 
           {/* Mobile Facebook Feed Section */}
-          <div className="block lg:hidden mt-10">
-            <div className="mb-4">
-              <p className="font-mono text-xs font-bold uppercase tracking-widest text-sky-700">Official Social Channel</p>
-              <h3 className="font-editorial text-xl font-bold text-slate-950">Live from Facebook Fanpage</h3>
-            </div>
-            <FacebookFeed height={650} />
+          <div className="block lg:hidden mt-8">
+            <FacebookFeed height={600} />
           </div>
         </div>
       )}

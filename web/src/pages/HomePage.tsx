@@ -33,20 +33,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     >
   > = {
     encodings_solvers: {
-      desc:
-        'Developing New Sequential Counter (NSC) variants, Cardinality constraints (AMO/AMK/ALK), Pseudo-Boolean translations, and high-performance solver libraries in the SCLib ecosystem.',
+      desc: 'Optimal Boolean and MaxSAT encodings, cardinality constraints, and high-performance solver architectures.',
     },
     line_balancing_scheduling: {
-      desc:
-        'Designing exact decision algorithms for Power Peak Minimization in Simple and U-shaped Assembly Line Balancing (SALBP / UALBP), Job-Shop Scheduling, and Railway Train Rescheduling via MaxSAT-DDD.',
+      desc: 'Exact decision algorithms for assembly line balancing, job-shop scheduling, and railway train rescheduling.',
     },
     packing_cutting: {
-      desc:
-        'Formulating compact SAT and MaxSAT models with non-overlapping spatial constraints and rotation capabilities for 2D Strip Packing, 2D Bin Packing, and Cutting Stock Problems.',
+      desc: 'Compact mathematical models and exact algorithms for 2D strip packing, bin packing, and cutting stock problems.',
     },
     graph_labeling_fap: {
-      desc:
-        'Formulating specialized SAT encodings and exact solvers for graph embedding, frequency assignment problems (FAP), bandwidth coloring, and distance-constrained vertex labelings.',
+      desc: 'Specialized encodings and solvers for graph embedding, frequency assignment (FAP), and distance-constrained labelings.',
     },
   };
 
@@ -68,29 +64,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-8 font-editorial text-lg sm:text-xl leading-relaxed text-slate-600 max-w-4xl mx-auto font-normal">
-            SATLab UET advances the theory and software engineering of SAT, MaxSAT, and Pseudo-Boolean encodings,
-            exact decision solvers, and verified algorithms for industrial scheduling, 2D packing, graph labeling,
-            and software verification.
+          <p className="mt-8 font-editorial text-lg sm:text-xl leading-relaxed text-slate-600 max-w-3xl mx-auto font-normal">
+            SATLab UET advances the theory and practice of SAT, MaxSAT, and Boolean encodings,
+            exact decision solvers, and verified algorithms for combinatorial optimization.
           </p>
-
-          {/* Lab Core Lead Card */}
-          <div className="mt-8 mx-auto max-w-2xl rounded-2xl border border-slate-200/90 bg-white/85 p-4 backdrop-blur-md shadow-xs text-left">
-            <p className="font-editorial text-xs sm:text-sm text-slate-800">
-              <strong className="text-slate-950">Key Faculty &amp; Researchers:</strong> Dr. To Van Khanh (Head of Lab), M.Sc. Kieu Van Tuyen (Lab Coordinator), M.Sc. Student Truong Xuan Hieu, M.Sc. Vu Thanh Huong, M.Sc. Student Dao Xuan Nghia, Nguyen Kim Trung Duc
-            </p>
-            <div className="mt-1.5 flex items-center justify-between text-xs text-slate-500 font-mono">
-              <span>VNU University of Engineering and Technology (UET-VNU)</span>
-              <a
-                href="https://www.facebook.com/satlab.uet/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sky-700 hover:text-sky-900 font-semibold"
-              >
-                Facebook Fanpage ↗
-              </a>
-            </div>
-          </div>
 
           {/* CTAs */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -100,7 +77,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               className="inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-6 py-3.5 font-editorial text-sm font-bold text-white shadow-lift hover:bg-sky-950 transition hover:-translate-y-0.5 focus-ring"
             >
               <Icon name="menu_book" className="h-4 w-4 text-cyan-400" />
-              <span>Research Publications ({publications.length})</span>
+              <span>Publications ({publications.length})</span>
               <Icon name="arrow_forward" className="h-4 w-4" />
             </button>
 
@@ -128,19 +105,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-300/90 bg-white/90 px-6 py-3.5 font-editorial text-sm font-bold text-slate-800 shadow-xs hover:bg-slate-50 transition hover:-translate-y-0.5 focus-ring"
             >
               <Icon name="groups" className="h-4 w-4 text-sky-700" />
-              <span>Team &amp; Students</span>
+              <span>Team</span>
             </button>
           </div>
         </div>
 
-        {/* Telemetry Counter Cards */}
+        {/* Counter Cards */}
         <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
           <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 backdrop-blur-md shadow-xs text-center">
             <p className="font-mono text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
               {publications.length}
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Peer-Reviewed Publications
+              Publications
             </p>
           </div>
 
@@ -158,16 +135,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               13+
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Active Student Researchers
+              Student Researchers
             </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 backdrop-blur-md shadow-xs text-center">
             <p className="font-mono text-3xl sm:text-4xl font-extrabold text-amber-700 tracking-tight">
-              100%
+              11
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Exact Optimality Solved
+              Monograph Chapters
             </p>
           </div>
         </div>
@@ -191,16 +168,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </p>
 
               <p className="mt-3 font-editorial text-base text-slate-700 leading-relaxed">
-                A comprehensive 116-page academic monograph synthesizing propositional satisfiability theory
-                and practical solver engineering for combinatorial optimization: from New Sequential Counter (NSC)
-                variants, trapezoidal and ladder cardinality constraints, 2D Strip &amp; Bin Packing,
-                to industrial assembly line balancing (SALBP-Power), railway train rescheduling, and distance graph labeling.
+                A 116-page academic monograph synthesizing propositional satisfiability theory,
+                optimal Boolean encodings, and exact solving algorithms for combinatorial optimization problems.
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2 font-mono text-xs text-slate-600">
                 <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">116 Pages</span>
                 <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">11 Research Chapters</span>
-                <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">LaTeX &amp; C++ Sources</span>
+                <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">Open Access</span>
               </div>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -251,13 +226,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <section className="section-shell">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p className="font-mono text-xs font-bold uppercase tracking-widest text-sky-700">
-            STRATEGIC FOUNDATIONS
+            RESEARCH AREAS
           </p>
           <h2 className="mt-2 font-editorial text-3xl sm:text-4xl font-bold text-slate-950">
             Core Research Pillars
           </h2>
           <p className="mt-3 font-editorial text-base text-slate-600">
-            Our scientific agenda integrates rigorous mathematical constraint modeling with high-performance Boolean and MaxSAT solving engines.
+            Mathematical constraint modeling and high-performance Boolean and MaxSAT solving engines.
           </p>
           <button
             type="button"
@@ -315,13 +290,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
           <div>
             <p className="font-mono text-xs font-bold uppercase tracking-widest text-sky-700">
-              INTELLIGENCE &amp; MILESTONES
+              NEWS &amp; ANNOUNCEMENTS
             </p>
             <h2 className="mt-1 font-editorial text-3xl sm:text-4xl font-bold text-slate-950">
-              News Briefs &amp; Announcements
+              News &amp; Updates
             </h2>
             <p className="mt-2 font-editorial text-base text-slate-600">
-              Recent acceptances, prestigious journal publications, student achievements, and solver releases.
+              Latest publications, conference acceptances, and lab updates.
             </p>
           </div>
           <button
