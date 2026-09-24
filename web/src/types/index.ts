@@ -173,6 +173,8 @@ export type Publication = {
   highlighted_authors?: string[];
   badge?: string | null;
   status?: 'published' | 'topic_only' | string;
+  citations?: number;
+  scholar_link?: string | null;
 };
 
 export type Person = {

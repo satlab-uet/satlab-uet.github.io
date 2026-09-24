@@ -138,6 +138,11 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
                 {badgeInfo.label}
               </span>
             )}
+            {'citations' in paper && typeof paper.citations === 'number' && paper.citations > 0 && (
+              <span className="rounded-lg border border-amber-200 bg-amber-50 px-2 py-0.5 font-mono text-[10px] font-bold text-amber-900 inline-flex items-center gap-1 shadow-xs">
+                <span>★ {paper.citations} {paper.citations === 1 ? 'citation' : 'citations'}</span>
+              </span>
+            )}
           </div>
 
           {paper.doi && (
@@ -230,6 +235,19 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
             >
               <span>Paper</span>
               <Icon name="open_in_new" className="h-3 w-3" />
+            </a>
+          )}
+
+          {'scholar_link' in paper && paper.scholar_link && (
+            <a
+              href={paper.scholar_link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-2.5 py-1 font-mono text-[11px] font-medium text-slate-700 hover:border-sky-300 hover:text-sky-700 transition"
+              title="View on Google Scholar"
+            >
+              <span>Scholar</span>
+              <Icon name="open_in_new" className="h-3 w-3 text-slate-400" />
             </a>
           )}
         </div>
