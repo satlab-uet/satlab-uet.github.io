@@ -38,7 +38,7 @@ export const ProjectsPage: React.FC = () => {
       {/* Header Banner */}
       <div className="max-w-4xl">
         <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800 mb-4">
-          <Icon name="work" className="h-3.5 w-3.5 text-sky-600" />
+          <Icon name="terminal" className="h-3.5 w-3.5 text-sky-600" />
           <span>Research Initiatives &amp; Solvers</span>
         </div>
         <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">

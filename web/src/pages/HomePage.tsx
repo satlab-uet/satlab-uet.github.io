@@ -24,11 +24,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
   const [selectedPillar, setSelectedPillar] = useState<PillarId>('encodings_solvers');
 
-  const pillarDetails: Record<
-    PillarId,
-    {
-      desc: string;
-    }
+  const pillarDetails: Partial<
+    Record<
+      PillarId,
+      {
+        desc: string;
+      }
+    >
   > = {
     encodings_solvers: {
       desc:
@@ -45,15 +47,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     graph_labeling_fap: {
       desc:
         'Formulating specialized SAT encodings and exact solvers for graph embedding, frequency assignment problems (FAP), bandwidth coloring, and distance-constrained vertex labelings.',
-    },
-    supply_chain_optimization: {
-      desc: 'Operations research and mathematical optimization for complex systems.',
-    },
-    ai_supply_chain_intelligence: {
-      desc: 'Artificial intelligence and automated reasoning for intelligent decision making.',
-    },
-    decision_analytics: {
-      desc: 'Decision analytics and algorithmic solutions for discrete optimization.',
     },
   };
 
@@ -125,7 +118,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               onClick={() => onNavigate('projects')}
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-300/90 bg-white/90 px-6 py-3.5 font-editorial text-sm font-bold text-slate-800 shadow-xs hover:bg-slate-50 transition hover:-translate-y-0.5 focus-ring"
             >
-              <Icon name="hub" className="h-4 w-4 text-emerald-700" />
+              <Icon name="terminal" className="h-4 w-4 text-emerald-700" />
               <span>Projects &amp; Solvers</span>
             </button>
 

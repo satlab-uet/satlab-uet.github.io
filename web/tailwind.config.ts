@@ -7,8 +7,6 @@ export default {
       colors: {
         ocean: '#0369a1',
         mint: '#10b981',
-        cyan: '#06b6d4',
-        amber: '#f59e0b',
       },
       fontFamily: {
         sans: ['Onest', 'sans-serif'],
