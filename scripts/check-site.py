@@ -189,7 +189,7 @@ def main() -> int:
             for element in sitemap.findall(".//sm:loc", namespace)
             if element.text
         ]
-        expected_location = "https://satlab-uet.github.io/sat-book/"
+        expected_location = "https://satlab-uet.github.io/"
         if expected_location not in locations:
             errors.append(
                 f"{sitemap_path}: missing canonical URL {expected_location}"

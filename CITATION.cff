@@ -17,7 +17,7 @@ authors:
     given-names: "Kim Trung Đức"
 version: "1.0.0"
 date-released: "2026-07-30"
-repository-code: "https://github.com/satlab-uet/sat-book"
+repository-code: "https://github.com/satlab-uet/satlab-uet.github.io"
 keywords:
   - "SAT encoding"
   - "MaxSAT"
@@ -43,4 +43,4 @@ preferred-citation:
       given-names: "Kim Trung Đức"
   version: "1.0.0"
   year: 2026
-  url: "https://github.com/satlab-uet/sat-book"
+  url: "https://github.com/satlab-uet/satlab-uet.github.io"

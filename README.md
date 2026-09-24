@@ -1,6 +1,6 @@
 # Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp
 
-[![Deploy book to GitHub Pages](https://github.com/satlab-uet/sat-book/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/satlab-uet/sat-book/actions/workflows/deploy-pages.yml)
+[![Deploy book to GitHub Pages](https://github.com/satlab-uet/satlab-uet.github.io/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/satlab-uet/satlab-uet.github.io/actions/workflows/deploy-pages.yml)
 
 Mã nguồn LaTeX của sách chuyên khảo:
 
@@ -113,7 +113,7 @@ thích với GitHub Pages tại `/sat-book/`.
 
 Website chính thức:
 
-<https://satlab-uet.github.io/sat-book/>
+<https://satlab-uet.github.io/>
 
 Lệnh `make site-assets` cần thêm Python 3, Pillow và Poppler. Các tài nguyên đã
 sinh được lưu trong `site/assets/images/`, vì vậy bước đóng gói `make site`
@@ -155,7 +155,7 @@ Khi trích dẫn, vui lòng dùng mục `preferred-citation`.
 
 Vui lòng tạo issue tại:
 
-<https://github.com/satlab-uet/sat-book/issues>
+<https://github.com/satlab-uet/satlab-uet.github.io/issues>
 
 Khi báo lỗi nội dung, nên ghi rõ số trang, chương/mục, đoạn liên quan và đề
 xuất sửa nếu có.
