@@ -607,6 +607,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32.png">
     <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=JetBrains+Mono:wght@400;500;600&family=Onest:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
     
     <!-- MathJax 3 — full-document math rendering -->
@@ -647,46 +651,133 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <style>
       body {
-        background-color: #f8fafc;
-        color: #1e293b;
-        font-family: var(--font-sans);
-        line-height: 1.7;
+        margin: 0;
+        background-color: #fafbfd;
+        background-image: 
+          radial-gradient(circle at 14% 10%, rgba(6, 182, 212, 0.15), transparent 32rem),
+          radial-gradient(circle at 86% 18%, rgba(16, 185, 129, 0.12), transparent 36rem),
+          radial-gradient(circle at 48% 46%, rgba(245, 158, 11, 0.09), transparent 34rem),
+          radial-gradient(circle at 12% 76%, rgba(14, 165, 233, 0.13), transparent 34rem),
+          radial-gradient(circle at 88% 88%, rgba(6, 182, 212, 0.12), transparent 36rem);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #0f172a;
+        font-family: 'Onest', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.75;
+      }
+      .top-banner {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        color: #0369a1;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 8px 16px;
+        text-align: center;
+      }
+      .top-banner a {
+        color: #0284c7;
+        text-decoration: underline;
+        margin-left: 6px;
+        font-weight: 700;
       }
       .reader-header {
         position: sticky;
         top: 0;
         z-index: 100;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(8px);
-        border-bottom: 1px solid #e2e8f0;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(226, 232, 240, 0.75);
         padding: 12px 0;
+        box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
       }
       .reader-header-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
+      .brand-title {
+        font-family: 'Faculty Glyphic', serif;
+        font-weight: 700;
+        font-size: 1.35rem;
+        color: #0f172a;
+        letter-spacing: -0.02em;
+      }
+      .btn-pill-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #0f172a;
+        color: #ffffff !important;
+        font-family: 'Onest', sans-serif;
+        font-size: 0.84rem;
+        font-weight: 600;
+        padding: 8px 18px;
+        border-radius: 9999px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.2);
+        transition: all 0.2s ease;
+      }
+      .btn-pill-home:hover {
+        background: #1e293b;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px -2px rgba(15, 23, 42, 0.25);
+      }
+      .btn-pill-pdf {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #ffffff;
+        color: #1e293b !important;
+        font-family: 'Onest', sans-serif;
+        font-size: 0.84rem;
+        font-weight: 600;
+        padding: 8px 18px;
+        border-radius: 9999px;
+        border: 1px solid #cbd5e1;
+        text-decoration: none;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        transition: all 0.2s ease;
+      }
+      .btn-pill-pdf:hover {
+        border-color: #0284c7;
+        color: #0284c7 !important;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.12);
+      }
       .reader-layout {
         display: grid;
-        grid-template-columns: 280px 1fr;
-        gap: 36px;
-        margin-top: 24px;
-        margin-bottom: 64px;
+        grid-template-columns: 290px 1fr;
+        gap: 32px;
+        margin-top: 28px;
+        margin-bottom: 72px;
+        align-items: start;
       }
       .reader-toc {
         position: sticky;
-        top: 80px;
-        max-height: calc(100vh - 100px);
+        top: 88px;
+        max-height: calc(100vh - 110px);
         overflow-y: auto;
-        padding-right: 12px;
-        font-size: 0.88rem;
+        padding: 22px 18px;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        border-radius: 24px;
+        box-shadow: 0 10px 30px -15px rgba(15, 23, 42, 0.08);
       }
       .reader-toc h3 {
-        font-size: 0.95rem;
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 0.84rem;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #64748b;
-        margin-bottom: 12px;
+        letter-spacing: 0.08em;
+        color: #0284c7;
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-weight: 700;
+        padding-left: 8px;
       }
       .reader-toc ul {
         list-style: none;
@@ -694,91 +785,119 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         margin: 0;
       }
       .reader-toc li {
-        margin-bottom: 8px;
+        margin-bottom: 4px;
       }
       .reader-toc a {
         color: #334155;
         text-decoration: none;
         display: block;
-        padding: 4px 8px;
-        border-radius: 6px;
+        padding: 6px 12px;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        line-height: 1.45;
       }
       .reader-toc a:hover {
-        background: #e2e8f0;
-        color: #0f172a;
+        background: rgba(240, 249, 255, 0.9);
+        color: #0284c7;
+        transform: translateX(2px);
       }
       .reader-content {
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 40px 48px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(226, 232, 240, 0.85);
+        border-radius: 28px;
+        padding: 44px 52px;
+        box-shadow: 0 15px 35px -15px rgba(15, 23, 42, 0.08);
+      }
+      .book-main-title {
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 2.15rem;
+        font-weight: 700;
+        color: #0f172a;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 28px;
+        letter-spacing: -0.02em;
       }
       .chapter-title {
-        font-family: var(--font-display);
-        font-size: 1.85rem;
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 1.65rem;
+        font-weight: 700;
         color: #0f172a;
-        margin-bottom: 16px;
-        border-bottom: 2px solid #0284c7;
-        padding-bottom: 8px;
+        margin-bottom: 18px;
+        border-bottom: 2px solid #38bdf8;
+        padding-bottom: 10px;
+        letter-spacing: -0.01em;
       }
       .chapter-lead {
-        font-size: 1.08rem;
-        color: #334155;
-        background: #f0f9ff;
+        font-size: 1.05rem;
+        color: #1e293b;
+        background: linear-gradient(135deg, rgba(240, 249, 255, 0.85), rgba(236, 254, 255, 0.45));
         border-left: 4px solid #0284c7;
-        padding: 16px 20px;
-        border-radius: 0 8px 8px 0;
-        margin-bottom: 28px;
+        padding: 18px 24px;
+        border-radius: 0 16px 16px 0;
+        margin-bottom: 30px;
         font-style: italic;
       }
       .reader-h2 {
-        font-family: var(--font-display);
+        font-family: 'Faculty Glyphic', serif;
         font-size: 1.35rem;
+        font-weight: 700;
         color: #0f172a;
         margin-top: 36px;
         margin-bottom: 14px;
       }
       .reader-h3 {
-        font-family: var(--font-display);
-        font-size: 1.12rem;
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 1.15rem;
+        font-weight: 600;
         color: #1e293b;
         margin-top: 24px;
         margin-bottom: 10px;
       }
       .reader-callout {
-        border-radius: 6px;
-        padding: 18px 22px;
-        margin: 20px 0;
-        background: #f8fafc;
-        border: 1px solid #e2e8f0;
-        border-left: 4px solid #000000;
+        border-radius: 18px;
+        padding: 20px 24px;
+        margin: 22px 0;
+        background: rgba(248, 250, 252, 0.9);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        border-left: 4px solid #0284c7;
+        box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.03);
       }
       .reader-callout.design-rule,
-      .reader-callout.worked-example,
-      .reader-callout.key-idea,
-      .reader-callout.summary-box,
       .reader-callout.result-box,
       .reader-callout.theorem-box,
       .reader-callout.lemma-box,
-      .reader-callout.proposition-box,
+      .reader-callout.proposition-box {
+        border-left-color: #0284c7;
+      }
+      .reader-callout.worked-example,
       .reader-callout.example-box {
-        background: #f8fafc;
-        border-left-color: #000000;
+        border-left-color: #10b981;
+        background: rgba(240, 253, 244, 0.6);
+      }
+      .reader-callout.key-idea,
+      .reader-callout.summary-box {
+        border-left-color: #f59e0b;
+        background: rgba(254, 252, 232, 0.6);
       }
       .callout-header {
-        font-family: var(--font-display);
+        font-family: 'Faculty Glyphic', serif;
         font-size: 1.02rem;
         margin-bottom: 8px;
-        color: #000000;
+        color: #0f172a;
         font-weight: 700;
       }
       .callout-body {
         font-size: 0.95rem;
         line-height: 1.65;
+        color: #334155;
       }
       .reader-figure-box {
-        margin: 28px 0;
+        margin: 32px 0;
         text-align: center;
       }
       .reader-figure-img {
@@ -789,96 +908,104 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       .reader-figure-img img {
         max-width: 100%;
         height: auto;
-        border-radius: 6px;
-        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+        border: 1px solid rgba(226, 232, 240, 0.85);
         background: #ffffff;
-        padding: 8px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        padding: 12px;
+        box-shadow: 0 10px 25px -10px rgba(15, 23, 42, 0.08);
       }
       .reader-inline-caption {
-        font-size: 0.92rem;
-        color: #475569;
-        margin-top: 6px;
+        font-size: 0.88rem;
+        color: #64748b;
+        margin-top: 8px;
+        font-style: italic;
       }
       .reader-proof {
-        background: #f8fafc;
+        background: rgba(248, 250, 252, 0.85);
         border-left: 3px solid #94a3b8;
-        padding: 12px 18px;
-        margin: 16px 0;
+        border-radius: 0 12px 12px 0;
+        padding: 14px 20px;
+        margin: 18px 0;
         font-size: 0.94rem;
+        color: #334155;
       }
       .proof-qedsymbol {
         float: right;
         color: #64748b;
+        font-weight: bold;
       }
       .reader-algorithm-box {
         background: #0f172a;
         color: #f8fafc;
-        border-radius: 8px;
-        padding: 18px;
-        margin: 24px 0;
-        font-family: var(--font-mono);
+        border-radius: 18px;
+        padding: 22px 26px;
+        margin: 26px 0;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 0.88rem;
+        box-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.35);
       }
       .algo-header {
         color: #38bdf8;
+        font-family: 'Faculty Glyphic', serif;
+        font-weight: 700;
         border-bottom: 1px solid #334155;
         padding-bottom: 8px;
         margin-bottom: 12px;
       }
       .reader-table-wrapper {
         overflow-x: auto;
-        margin: 24px 0;
+        margin: 26px 0;
       }
       .reader-table {
         width: 100%;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
         font-size: 0.9rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        overflow: hidden;
       }
       .reader-table th {
         background: #f1f5f9;
         color: #0f172a;
+        font-family: 'Faculty Glyphic', serif;
         font-weight: 700;
-        padding: 10px 14px;
-        border: 1px solid #cbd5e1;
+        padding: 12px 16px;
+        border-bottom: 2px solid #cbd5e1;
         text-align: left;
       }
       .reader-table td {
-        padding: 8px 14px;
-        border: 1px solid #e2e8f0;
+        padding: 10px 16px;
+        border-bottom: 1px solid #e2e8f0;
+        color: #334155;
       }
       .reader-table tr:nth-child(even) {
-        background: #f8fafc;
-      }
-      .reader-table-caption, .reader-inline-caption {
-        font-size: 0.88rem;
-        color: #64748b;
-        margin-bottom: 8px;
-        text-align: center;
+        background: rgba(248, 250, 252, 0.6);
       }
       .reader-flow-diagram {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 12px;
-        background: #f8fafc;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 24px 0;
+        background: rgba(248, 250, 252, 0.85);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        border-radius: 20px;
+        padding: 24px;
+        margin: 26px 0;
         flex-wrap: wrap;
       }
       .flow-box {
         background: #ffffff;
         border: 1px solid #cbd5e1;
-        padding: 8px 14px;
-        border-radius: 6px;
+        padding: 8px 16px;
+        border-radius: 12px;
         font-size: 0.88rem;
         font-weight: 600;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
       }
       .flow-box.highlight {
         background: #e0f2fe;
-        border-color: #0284c7;
+        border-color: #38bdf8;
         color: #0369a1;
       }
       .flow-arrow {
@@ -894,28 +1021,51 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         background: #ffffff;
         border: 1px solid #cbd5e1;
         padding: 4px 10px;
-        border-radius: 4px;
+        border-radius: 8px;
         font-size: 0.8rem;
       }
-      .reader-figure-img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        border: 1px solid #e2e8f0;
-        margin: 16px 0 8px;
-      }
       .cite {
-        color: #1d4ed8;
+        color: #0284c7;
         font-weight: 600;
       }
-      .small-caps {
-        font-variant: small-caps;
-        letter-spacing: 0.05em;
+      .site-footer {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-top: 1px solid rgba(226, 232, 240, 0.8);
+        color: #64748b;
+        padding: 32px 0 24px;
+        margin-top: 48px;
+      }
+      .footer-grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+      .footer-brand {
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 2px;
+      }
+      .footer-links a {
+        color: #475569;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 0.88rem;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+      .footer-links a:hover {
+        color: #0284c7;
       }
 
       /* KaTeX & MathJax Font Fallback Overrides to Protect Vietnamese Diacritics */
       .katex, .katex .text, .katex-display {
-        font-family: var(--font-sans) !important;
+        font-family: 'Onest', sans-serif !important;
       }
       
       @media (max-width: 900px) {
@@ -928,7 +1078,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           margin-bottom: 24px;
         }
         .reader-content {
-          padding: 24px;
+          padding: 24px 20px;
+          border-radius: 20px;
+        }
+        .footer-links a {
+          margin-left: 0;
+          margin-right: 16px;
         }
       }
     </style>
@@ -941,42 +1096,45 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <header class="reader-header">
       <div class="shell reader-header-inner">
-        <a class="brand" href="./">
+        <a class="brand" href="./" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
           <img src="./assets/images/satlab.png" alt="SATLab Logo" class="brand-logo-img">
           <span class="brand-title">SATLab</span>
         </a>
         <div style="display: flex; gap: 12px; align-items: center;">
-          <a href="./downloads/sat-book.pdf" class="btn btn-outline" style="padding: 4px 12px; font-size: 0.82rem;">Tải PDF ↗</a>
-          <a href="./" class="btn btn-primary" style="padding: 4px 12px; font-size: 0.82rem;">Trở về Trang chủ</a>
+          <a href="./downloads/sat-book.pdf" class="btn-pill-pdf">Download PDF (116p)</a>
+          <a href="./" class="btn-pill-home">SATLab Home</a>
         </div>
       </div>
     </header>
 
     <main class="shell reader-layout">
       <aside class="reader-toc">
-        <h3>Mục lục Sách Chuyên khảo</h3>
+        <h3>Monograph Contents</h3>
         <ul>
           __TOC_ITEMS__
         </ul>
       </aside>
 
       <article class="reader-content">
-        <h1 style="font-family: var(--font-display); font-size: 1.85rem; color: #0f172a; margin-bottom: 24px; font-weight: 800;">Sách Chuyên khảo: Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp</h1>
+        <h1 class="book-main-title">Sách Chuyên khảo: Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp</h1>
         __CHAPTERS_HTML__
       </article>
     </main>
 
     <footer class="site-footer">
       <div class="shell footer-grid">
-        <div>
+        <div style="display: flex; align-items: center; gap: 14px;">
           <img src="./assets/images/satlab.png" alt="SATLab Logo" class="footer-logo">
-          <div class="footer-brand">SATLab UET — Phòng nghiên cứu Biểu diễn SAT</div>
-          <p>© 2026 SATLab UET. All rights reserved.</p>
+          <div>
+            <div class="footer-brand">SATLab UET — Satisfiability &amp; Optimization Research Group</div>
+            <p style="margin: 0; font-size: 0.82rem; color: #94a3b8;">Faculty of Information Technology, VNU-UET · © 2026 SATLab UET</p>
+          </div>
         </div>
-        <div>
-          <a href="https://www.facebook.com/satlab.uet/" target="_blank" rel="noopener noreferrer" style="color: #94a3b8; margin-right: 16px;">Facebook ↗</a>
-          <a href="./about.html" style="color: #94a3b8; margin-right: 16px;">Giới thiệu</a>
-          <a href="./downloads/sat-book.pdf" style="color: #94a3b8;">Tải PDF</a>
+        <div class="footer-links">
+          <a href="./">SATLab Home</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./downloads/sat-book.pdf">Download PDF (116p)</a>
+          <a href="https://www.facebook.com/satlab.uet/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
         </div>
       </div>
     </footer>

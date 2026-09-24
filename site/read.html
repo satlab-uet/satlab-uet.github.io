@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#102536">
-    <meta name="sat-book-source-sha256" content="427ddece26f9aea30b4a486231a483639af21e3032a2f47deb9badee323baec9">
+    <meta name="sat-book-source-sha256" content="80fc1dd220f308910b059b78855d362759f2d28701b9b1b776dd072282c76aaf">
     <title>Đọc trực tuyến | Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp</title>
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32.png">
     <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=JetBrains+Mono:wght@400;500;600&family=Onest:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
     
     <!-- MathJax 3 — full-document math rendering -->
@@ -50,46 +54,133 @@
 
     <style>
       body {
-        background-color: #f8fafc;
-        color: #1e293b;
-        font-family: var(--font-sans);
-        line-height: 1.7;
+        margin: 0;
+        background-color: #fafbfd;
+        background-image: 
+          radial-gradient(circle at 14% 10%, rgba(6, 182, 212, 0.15), transparent 32rem),
+          radial-gradient(circle at 86% 18%, rgba(16, 185, 129, 0.12), transparent 36rem),
+          radial-gradient(circle at 48% 46%, rgba(245, 158, 11, 0.09), transparent 34rem),
+          radial-gradient(circle at 12% 76%, rgba(14, 165, 233, 0.13), transparent 34rem),
+          radial-gradient(circle at 88% 88%, rgba(6, 182, 212, 0.12), transparent 36rem);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #0f172a;
+        font-family: 'Onest', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.75;
+      }
+      .top-banner {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        color: #0369a1;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 8px 16px;
+        text-align: center;
+      }
+      .top-banner a {
+        color: #0284c7;
+        text-decoration: underline;
+        margin-left: 6px;
+        font-weight: 700;
       }
       .reader-header {
         position: sticky;
         top: 0;
         z-index: 100;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(8px);
-        border-bottom: 1px solid #e2e8f0;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(226, 232, 240, 0.75);
         padding: 12px 0;
+        box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
       }
       .reader-header-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
+      .brand-title {
+        font-family: 'Faculty Glyphic', serif;
+        font-weight: 700;
+        font-size: 1.35rem;
+        color: #0f172a;
+        letter-spacing: -0.02em;
+      }
+      .btn-pill-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #0f172a;
+        color: #ffffff !important;
+        font-family: 'Onest', sans-serif;
+        font-size: 0.84rem;
+        font-weight: 600;
+        padding: 8px 18px;
+        border-radius: 9999px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.2);
+        transition: all 0.2s ease;
+      }
+      .btn-pill-home:hover {
+        background: #1e293b;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px -2px rgba(15, 23, 42, 0.25);
+      }
+      .btn-pill-pdf {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #ffffff;
+        color: #1e293b !important;
+        font-family: 'Onest', sans-serif;
+        font-size: 0.84rem;
+        font-weight: 600;
+        padding: 8px 18px;
+        border-radius: 9999px;
+        border: 1px solid #cbd5e1;
+        text-decoration: none;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        transition: all 0.2s ease;
+      }
+      .btn-pill-pdf:hover {
+        border-color: #0284c7;
+        color: #0284c7 !important;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.12);
+      }
       .reader-layout {
         display: grid;
-        grid-template-columns: 280px 1fr;
-        gap: 36px;
-        margin-top: 24px;
-        margin-bottom: 64px;
+        grid-template-columns: 290px 1fr;
+        gap: 32px;
+        margin-top: 28px;
+        margin-bottom: 72px;
+        align-items: start;
       }
       .reader-toc {
         position: sticky;
-        top: 80px;
-        max-height: calc(100vh - 100px);
+        top: 88px;
+        max-height: calc(100vh - 110px);
         overflow-y: auto;
-        padding-right: 12px;
-        font-size: 0.88rem;
+        padding: 22px 18px;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        border-radius: 24px;
+        box-shadow: 0 10px 30px -15px rgba(15, 23, 42, 0.08);
       }
       .reader-toc h3 {
-        font-size: 0.95rem;
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 0.84rem;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #64748b;
-        margin-bottom: 12px;
+        letter-spacing: 0.08em;
+        color: #0284c7;
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-weight: 700;
+        padding-left: 8px;
       }
       .reader-toc ul {
         list-style: none;
@@ -97,91 +188,119 @@
         margin: 0;
       }
       .reader-toc li {
-        margin-bottom: 8px;
+        margin-bottom: 4px;
       }
       .reader-toc a {
         color: #334155;
         text-decoration: none;
         display: block;
-        padding: 4px 8px;
-        border-radius: 6px;
+        padding: 6px 12px;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        line-height: 1.45;
       }
       .reader-toc a:hover {
-        background: #e2e8f0;
-        color: #0f172a;
+        background: rgba(240, 249, 255, 0.9);
+        color: #0284c7;
+        transform: translateX(2px);
       }
       .reader-content {
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 40px 48px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(226, 232, 240, 0.85);
+        border-radius: 28px;
+        padding: 44px 52px;
+        box-shadow: 0 15px 35px -15px rgba(15, 23, 42, 0.08);
+      }
+      .book-main-title {
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 2.15rem;
+        font-weight: 700;
+        color: #0f172a;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 28px;
+        letter-spacing: -0.02em;
       }
       .chapter-title {
-        font-family: var(--font-display);
-        font-size: 1.85rem;
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 1.65rem;
+        font-weight: 700;
         color: #0f172a;
-        margin-bottom: 16px;
-        border-bottom: 2px solid #0284c7;
-        padding-bottom: 8px;
+        margin-bottom: 18px;
+        border-bottom: 2px solid #38bdf8;
+        padding-bottom: 10px;
+        letter-spacing: -0.01em;
       }
       .chapter-lead {
-        font-size: 1.08rem;
-        color: #334155;
-        background: #f0f9ff;
+        font-size: 1.05rem;
+        color: #1e293b;
+        background: linear-gradient(135deg, rgba(240, 249, 255, 0.85), rgba(236, 254, 255, 0.45));
         border-left: 4px solid #0284c7;
-        padding: 16px 20px;
-        border-radius: 0 8px 8px 0;
-        margin-bottom: 28px;
+        padding: 18px 24px;
+        border-radius: 0 16px 16px 0;
+        margin-bottom: 30px;
         font-style: italic;
       }
       .reader-h2 {
-        font-family: var(--font-display);
+        font-family: 'Faculty Glyphic', serif;
         font-size: 1.35rem;
+        font-weight: 700;
         color: #0f172a;
         margin-top: 36px;
         margin-bottom: 14px;
       }
       .reader-h3 {
-        font-family: var(--font-display);
-        font-size: 1.12rem;
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 1.15rem;
+        font-weight: 600;
         color: #1e293b;
         margin-top: 24px;
         margin-bottom: 10px;
       }
       .reader-callout {
-        border-radius: 6px;
-        padding: 18px 22px;
-        margin: 20px 0;
-        background: #f8fafc;
-        border: 1px solid #e2e8f0;
-        border-left: 4px solid #000000;
+        border-radius: 18px;
+        padding: 20px 24px;
+        margin: 22px 0;
+        background: rgba(248, 250, 252, 0.9);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        border-left: 4px solid #0284c7;
+        box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.03);
       }
       .reader-callout.design-rule,
-      .reader-callout.worked-example,
-      .reader-callout.key-idea,
-      .reader-callout.summary-box,
       .reader-callout.result-box,
       .reader-callout.theorem-box,
       .reader-callout.lemma-box,
-      .reader-callout.proposition-box,
+      .reader-callout.proposition-box {
+        border-left-color: #0284c7;
+      }
+      .reader-callout.worked-example,
       .reader-callout.example-box {
-        background: #f8fafc;
-        border-left-color: #000000;
+        border-left-color: #10b981;
+        background: rgba(240, 253, 244, 0.6);
+      }
+      .reader-callout.key-idea,
+      .reader-callout.summary-box {
+        border-left-color: #f59e0b;
+        background: rgba(254, 252, 232, 0.6);
       }
       .callout-header {
-        font-family: var(--font-display);
+        font-family: 'Faculty Glyphic', serif;
         font-size: 1.02rem;
         margin-bottom: 8px;
-        color: #000000;
+        color: #0f172a;
         font-weight: 700;
       }
       .callout-body {
         font-size: 0.95rem;
         line-height: 1.65;
+        color: #334155;
       }
       .reader-figure-box {
-        margin: 28px 0;
+        margin: 32px 0;
         text-align: center;
       }
       .reader-figure-img {
@@ -192,96 +311,104 @@
       .reader-figure-img img {
         max-width: 100%;
         height: auto;
-        border-radius: 6px;
-        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+        border: 1px solid rgba(226, 232, 240, 0.85);
         background: #ffffff;
-        padding: 8px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        padding: 12px;
+        box-shadow: 0 10px 25px -10px rgba(15, 23, 42, 0.08);
       }
       .reader-inline-caption {
-        font-size: 0.92rem;
-        color: #475569;
-        margin-top: 6px;
+        font-size: 0.88rem;
+        color: #64748b;
+        margin-top: 8px;
+        font-style: italic;
       }
       .reader-proof {
-        background: #f8fafc;
+        background: rgba(248, 250, 252, 0.85);
         border-left: 3px solid #94a3b8;
-        padding: 12px 18px;
-        margin: 16px 0;
+        border-radius: 0 12px 12px 0;
+        padding: 14px 20px;
+        margin: 18px 0;
         font-size: 0.94rem;
+        color: #334155;
       }
       .proof-qedsymbol {
         float: right;
         color: #64748b;
+        font-weight: bold;
       }
       .reader-algorithm-box {
         background: #0f172a;
         color: #f8fafc;
-        border-radius: 8px;
-        padding: 18px;
-        margin: 24px 0;
-        font-family: var(--font-mono);
+        border-radius: 18px;
+        padding: 22px 26px;
+        margin: 26px 0;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 0.88rem;
+        box-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.35);
       }
       .algo-header {
         color: #38bdf8;
+        font-family: 'Faculty Glyphic', serif;
+        font-weight: 700;
         border-bottom: 1px solid #334155;
         padding-bottom: 8px;
         margin-bottom: 12px;
       }
       .reader-table-wrapper {
         overflow-x: auto;
-        margin: 24px 0;
+        margin: 26px 0;
       }
       .reader-table {
         width: 100%;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
         font-size: 0.9rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        overflow: hidden;
       }
       .reader-table th {
         background: #f1f5f9;
         color: #0f172a;
+        font-family: 'Faculty Glyphic', serif;
         font-weight: 700;
-        padding: 10px 14px;
-        border: 1px solid #cbd5e1;
+        padding: 12px 16px;
+        border-bottom: 2px solid #cbd5e1;
         text-align: left;
       }
       .reader-table td {
-        padding: 8px 14px;
-        border: 1px solid #e2e8f0;
+        padding: 10px 16px;
+        border-bottom: 1px solid #e2e8f0;
+        color: #334155;
       }
       .reader-table tr:nth-child(even) {
-        background: #f8fafc;
-      }
-      .reader-table-caption, .reader-inline-caption {
-        font-size: 0.88rem;
-        color: #64748b;
-        margin-bottom: 8px;
-        text-align: center;
+        background: rgba(248, 250, 252, 0.6);
       }
       .reader-flow-diagram {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 12px;
-        background: #f8fafc;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 24px 0;
+        background: rgba(248, 250, 252, 0.85);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        border-radius: 20px;
+        padding: 24px;
+        margin: 26px 0;
         flex-wrap: wrap;
       }
       .flow-box {
         background: #ffffff;
         border: 1px solid #cbd5e1;
-        padding: 8px 14px;
-        border-radius: 6px;
+        padding: 8px 16px;
+        border-radius: 12px;
         font-size: 0.88rem;
         font-weight: 600;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
       }
       .flow-box.highlight {
         background: #e0f2fe;
-        border-color: #0284c7;
+        border-color: #38bdf8;
         color: #0369a1;
       }
       .flow-arrow {
@@ -297,28 +424,51 @@
         background: #ffffff;
         border: 1px solid #cbd5e1;
         padding: 4px 10px;
-        border-radius: 4px;
+        border-radius: 8px;
         font-size: 0.8rem;
       }
-      .reader-figure-img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        border: 1px solid #e2e8f0;
-        margin: 16px 0 8px;
-      }
       .cite {
-        color: #1d4ed8;
+        color: #0284c7;
         font-weight: 600;
       }
-      .small-caps {
-        font-variant: small-caps;
-        letter-spacing: 0.05em;
+      .site-footer {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-top: 1px solid rgba(226, 232, 240, 0.8);
+        color: #64748b;
+        padding: 32px 0 24px;
+        margin-top: 48px;
+      }
+      .footer-grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+      .footer-brand {
+        font-family: 'Faculty Glyphic', serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 2px;
+      }
+      .footer-links a {
+        color: #475569;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 0.88rem;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+      .footer-links a:hover {
+        color: #0284c7;
       }
 
       /* KaTeX & MathJax Font Fallback Overrides to Protect Vietnamese Diacritics */
       .katex, .katex .text, .katex-display {
-        font-family: var(--font-sans) !important;
+        font-family: 'Onest', sans-serif !important;
       }
       
       @media (max-width: 900px) {
@@ -331,7 +481,12 @@
           margin-bottom: 24px;
         }
         .reader-content {
-          padding: 24px;
+          padding: 24px 20px;
+          border-radius: 20px;
+        }
+        .footer-links a {
+          margin-left: 0;
+          margin-right: 16px;
         }
       }
     </style>
@@ -344,20 +499,20 @@
 
     <header class="reader-header">
       <div class="shell reader-header-inner">
-        <a class="brand" href="./">
+        <a class="brand" href="./" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
           <img src="./assets/images/satlab.png" alt="SATLab Logo" class="brand-logo-img">
           <span class="brand-title">SATLab</span>
         </a>
         <div style="display: flex; gap: 12px; align-items: center;">
-          <a href="./downloads/sat-book.pdf" class="btn btn-outline" style="padding: 4px 12px; font-size: 0.82rem;">Tải PDF ↗</a>
-          <a href="./" class="btn btn-primary" style="padding: 4px 12px; font-size: 0.82rem;">Trở về Trang chủ</a>
+          <a href="./downloads/sat-book.pdf" class="btn-pill-pdf">Download PDF (116p)</a>
+          <a href="./" class="btn-pill-home">SATLab Home</a>
         </div>
       </div>
     </header>
 
     <main class="shell reader-layout">
       <aside class="reader-toc">
-        <h3>Mục lục Sách Chuyên khảo</h3>
+        <h3>Monograph Contents</h3>
         <ul>
           <li><a href="#chap-1">Chương 1: Nền tảng Biểu diễn và Bộ giải SAT</a></li>
 <li><a href="#chap-2">Chương 2: Đánh giá Chất lượng và Tiêu chuẩn Mã hóa</a></li>
@@ -375,7 +530,7 @@
       </aside>
 
       <article class="reader-content">
-        <h1 style="font-family: var(--font-display); font-size: 1.85rem; color: #0f172a; margin-bottom: 24px; font-weight: 800;">Sách Chuyên khảo: Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp</h1>
+        <h1 class="book-main-title">Sách Chuyên khảo: Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp</h1>
         
         <section id="chap-1" data-slug="ch01-foundations" style="margin-bottom: 48px; scroll-margin-top: 100px;">
           <h2 class="chapter-title">Chương 1: Nền tảng Biểu diễn và Bộ giải SAT</h2>
@@ -1790,6 +1945,7 @@ nhỏ và mỗi cửa sổ chỉ cắt ít khối. Với các cửa sổ gần r
 nhỏ, biểu diễn từng cặp và bộ đếm độc lập thường có hằng số thấp hơn. Một bộ chọn
 có thể quyết định trước khi sinh CNF từ ba đại lượng: tổng số ngưỡng cục bộ,
 số bộ nối sau giản lược và số bước ghép của các cửa sổ nhiều biên.</p>
+<p>Ngoài các ràng buộc cửa sổ trượt <span class="small-caps">Sequence</span>, nguyên lý tái sử dụng trạng thái phụ qua các điểm cắt miền còn được mở rộng thành kỹ thuật hậu tố thưa \mbox{\textnormal{<span class="small-caps">SparseSuffix</span>}} trong bài toán lập lịch cuộc họp doanh nghiệp (B2B Meeting Scheduling) <span class="cite">(Nguyen et al., 2026)</span> (xem Mục~8.5). Tại đó, các biến đại diện hậu tố được chia sẻ trực tiếp giữa các quan hệ thứ tự tiên quyết có cùng điểm cắt miền tiền nhiệm, giúp giảm đáng kể số mệnh đề nhị phân sinh ra trong công thức CNF.</p>
 <h3 class="reader-h2">Bài học thiết kế</h3>
 <div class="reader-callout summary-box">
  <div class="callout-header"><strong>Tổng kết Bài học</strong></div>
@@ -2549,7 +2705,7 @@ trong lập lịch nhân viên thành các mệnh đề mềm
  <div class="reader-table-caption"><strong>Bảng: Các mô hình giải chính xác cho bài toán thời gian.</strong></div>
  <table class="reader-table">
  <thead><tr><th>Mô hình</th><th>Trạng thái thời gian</th><th>Cơ chế tài nguyên</th><th>Cận chủ đạo</th></tr></thead>
- <tbody><tr><td>SAT theo mốc thời gian</td><td>Mốc rời rạc</td><td>Xung đột/ràng buộc đếm</td><td>UNSAT theo chân trời</td></tr><tr><td>SAT thứ tự</td><td>Ngưỡng thời gian</td><td>Quan hệ + cận dịch chuyển</td><td>Học mệnh đề</td></tr><tr><td>MaxSAT/PB</td><td>Như SAT + literal chi phí</td><td>Cứng/mềm hoặc PB</td><td>Lõi/cận chi phí</td></tr><tr><td>SMT</td><td>Biến nguyên/thực</td><td>Phép tuyển + lý thuyết</td><td>Lan truyền lý thuyết</td></tr><tr><td>CP/LCG</td><td>Miền và khoảng</td><td>Bộ lan truyền toàn cục</td><td>Lọc miền + mệnh đề</td></tr><tr><td>MIP</td><td>Biến nhị phân/liên tục</td><td>Bất đẳng thức tuyến tính</td><td>Thư giãn quy hoạch tuyến tính</td></tr></tbody>
+ <tbody><tr><td>SAT theo mốc thời gian</td><td>Mốc rời rạc</td><td>Xung đột/ràng buộc đếm</td><td>UNSAT theo khung thời gian</td></tr><tr><td>SAT thứ tự</td><td>Ngưỡng thời gian</td><td>Quan hệ + cận dịch chuyển</td><td>Học mệnh đề</td></tr><tr><td>MaxSAT/PB</td><td>Như SAT + literal chi phí</td><td>Cứng/mềm hoặc PB</td><td>Lõi/cận chi phí</td></tr><tr><td>SMT</td><td>Biến nguyên/thực</td><td>Phép tuyển + lý thuyết</td><td>Lan truyền lý thuyết</td></tr><tr><td>CP/LCG</td><td>Miền và khoảng</td><td>Bộ lan truyền toàn cục</td><td>Lọc miền + mệnh đề</td></tr><tr><td>MIP</td><td>Biến nhị phân/liên tục</td><td>Bất đẳng thức tuyến tính</td><td>Nới lỏng quy hoạch tuyến tính</td></tr></tbody>
  </table>
  </div>
 <p>Vì vậy, một phép biểu diễn lập lịch được đánh giá trên cả kích thước, sức lan
@@ -2558,9 +2714,10 @@ rộng theo thời gian; SAT thứ tự so với lôgic sai phân/SMT; bộ đ�
 chung so với bộ lan truyền <span class="small-caps">Sequence</span>; và hàm mục tiêu MaxSAT so với PB
 hay hàm mục tiêu tuyến tính.</p>
 <h3 class="reader-h2">Kiến trúc chung của mô hình thời gian</h3>
-<p>Các bài toán trong chương có bề mặt khác nhau: phân ca điều dưỡng, xếp tác vụ
-trên các máy đồng nhất, cân bằng dây chuyền theo đỉnh công suất và điều chỉnh
-lịch tàu. Tuy nhiên, phép biểu diễn của chúng đều có thể tách thành bốn lớp:
+<p>Các bài toán trong chương có bề mặt khác nhau: xếp tác vụ không ngắt
+trên các máy đồng nhất, phân ca điều dưỡng, lập lịch cuộc họp B2B với cân bằng thời
+gian chờ, cân bằng dây chuyền theo đỉnh công suất và điều chỉnh lịch tàu. Tuy
+nhiên, phép biểu diễn của chúng đều có thể tách thành bốn lớp:
 <ol class="reader-list"><li><strong>gán</strong>: tác vụ, người hoặc chuyến tàu sử dụng tài nguyên nào;</li><li><strong>thời gian/thứ tự</strong>: thời điểm bắt đầu, kết thúc hoặc thứ tự trước–sau;</li><li><strong>liên tục/chuỗi</strong>: các quyết định cục bộ ghép thành một
  khoảng hoặc một chuỗi hợp lệ;</li><li><strong>hàm mục tiêu</strong>: thời điểm hoàn tất toàn lịch, đỉnh công suất,
  độ trễ hay số vi phạm.</li></ol></p>
@@ -2750,6 +2907,90 @@ ALSCE giải toàn bộ tập thử trong nghiên cứu của
 \(26{,}01\) giây. Kết quả này minh họa hiệu quả của kỹ thuật chia sẻ thanh ghi giữa
 các cửa sổ chồng lấn.</div>
  </div>
+<h3 class="reader-h2">Lập lịch cuộc họp B2B với cân bằng thời gian chờ</h3>
+<h4 class="reader-h3">Bài toán B2B và mục tiêu khoảng thời gian chờ</h4>
+<p>Bài toán lập lịch cuộc họp doanh nghiệp (Business-to-Business Meeting Scheduling Problem, B2B) xếp lịch cho tập các cuộc họp đối tác \(M\) vào tập mốc thời gian rời rạc \(T=\left\{1,\ldots, h\right\}\) và \(K\) phòng họp/địa điểm dùng chung <span class="cite">(Pesant et al., 2015; Bofill et al., 2022)</span>. Mỗi cuộc họp \(m\in M\) được thực hiện bởi đúng hai đại biểu, ký hiệu \(\pi(m)\subseteq P\) với \(\left|\pi(m)\right|=2\), và có miền mốc khởi tạo \(D_m^0\subseteq T\) tương ứng với phiên làm việc, mốc cố định và mốc cấm của hai đại biểu. Đặt \(E\subseteq M\times M\) là tập các cung thứ tự tiên quyết giữa các cuộc họp. Một lịch xếp \(S: M\to T\) là hợp lệ nếu \(S(m)\in D_m^0\) và thỏa mãn các điều kiện:</p>
+\[
+S(m) &\ne S(m') && \forall m, m'\in M, m\ne m': \pi(m)\cap\pi(m')\ne\emptyset, \label{eq:b2b-participant}\\
+  \left|\left\{m\in M \suchthat S(m)=t\right\}\right| &\le K && \forall t\in T, \label{eq:b2b-capacity}\\
+  S(i) &&lt; S(j) && \forall (i, j)\in E. \label{eq:b2b-precedence}
+\]
+<p>Với mỗi đại biểu \(p\in P\), đặt \(M_p = \left\{m\in M \suchthat p\in\pi(m)\right\}\) là tập cuộc họp của đại biểu đó. Đặt \(P^\star = \left\{p\in P \suchthat \left|M_p\right|\ge 2\right\}\) là tập các đại biểu có ít nhất hai cuộc họp. Đối với \(p\in P^\star\), mốc bận đầu tiên \(F_p(S)\) và mốc bận cuối cùng \(L_p(S)\) trong lịch \(S\) được xác định bởi:</p>
+\[
+F_p(S) = \min_{m\in M_p} S(m), \qquad L_p(S) = \max_{m\in M_p} S(m).
+\]
+<p>Do các cuộc họp của đại biểu \(p\) không chồng lấn, số mốc thời gian trống nằm hoàn toàn giữa mốc đầu và mốc cuối—gọi là <em>thời gian chờ nội bộ</em> (internal idle slots)—được tính bằng:</p>
+\[
+I_p(S) =
+  \begin{cases}
+    L_p(S) - F_p(S) + 1 - \left|M_p\right|, & p\in P^\star,\\
+    0, & \left|M_p\right|\le 1.
+  \end{cases}
+  \label{eq:b2b-internal-idle}
+\]
+<p>Khác với mô hình truyền thống đếm tổng số nhóm nghỉ (<em>break groups</em>) <span class="cite">(Bofill et al., 2022)</span>, chỉ số \(I_p(S)\) phân biệt rõ khoảng chờ dài (như chờ 5 mốc) với khoảng chờ ngắn (chờ 1 mốc). Hàm mục tiêu tối ưu hóa khoảng thời gian chờ nội bộ giữa các đại biểu:</p>
+\[
+\Delta_I(S) = \max_{p\in P^\star} I_p(S) - \min_{p\in P^\star} I_p(S).
+  \label{eq:b2b-idle-range}
+\]
+<p>Mục tiêu này hướng tới sự cân bằng công bằng về thời gian chờ giữa các đại biểu, lấy cảm hứng từ các chuẩn cân bằng tải trong bài toán BACP <span class="cite">(Chiarandini et al., 2012)</span>. Tổng thời gian chờ \(I_\Sigma(S)=\sum_{p\in P}I_p(S)\) được báo cáo như một chỉ số bổ trợ.</p>
+<h4 class="reader-h3">Tiền xử lý bảo toàn nghiệm và lọc miền</h4>
+<p>Trước khi sinh công thức CNF, thuật toán lọc miền <span class="cite">(Nguyen et al., 2026)</span> thu hẹp miền mốc của từng cuộc họp bằng cách áp dụng lặp cho đến điểm bất động ba quy tắc lọc:
+<ol class="reader-list"><li><strong>Cận thứ tự tiên quyết</strong>: Với mỗi quan hệ \((i, j,d)\) trong tập quan hệ \(\mathcal R_f\in\left\{\mathcal R_E, \mathcal R_{E^\star}\right\}\) (trong đó \(\mathcal R_E = \left\{(i, j,1) \suchthat (i, j)\in E\right\}\) và \(\mathcal R_{E^\star}\) là bao đóng bắc cầu gán khoảng cách đường đi dài nhất \(\ell_{ij}\)), loại \(t\in D_i\) nếu \(t+d &gt; \max D_j\), và loại \(u\in D_j\) nếu \(\min D_i+d &gt; u\).</li><li><strong>Nhất quán ghép cặp đại biểu</strong>: Với mỗi đại biểu \(p\), dựng đồ thị hai phía giữa \(M_p\) và miền mốc khả thi. Sử dụng thuật toán lọc <span class="small-caps">AllDifferent</span> dựa trên ghép cặp cực đại <span class="cite">(R{'e, 1994)</span> để xóa phân gán cuộc họp–mốc nào không thuộc bất kỳ ghép cặp hoàn hảo nào của \(M_p\).</li><li><strong>Mốc bão hòa</strong>: Nếu mốc \(t\) đã bị ép chọn bởi đúng \(K\) cuộc họp cố định, loại mốc \(t\) khỏi miền của tất cả cuộc họp còn lại.</li></ol></p>
+<div class="reader-callout proposition-box">
+ <div class="callout-header"><strong>Mệnh đề (Tính bảo toàn nghiệm của lọc miền B2B)</strong></div>
+ <div class="callout-body">Thuật toán lọc miền dừng sau số bước hữu hạn, loại bỏ duy nhất các giá trị không thể thuộc bất kỳ lịch hợp lệ nào, bảo toàn trọn vẹn tập nghiệm khả thi, và chỉ thông báo vô nghiệm khi bài toán thực sự không có nghiệm.</div>
+ </div>
+<div class="reader-proof">
+ <em>Chứng minh.</em> Mỗi bước loại giá trị đều dựa trên các điều kiện cần về tính khả thi: vi phạm cận thứ tự tiên quyết, không có hỗ trợ trong ghép cặp đại biểu, hoặc vượt quá sức chứa địa điểm \(K\). Vì miền ban đầu là hữu hạn, quá trình xóa giá trị phải dừng sau tối đa \(\sum_{m}\left|D_m^0\right|\) bước. <span class="proof-qedsymbol">■</span>
+ </div>
+<p>Phép biểu diễn \mbox{<span class="small-caps">Reduced</span>} áp dụng biến gán \(x_{m, t}\) chỉ trên miền mốc đã lọc \(A_m = D_m\), thay vì miền đầy đủ \(A_m = T\) của mô hình gốc \mbox{<span class="small-caps">ORG-MaxSAT</span>} <span class="cite">(Bofill et al., 2022)</span>.</p>
+<h4 class="reader-h3">Biểu diễn thứ tự tiên quyết bằng hậu tố thưa chia sẻ (<span class="small-caps">SparseSuffix</h4>)</span>
+<p>Xét quan hệ tiên quyết \((i, j,d)\in\mathcal R_g\). Biểu diễn từng cặp (\mbox{\textnormal{<span class="small-caps">Pairwise</span>}}) thêm các mệnh đề nhị phân \(\neg x_{i, t}\lor\neg x_{j, u}\) với mọi \(t\in A_i, u\in A_j\) thỏa \(t+d&gt;u\), có thể phát sinh \(O(\left|A_i\right|\left|A_j\right|)\) mệnh đề cho một quan hệ.</p>
+<p>Phép biểu diễn hậu tố thưa (\mbox{\textnormal{<span class="small-caps">SparseSuffix</span>}}) <span class="cite">(Nguyen et al., 2026)</span> chỉ khởi tạo biến phụ tại các điểm cắt nội bộ thực sự xuất hiện trong miền tiền nhiệm. Với miền đã sắp thứ tự \(A_i = (a_{i, 0},\ldots, a_{i, n_i-1})\), giả sử các điểm cắt xuất hiện là \(c_1 &lt; c_2 &lt; \cdots &lt; c_s\). Đặt \(c_{s+1}=n_i\) và \(q_{i, n_i}=\bot\), biến đại diện hậu tố được định nghĩa quy nạp:</p>
+\[
+c(i, j,u) &= \min\left\{r\in\set{0,\ldots, n_i-1} \suchthat a_{i, r} &gt; u - d\right\}, \notag\\
+  q_{i, c_\ell} &\leftrightarrow \left(\bigvee_{r=c_\ell}^{c_{\ell+1}-1} x_{i, a_{i, r}}\right) \lor q_{i, c_{\ell+1}}, \label{eq:b2b-sparse-suffix}\\
+  x_{j, u} &\rightarrow \neg q_{i, c(i, j,u)}. \label{eq:b2b-suffix-link}
+\]
+<p>Khi hai quan hệ tiên quyết cùng dẫn đến một điểm cắt \(c\) trên miền \(A_i\), biến hậu tố \(q_{i, c}\) được tái sử dụng hoàn toàn.</p>
+<div class="reader-callout proposition-box">
+ <div class="callout-header"><strong>Mệnh đề (Tương đương của SparseSuffix)</strong></div>
+ <div class="callout-body">Phép biểu diễn \mbox{\textnormal{<span class="small-caps">SparseSuffix</span>}} và phép biểu diễn từng cặp \mbox{\textnormal{<span class="small-caps">Pairwise</span>}} mô tả chính xác cùng một tập phân gán cuộc họp–mốc thời gian.</div>
+ </div>
+<div class="reader-proof">
+ <em>Chứng minh.</em> Từ Công thức~(công thức eq:b2b-sparse-suffix), biến phụ \(q_{i, c}\) đúng khi và chỉ khi cuộc họp \(i\) được gán cho mốc có chỉ số ít nhất là \(c\). Mệnh đề kéo theo~(công thức eq:b2b-suffix-link) do đó loại bỏ chính xác các cặp mốc \((t, u)\) vi phạm điều kiện \(t+d \le u\). <span class="proof-qedsymbol">■</span>
+ </div>
+<div class="reader-figure-box" id="fig_b2b_encoding_ideas">
+<div class="reader-figure-img">
+ <img src="assets/images/diagrams/fig_b2b_encoding_ideas.webp" alt="Hình: Kỹ thuật biểu diễn trong B2B: (a) Biến hậu tố thưa \mbox{\textnormal{<span class="small-caps">SparseSuffix" loading="lazy" />
+ </div>
+<div class="reader-inline-caption"><em>Hình: Kỹ thuật biểu diễn trong B2B: (a) Biến hậu tố thưa \mbox{\textnormal{\textsc{SparseSuffix</em></div>
+ </div>
+<h4 class="reader-h3">Mã hóa ngưỡng thời gian chờ từ nhịp hoạt động</h4>
+<p>Để xác định \(I_p(S)\), gọi \(y_{p, t}\leftrightarrow\bigvee_{m\in M_p: t\in A_m}x_{m, t}\) là biến chỉ báo đại biểu \(p\) bận tại mốc \(t\). Định nghĩa biến tích lũy tiền tố \(P_{p, t}\leftrightarrow P_{p, t-1}\lor y_{p, t}\) và hậu tố \(R_{p, t}\leftrightarrow y_{p, t}\lor R_{p, t+1}\). Mốc bắt đầu đầu tiên của đại biểu \(p\) được nhận diện bằng:</p>
+\[
+f_{p, t} \leftrightarrow y_{p, t} \land \neg P_{p, t-1}.
+\]
+<p>Gọi \(\theta_{p, k}\) là biến mệnh đề đại diện cho điều kiện \(I_p(S)\ge k\). Mối liên hệ giữa mốc đầu và mốc cuối được biểu diễn chính xác bằng:</p>
+\[
+f_{p, t} \rightarrow \left(\theta_{p, k} \leftrightarrow R_{p, t + \left|M_p\right| + k - 1}\right)
+  \qquad \forall t\in T, 1\le k\le U_p,
+  \label{eq:b2b-span-threshold}
+\]
+<p>trong đó \(U_p\) là cận trên hợp lệ của thời gian chờ đối với đại biểu \(p\).</p>
+<p>Cuối cùng, với \(U=\max_{p\in P^\star} U_p\) và \(1\le k\le U\), biểu diễn định nghĩa biến ngưỡng cực đại \(\Theta_k^{\max}\leftrightarrow\bigvee_{p\in P^\star}\theta_{p, k}\), cực tiểu \(\Theta_k^{\min}\leftrightarrow\bigwedge_{p\in P^\star}\theta_{p, k}\), và biến mức chênh lệch:</p>
+\[
+g_k \leftrightarrow \Theta_k^{\max} \land \neg \Theta_k^{\min}, \qquad \text{với } \sum_{k=1}^U g_k = \Delta_I(S).
+  \label{eq:b2b-range-sum}
+\]
+<h4 class="reader-h3">Phương pháp giải và kết quả thực nghiệm</h4>
+<p>Phép biểu diễn B2B thu gọn được đánh giá thực nghiệm rộng rãi trên 126 bộ dữ liệu chuẩn chính thức (<em>All-126</em>) và 100 bộ dữ liệu biến đổi mật độ thứ tự (<em>Stress-100</em>) <span class="cite">(nguyen2026compactsatmaxsatencodings</span>. Thử nghiệm so sánh ba phương pháp tối ưu dựa trên công thức SAT/MaxSAT (UWrMaxSAT; <span class="small-caps">Non-Incremental SAT</span>; và <span class="small-caps">Incremental SAT</span> sử dụng Totalizer kết hợp giả định assumption) với các công cụ thương mại hàng đầu đại diện cho MIP (Gurobi; CPLEX) và CP (CP Optimizer).</p>
+<div class="reader-callout result-box">
+ <div class="callout-header"><strong>Kết quả tiêu biểu cho B2B Meeting Scheduling</strong></div>
+ <div class="callout-body">Trên tập dữ liệu chuẩn <em>All-126</em>:
+<ul class="reader-list"><li>Phép biểu diễn thu gọn giảm trung vị <strong>40.3%</strong> số mệnh đề; <strong>55.9%</strong> dung lượng bộ nhớ đỉnh và <strong>14.0%</strong> tổng thời gian chạy so với mô hình \mbox{<span class="small-caps">ORG-MaxSAT</span>)</span> công bố <span class="cite">(Bofill et al., 2022)</span>.</li><li>Riêng bước lọc miền (\mbox{<span class="small-caps">Reduced</span>}) đóng góp giảm <strong>24.1%</strong> số biến gán và <strong>16.2%</strong> số mệnh đề.</li><li>Biểu diễn hậu tố \mbox{\textnormal{<span class="small-caps">SparseSuffix</span>}} kết hợp với bao đóng bắc cầu \mbox{\textnormal{<span class="small-caps">Closure-</span>}\ensuremath{E^\star}} giúp giảm số mệnh đề đến <strong>5.5%</strong> ở các mức mật độ thứ tự cao.</li><li>Cả ba phương pháp SAT và MaxSAT đều giải thành công 100% các bài toán chính thức với thời gian trung vị vượt trội Gurobi MIP (\(0.521\) giây); trong đó \mbox{\textnormal{<span class="small-caps">Incremental SAT</span>}} đạt thời gian trung vị nhanh nhất (<strong>0.227</strong> giây).</li></ul></div>
+ </div>
 <h3 class="reader-h2">Peak power: công suất đỉnh trong cân bằng dây chuyền</h3>
 <h4 class="reader-h3">Mô hình đỉnh công suất</h4>
 <p>Trong SALBP-3PM, tác vụ \(i\) có thời lượng \(t_i\), công suất \(w_i\), được gán
@@ -2806,7 +3047,7 @@ hơn và thí nghiệm phân tích thành phần (ablation study) rõ hơn.</div
 t^{i, q}\ge t^{i, r}+\ell_i^r,
 \]
 <p>trong khi hai tàu chia sẻ tài nguyên phải chọn một trong hai thứ tự an toàn.
-Nếu dựng toàn bộ miền thời gian đến chân trời \(H\), số biến theo mốc thời gian có thể
+Nếu dựng toàn bộ miền thời gian đến khung thời gian \(H\), số biến theo mốc thời gian có thể
 rất lớn.</p>
 <p><em>Dynamic Discretization Discovery</em> (khám phá rời rạc hóa động, DDD) khởi
 đầu bằng tập mốc thưa \(\Lambda^{i, r}\). Mô hình hạn chế cho một cận dưới.
@@ -2829,7 +3070,7 @@ vào SAT, thay vì chỉ thay phép biểu diễn của một ràng buộc.</p>
 \(\Lambda^0\subseteq\Lambda^\star\), bộ giải mã–kiểm tra và hàm chi phí.<br>
 <strong>Đầu ra:</strong> lịch tối ưu hoặc chứng nhận vô nghiệm trong miền đầy đủ.
 <ol class="reader-list"><li>Với vòng \(r\), sinh hoặc cập nhật mô hình hạn chế trên
- \(\Lambda^r\), giải tối ưu và ghi cận dưới \(L_r\).</li><li>Nếu mô hình hạn chế vô nghiệm và là một phép thư giãn hợp lệ của mô hình
+ \(\Lambda^r\), giải tối ưu và ghi cận dưới \(L_r\).</li><li>Nếu mô hình hạn chế vô nghiệm và là một mô hình nới lỏng hợp lệ của mô hình
  đầy đủ, kết luận mô hình đầy đủ vô nghiệm.</li><li>Giải mã nghiệm. Bộ kiểm tra xác nhận một lịch đầy đủ có chi phí \(U_r\) nếu
  khả thi; đồng thời, khi lịch chưa khả thi hoặc \(L_r&lt;U_r\), thuật toán phải trả về một
  bằng chứng \(C_r\) chỉ ra phần rời rạc hóa đang thiếu cho feasibility hoặc
@@ -2855,7 +3096,7 @@ tăng nghiêm ngặt trong một tập hữu hạn, số lần tinh chỉnh bị
 phí của một nghiệm đầy đủ được bộ kiểm tra xác nhận, nên cả hai bằng giá trị
 tối ưu. Nếu đến \(\Lambda^\star\), mô hình hạn chế chính là mô hình đầy đủ; bộ giải quyết định
 tối ưu hoặc vô nghiệm. Kết luận vô nghiệm sớm chỉ hợp lệ dưới giả thiết
-thư giãn ở (ii). <span class="proof-qedsymbol">■</span>
+nới lỏng ở (ii). <span class="proof-qedsymbol">■</span>
  </div>
 <p><strong>Biên hội tụ và chiến lược tinh chỉnh.</strong>
 Ở biên xấu nhất, DDD khôi phục toàn bộ lưới \(\Lambda^\star\). Mỗi bước tinh
@@ -2866,10 +3107,10 @@ tập mốc đầy đủ—xác định đồng thời tính đúng và tốc đ
 <div class="reader-figure-box" id="fig_ddd_refinement">
 <div class="reader-figure-img">
  <img src="assets/images/diagrams/fig_ddd_refinement.webp" alt="Hình: DDD chỉ thêm mốc tại nơi nghiệm của mô hình hạn chế thiếu thông tin.
-Lưới không được làm dày đồng loạt trên toàn chân trời thời gian." loading="lazy" />
+Lưới không được làm dày đồng loạt trên toàn bộ khung thời gian." loading="lazy" />
  </div>
 <div class="reader-inline-caption"><em>Hình: DDD chỉ thêm mốc tại nơi nghiệm của mô hình hạn chế thiếu thông tin.
-Lưới không được làm dày đồng loạt trên toàn chân trời thời gian.</em></div>
+Lưới không được làm dày đồng loạt trên toàn bộ khung thời gian.</em></div>
  </div>
 <p>Lan truyền quan hệ trước–sau có vai trò thu hẹp miền trước khi sinh CNF. Nếu một
 lựa chọn thứ tự \(i\prec j\) kéo theo một chuỗi thời điểm tối thiểu, các mốc
@@ -2888,16 +3129,16 @@ khó nhất của mô hình:
 <ul class="reader-list"><li>Chọn SAT/MaxSAT khi lôgic rời rạc, cửa sổ và xung đột lặp lại; có lợi
  từ học mệnh đề và giải tăng dần.</li><li>Chọn SMT khi bất đẳng thức thời gian nguyên là lõi, còn phần Boolean
  chỉ quyết định thứ tự hoặc chế độ <span class="cite">(Bofill et al., 2020)</span>.</li><li>Chọn CP khi tích lũy/không chồng lấn là ràng buộc toàn cục tự nhiên và
- lan truyền miền có thể khai thác trực tiếp.</li><li>Chọn MIP khi hàm mục tiêu tuyến tính mạnh và phép thư giãn cung cấp cận tốt.</li></ul></p>
+ lan truyền miền có thể khai thác trực tiếp.</li><li>Chọn MIP khi hàm mục tiêu tuyến tính mạnh và mô hình nới lỏng cung cấp cận tốt.</li></ul></p>
 <p>Phương pháp kết hợp nên được thiết kế như một phân chia nhiệm vụ suy diễn: mô-đun
 nào tạo cận, mô-đun nào xử lý phép tuyển và bằng cách nào hai phía trao đổi
 thông tin. Việc chỉ gọi nhiều bộ giải trên cùng một mô hình không tự tạo ra
 một kiến trúc kết hợp.</p>
 <h4 class="reader-h3">Một cây quyết định theo cấu trúc</h4>
-<ol class="reader-list"><li>Nếu chân trời nhỏ và mỗi tác vụ có ít giá trị bắt đầu, SAT/MaxSAT theo
- mốc thời gian là đối chứng minh bạch.</li><li>Nếu chân trời lớn nhưng các ràng buộc trước–sau/sai phân dày, thử mã
+<ol class="reader-list"><li>Nếu khung thời gian nhỏ và mỗi tác vụ có ít giá trị bắt đầu, SAT/MaxSAT theo
+ mốc thời gian là đối chứng minh bạch.</li><li>Nếu khung thời gian lớn nhưng các ràng buộc trước–sau/sai phân dày, thử mã
  hóa thứ tự, SMT hoặc LCG trước khi mở toàn bộ trục thời gian.</li><li>Nếu tài nguyên tích lũy là nút thắt và có suy luận năng lượng mạnh,
- CP/LCG có ưu thế cấu trúc mà xung đột từng cặp khó thay thế.</li><li>Nếu hàm mục tiêu/phép thư giãn tuyến tính tạo cận mạnh, MIP là đối
+ CP/LCG có ưu thế cấu trúc mà xung đột từng cặp khó thay thế.</li><li>Nếu hàm mục tiêu/mô hình nới lỏng tuyến tính tạo cận mạnh, MIP là đối
  chứng bắt buộc; SAT chỉ có lợi khi phép tuyển Boolean hoặc đối xứng chi phối.</li><li>Nếu chỉ một phần nhỏ mốc thời gian quan trọng, xét DDD/tinh chỉnh và
  chứng minh rõ tính hợp lệ của cận dưới.</li></ol>
 <h3 class="reader-h2">Bài học thiết kế</h3>
@@ -3313,10 +3554,10 @@ và nguồn gốc bộ kiểm chuẩn cần dùng làm đối chứng
  </div>
 <h3 class="reader-h2">Phân loại trước khi biểu diễn</h3>
 <div class="reader-table-wrapper">
- <div class="reader-table-caption"><strong>Bảng: Phân biệt ngữ nghĩa của ABP, CABP, BCP và BMCP.</strong></div>
+ <div class="reader-table-caption"><strong>Bảng: Phân biệt ngữ nghĩa của ABP, CABP, No-hole Anti-\(k\)-labeling, BCP và BMCP.</strong></div>
  <table class="reader-table">
  <thead><tr><th>Bài toán</th><th>Nghiệm</th><th>Ràng buộc</th><th>Mục tiêu</th></tr></thead>
- <tbody><tr><td>Antibandwidth</td><td>Hoán vị \(1,\ldots, n\)</td><td>\(\left|f(u)-f(v)\right|\ge k\)</td><td>Tối đa \(k\)</td></tr><tr><td>Antibandwidth tuần hoàn</td><td>Hoán vị trên vòng</td><td>\(D_c(f(u),f(v))\ge k\)</td><td>Tối đa \(k\)</td></tr><tr><td>Tô màu theo bandwidth</td><td>Một màu mỗi đỉnh</td><td>\(\left|c(u)-c(v)\right|\ge d_{uv}\)</td><td>Tối thiểu độ trải</td></tr><tr><td>Tô đa màu theo bandwidth</td><td>\(w(u)\) màu mỗi đỉnh</td><td>Khoảng cách nội/ngoại đỉnh</td><td>Tối thiểu màu lớn nhất</td></tr></tbody>
+ <tbody><tr><td>Antibandwidth</td><td>Hoán vị \(1,\ldots, n\)</td><td>\(\left|f(u)-f(v)\right|\ge k\)</td><td>Tối đa \(k\)</td></tr><tr><td>Antibandwidth tuần hoàn</td><td>Hoán vị trên vòng</td><td>\(D_c(f(u),f(v))\ge k\)</td><td>Tối đa \(k\)</td></tr><tr><td>No-hole Anti-\(k\)-labeling</td><td>Ánh xạ toàn ánh \(\left\{1,\ldots, k\right\}\) (\(k&lt;n\))</td><td>\(\left|\psi(u)-\psi(v)\right|\ge w\) và \(\sum_i x_{ij}\ge 1\)</td><td>Tối đa \(w\)</td></tr><tr><td>Tô màu theo bandwidth</td><td>Một màu mỗi đỉnh</td><td>\(\left|c(u)-c(v)\right|\ge d_{uv}\)</td><td>Tối thiểu độ trải</td></tr><tr><td>Tô đa màu theo bandwidth</td><td>\(w(u)\) màu mỗi đỉnh</td><td>Khoảng cách nội/ngoại đỉnh</td><td>Tối thiểu màu lớn nhất</td></tr></tbody>
  </table>
  </div>
 <p>Với ABP và CABP, nhãn là một hoán vị nên ma trận gán cần
@@ -3449,6 +3690,70 @@ và khai thác cửa sổ tuần hoàn cùng đối xứng của vòng. Một t�
 chuẩn bị cho SAT Competition 2026 <span class="cite">(Truong & To, 2026)</span>; về mặt
 thiết kế, giá trị của bộ này là tách bài toán tối ưu thành chuỗi bài toán
 SAT/UNSAT có cận \(k\) rõ ràng.</div>
+ </div>
+<h3 class="reader-h2">Bài toán No-hole Anti-\(k\)-labeling và nén khoảng cấm bằng biến tiền tố</h3>
+<h4 class="reader-h3">Bài toán gán nhãn phi song ánh và điều kiện toàn ánh</h4>
+<p>Trong quản lý phổ tần số và tài nguyên mạng không dây, số lượng kênh truyền dẫn khả thi \(k\) thường nhỏ hơn đáng kể so với số lượng trạm phát sóng \(n = \left|V\right|\) (\(k &lt; n\)) do các giới hạn về mặt pháp lý và kỹ thuật. Bối cảnh này dẫn tới bài toán <em>Anti-\(k\)-labeling</em> <span class="cite">(Guan et al., 2019)</span>, một mở rộng phi song ánh tự nhiên của bài toán Antibandwidth cổ điển (nơi \(k=n\)). Khi \(k &lt; n\), phép gán nhãn không còn là một hoán vị mà trở thành một phép phân hoạch các đỉnh vào các lớp nhãn.</p>
+<p>Biến thể <em>No-hole Anti-\(k\)-labeling</em> <span class="cite">(Wang & Wu, 2021; Hai et al., 2026)</span> yêu cầu hàm gán nhãn \(\psi: V \to \left\{1,\ldots, k\right\}\) phải là một phép ánh xạ <em>toàn ánh</em> (<em>surjective mapping</em>), tức là mọi nhãn trong tập \(\left\{1,\ldots, k\right\}\) đều phải được gán cho ít nhất một đỉnh (không có nhãn trống/lỗ hổng). Mục tiêu của bài toán là tìm hàm gán nhãn \(\psi\) sao cho khoảng cách giữa hai đỉnh kề nhau là lớn nhất:</p>
+\[
+\lambda_k^{nh}(G) = \max_{\psi} \min_{(u, v)\in E} \left|\psi(u) - \psi(v)\right|.
+  \label{eq:nohole-objective}
+\]
+<p>Mô hình quy hoạch tuyến tính số nguyên (ILP) cho bài toán quyết định “liệu có tồn tại phép gán nhãn toàn ánh thỏa mãn khoảng cách tối thiểu \(w\) không” sử dụng các biến nhị phân \(x_{ij} = 1 \iff \psi(i) = j\):</p>
+\[
+\sum_{j=1}^k x_{ij} &= 1 && \forall i\in\left\{1,\ldots, n\right\}, \label{eq:nohole-ilp-vertex}\\
+  \sum_{i=1}^n x_{ij} &\ge 1 && \forall j\in\left\{1,\ldots, k\right\}, \label{eq:nohole-ilp-nohole}\\
+  x_{uj} + \sum_{j'=\max(1, j-w+1)}^{\min(k, j+w-1)} x_{vj'} &\le 1 && \forall (u, v)\in E, j\in\left\{1,\ldots, k\right\}. \label{eq:nohole-ilp-distance}
+\]
+<p>Ràng buộc~(công thức eq:nohole-ilp-vertex) bảo đảm mỗi đỉnh nhận đúng một nhãn; Ràng buộc~(công thức eq:nohole-ilp-nohole) bảo đảm tính toàn ánh (<em>no-hole</em>); và Ràng buộc~(công thức eq:nohole-ilp-distance) cấm hai đỉnh kề nhau nhận các nhãn thuộc khoảng cấm \((j-w, j+w)\).</p>
+<h4 class="reader-h3">Từ bùng nổ mệnh đề từng cặp đến biểu diễn khoảng bằng biến tiền tố</h4>
+<p>Chuyển trực tiếp Ràng buộc khoảng cách~(công thức eq:nohole-ilp-distance) sang CNF bằng phép biểu diễn từng cặp (Direct Encoding - DE) sinh ra họ mệnh đề xung đột:</p>
+\[
+\neg x_{ui} \lor \neg x_{vj} \qquad \forall (u, v)\in E, i\in\left\{1,\dots, k\right\}, j\in [\max(1, i-w+1),\min(k, i-w-1)].
+  \label{eq:nohole-direct-cnf}
+\]
+<p>Số lượng mệnh đề của DE phát triển theo cấp số \(O(\left|E\right|\cdot k\cdot w)\). Khi khoảng cách mục tiêu \(w\) tăng lên, số mệnh đề khoảng cách bùng nổ mạnh mẽ, gây tắc nghẽn bộ nhớ và làm suy giảm hiệu năng của bộ giải SAT.</p>
+<p>Để giải quyết triệt để nút thắt này, phép biểu diễn \mbox{\textnormal{<span class="small-caps">PSE</span>}} (<em>Proposed SAT Encoding</em>) <span class="cite">(Hai et al., 2026)</span> giới thiệu các biến phụ tiền tố \(l_{ij} \in \left\{0, 1\right\}\) với ngữ nghĩa:</p>
+\[
+l_{ij} = 1 \iff \psi(i) \le j \iff \exists k' \le j : x_{ik'} = 1.
+\]
+<p>Tính đơn điệu tự nhiên của biến tiền tố đòi hỏi \(l_{ij} \to l_{i(j+1)}\) cho mọi \(j &lt; k\). Hệ thống mệnh đề liên kết biến gán gốc \(x_{ij}\) và biến tiền tố \(l_{ij}\) được định nghĩa bởi:</p>
+\[
+x_{ij} &\to l_{ij} && \forall i\in\left\{1,\ldots, n\right\}, j\in\left\{1,\ldots, k\right\}, \label{eq:nohole-link-1}\\
+  l_{ij} &\to l_{i(j+1)} && \forall i\in\left\{1,\ldots, n\right\}, j\in\left\{1,\ldots, k-1\right\}, \label{eq:nohole-link-2}\\
+  \neg x_{i1} &\to \neg l_{i1} && \forall i\in\left\{1,\ldots, n\right\}, \label{eq:nohole-link-3}\\
+  (\neg x_{ij} \land \neg l_{i(j-1)}) &\to \neg l_{ij} && \forall i\in\left\{1,\ldots, n\right\}, j\in\left\{2,\ldots, k\right\}, \label{eq:nohole-link-4}\\
+  x_{ij} &\to \neg l_{i(j-1)} && \forall i\in\left\{1,\ldots, n\right\}, j\in\left\{2,\ldots, k\right\}. \label{eq:nohole-link-5}
+\]
+<p>Nhờ cấu trúc biến tiền tố, toàn bộ khoảng cấm \((j-w, j+w)\) giữa hai đỉnh kề nhau \((u, v)\in E\) được nén lại chỉ trong **đúng một mệnh đề kéo theo đơn duy nhất**:</p>
+\[
+x_{uj} \to \left( l_{v, \max(1, j-w)} \lor \neg l_{v, \min(k, j+w-1)} \right) \qquad \forall (u, v)\in E, j\in\left\{1,\ldots, k\right\}.
+  \label{eq:nohole-prefix-distance}
+\]
+<p>Mệnh đề~(công thức eq:nohole-prefix-distance) khẳng định rằng: nếu đỉnh \(u\) nhận nhãn \(j\), thì đỉnh kề \(v\) bắt buộc phải nhận nhãn nhỏ hơn/bằng \(j-w\) (thỏa mãn literal \(l_{v, \max(1, j-w)}\)) hoặc phải nhận nhãn lớn hơn \(j+w-1\) (thỏa mãn literal \(\neg l_{v, \min(k, j+w-1)}\)). Điều này tự động loại bỏ tất cả các nhãn nằm trong khoảng cấm \([j-w+1, j+w-1]\) mà không cần liệt kê từng cặp nhãn vi phạm.</p>
+<div class="reader-figure-box" id="fig_nohole_prefix_interval">
+<div class="reader-figure-img">
+ <img src="assets/images/diagrams/fig_nohole_prefix_interval.webp" alt="Hình: So sánh cơ chế nén khoảng cấm khi $k=5, w=2$: (a) Phép biểu diễn từng cặp liệt kê $O(w)$ mệnh đề; (b) Phép biểu diễn tiền tố PSE loại toàn bộ khoảng cấm bằng một mệnh đề kéo theo duy nhất." loading="lazy" />
+ </div>
+<div class="reader-inline-caption"><em>Hình: So sánh cơ chế nén khoảng cấm khi $k=5, w=2$: (a) Phép biểu diễn từng cặp liệt kê $O(w)$ mệnh đề; (b) Phép biểu diễn tiền tố PSE loại toàn bộ khoảng cấm bằng một mệnh đề kéo theo duy nhất.</em></div>
+ </div>
+<div class="reader-callout proposition-box">
+ <div class="callout-header"><strong>Mệnh đề (Độ phức tạp và tính đúng đắn của PSE)</strong></div>
+ <div class="callout-body">Phép biểu diễn \mbox{\textnormal{<span class="small-caps">PSE</span>}} biểu diễn chính xác bài toán No-hole Anti-\(k\)-labeling. Tổng số biến nhị phân là \(2nk\), tổng số mệnh đề khoảng cách là \(2\left|E\right|k\), và các mệnh đề liên kết là \(n(4k-2)\). Phép biểu diễn hoàn toàn triệt tiêu sự phụ thuộc của số mệnh đề vào tham số khoảng cách mục tiêu \(w\).</div>
+ </div>
+<div class="reader-proof">
+ <em>Chứng minh.</em> Mỗi đỉnh \(i\) có \(k\) biến gán gốc \(x_{ij}\) và \(k\) biến tiền tố \(l_{ij}\), tổng cộng \(2nk\) biến. Các Mệnh đề~(công thức eq:nohole-link-1)–(công thức eq:nohole-link-5) bảo đảm ngữ nghĩa \(l_{ij} = \sum_{k'\le j}x_{ik'}\) và ép buộc đỉnh \(i\) nhận đúng một nhãn mà không cần thêm các mệnh đề <span class="small-caps">ExactlyOne</span> bổ sung. Mệnh đề khoảng cách~(công thức eq:nohole-prefix-distance) chỉ tạo ra 2 mệnh đề cho mỗi cặp cạnh định hướng và nhãn \(j\), cho tổng số \(2\left|E\right|k\) mệnh đề. <span class="proof-qedsymbol">■</span>
+ </div>
+<h4 class="reader-h3">Phá vỡ đối xứng phản xạ và kết quả thực nghiệm</h4>
+<p>Không gian nghiệm của bài toán No-hole Anti-\(k\)-labeling chứa đối xứng phản xạ: nếu \(\psi(v)\) là một nghiệm hợp lệ, thì nghiệm đối xứng \(\psi'(v) = k + 1 - \psi(v)\) cũng hợp lệ và giữ nguyên khoảng cách \(\left|\psi'(u) - \psi'(v)\right| = \left|\psi(u) - \psi(v)\right|\) <span class="cite">(Hai et al., 2026)</span>. Để phá vỡ đối xứng này và thu hẹp không gian tìm kiếm, phép biểu diễn cố định một đỉnh chốt \(p\) (thường chọn đỉnh có chỉ số 0) thuộc nửa dưới miền nhãn:</p>
+\[
+\bigwedge_{i=\lceil k/2 \rceil + 1}^k \neg x_{pi}.
+  \label{eq:nohole-symmetry-breaking}
+\]
+<div class="reader-callout result-box">
+ <div class="callout-header"><strong>Kết quả tiêu biểu cho No-hole Anti-\(k\)-labeling</strong></div>
+ <div class="callout-body">Trên 23 bộ dữ liệu chuẩn Harwell–Boeing <span class="cite">(Hai et al., 2026)</span>:
+<ul class="reader-list"><li>Phép biểu diễn \mbox{\textnormal{<span class="small-caps">PSE</span>}} kết hợp với bộ giải song song PAINLESS giải thành công <strong>100% các bài toán</strong>, vượt trội hoàn toàn so với mô hình \mbox{\textnormal{<span class="small-caps">DE</span>}} (bị bùng nổ mệnh đề và không tìm được nghiệm khả thi trên 3 bài toán lớn U, V, X trong thời gian 1800 giây).</li><li>So với các công cụ thương mại hàng đầu đại diện cho MIP (Gurobi, CPLEX) và CP (CPLEX CP)—vốn hoàn toàn thất bại không tìm được bất kỳ nghiệm khả thi nào trên 8 bài toán quy mô lớn từ M đến X—phép biểu diễn \mbox{\textnormal{<span class="small-caps">PSE</span>}} cải thiện trung bình <strong>19%</strong> chất lượng nghiệm mục tiêu và giảm trên <strong>82%</strong> thời gian chạy trên các bài toán giải được.</li></ul></div>
  </div>
 <h3 class="reader-h2">Tô màu theo bandwidth</h3>
 <h4 class="reader-h3">Quan hệ với tô màu đỉnh</h4>
@@ -4109,9 +4414,9 @@ buộc và hàm mục tiêu. Sức chứa, miền quay và cách hàm mục tiê
 định những hoán vị nào thuộc nhóm này. Mức phá vỡ đối xứng được chọn cùng độ dài
 mệnh đề và chiến lược phân nhánh.</p>
 <p><strong>Biểu diễn thời gian và đóng gói.</strong>
-SAT theo mốc thời gian phù hợp với chân trời vừa phải và miền bắt đầu đã được
+SAT theo mốc thời gian phù hợp với khung thời gian vừa phải và miền bắt đầu đã được
 lọc. Tọa độ thứ tự nén tốt các so sánh trên miền nguyên. DDD mở rộng lựa chọn
-cho chân trời lớn khi có tập mốc đầy đủ hữu hạn, cận dưới hợp lệ và bước tinh
+cho khung thời gian lớn khi có tập mốc đầy đủ hữu hạn, cận dưới hợp lệ và bước tinh
 chỉnh tăng nghiêm ngặt.</p>
 <p><strong>Khoảng cấm và biên thứ tự.</strong>
 Hai literal biên nén hiệu quả một khoảng cấm trên miền có thứ tự và đặc tả thứ
@@ -4147,15 +4452,18 @@ lại.</p>
 
     <footer class="site-footer">
       <div class="shell footer-grid">
-        <div>
+        <div style="display: flex; align-items: center; gap: 14px;">
           <img src="./assets/images/satlab.png" alt="SATLab Logo" class="footer-logo">
-          <div class="footer-brand">SATLab UET — Phòng nghiên cứu Biểu diễn SAT</div>
-          <p>© 2026 SATLab UET. All rights reserved.</p>
+          <div>
+            <div class="footer-brand">SATLab UET — Satisfiability &amp; Optimization Research Group</div>
+            <p style="margin: 0; font-size: 0.82rem; color: #94a3b8;">Faculty of Information Technology, VNU-UET · © 2026 SATLab UET</p>
+          </div>
         </div>
-        <div>
-          <a href="https://www.facebook.com/satlab.uet/" target="_blank" rel="noopener noreferrer" style="color: #94a3b8; margin-right: 16px;">Facebook ↗</a>
-          <a href="./about.html" style="color: #94a3b8; margin-right: 16px;">Giới thiệu</a>
-          <a href="./downloads/sat-book.pdf" style="color: #94a3b8;">Tải PDF</a>
+        <div class="footer-links">
+          <a href="./">SATLab Home</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./downloads/sat-book.pdf">Download PDF (116p)</a>
+          <a href="https://www.facebook.com/satlab.uet/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
         </div>
       </div>
     </footer>

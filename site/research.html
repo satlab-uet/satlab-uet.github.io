@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="alternate" hreflang="en" href="https://satlab-uet.github.io/research.html">
     <link rel="alternate" hreflang="vi" href="https://satlab-uet.github.io/vi/research.html">
+
+    <script>
+      if (!window.location.hash && !window.location.search.includes('static=1')) {
+        window.location.replace('./#/research');
+      }
+    </script>
   </head>
   <body>
     <!-- Top Announcement Banner -->

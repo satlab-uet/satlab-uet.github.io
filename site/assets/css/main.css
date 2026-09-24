@@ -3,46 +3,46 @@
    Specification: SATLAB_RESEARCH_GROUP_WEBSITE_SYSTEM_DESIGN.md
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=JetBrains+Mono:wght@400;500;600&family=Onest:wght@300;400;500;600;700;800&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
 
 :root {
   /* Core Color Palette */
-  --color-ink-950: #102536;
+  --color-ink-950: #0f172a;
   --color-ink-900: #0f172a;
-  --color-ink-800: #294455;
-  --color-ink-650: #496273;
+  --color-ink-800: #1e293b;
+  --color-ink-650: #475569;
   --color-ink-500: #64748b;
   
-  --color-paper: #f8fafc;
+  --color-paper: #fafbfd;
   --color-surface: #ffffff;
   
-  --color-blue-700: #125b93;
-  --color-blue-800: #0b4777;
-  --color-brand-50: #eff6ff;
-  --color-brand-100: #dbeafe;
-  --color-brand-200: #bfdbfe;
-  --color-brand-500: #3b82f6;
-  --color-brand-600: #2563eb;
-  --color-brand-700: #1d4ed8;
+  --color-blue-700: #0284c7;
+  --color-blue-800: #0369a1;
+  --color-brand-50: #f0f9ff;
+  --color-brand-100: #e0f2fe;
+  --color-brand-200: #bae6fd;
+  --color-brand-500: #0284c7;
+  --color-brand-600: #0369a1;
+  --color-brand-700: #075985;
 
-  --color-teal-650: #197278;
-  --color-emerald-700: #237a46;
-  --color-gold-600: #a86f11;
-  --color-red-700: #b42318;
+  --color-teal-650: #0891b2;
+  --color-emerald-700: #059669;
+  --color-gold-600: #d97706;
+  --color-red-700: #dc2626;
   
-  --color-border: #d5dee5;
-  --color-border-light: #e2e8f0;
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
   
-  --gradient-brand: linear-gradient(135deg, #102536 0%, #125b93 50%, #2563eb 100%);
-  --gradient-banner: linear-gradient(90deg, #102536 0%, #125b93 100%);
+  --gradient-brand: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #075985 100%);
+  --gradient-banner: rgba(255, 255, 255, 0.85);
 
-  --bg-page: var(--color-paper);
+  --bg-page: #fafbfd;
   --bg-surface: var(--color-surface);
   
   /* Typography Tokens */
-  --font-sans: 'Be Vietnam Pro', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-display: 'Plus Jakarta Sans', 'Be Vietnam Pro', 'Inter', sans-serif;
-  --font-serif: 'Newsreader', Georgia, serif;
+  --font-sans: 'Onest', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Faculty Glyphic', serif;
+  --font-serif: 'Faculty Glyphic', Georgia, serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
   
   /* Layout & Spacing */
@@ -50,13 +50,13 @@
   --prose-max: 840px;
   --header-height: 64px;
   
-  --shadow-xs: 0 1px 3px rgba(16, 37, 54, 0.04);
-  --shadow-sm: 0 4px 6px -1px rgba(16, 37, 54, 0.06), 0 2px 4px -1px rgba(16, 37, 54, 0.03);
-  --shadow-md: 0 12px 24px -6px rgba(16, 37, 54, 0.1), 0 4px 8px -2px rgba(16, 37, 54, 0.04);
+  --shadow-xs: 0 1px 3px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 4px 12px -2px rgba(15, 23, 42, 0.06), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
+  --shadow-md: 0 12px 28px -6px rgba(15, 23, 42, 0.09), 0 4px 8px -2px rgba(15, 23, 42, 0.04);
 
-  --radius-sm: 6px;
-  --radius-card: 10px;
-  --radius-lg: 14px;
+  --radius-sm: 8px;
+  --radius-card: 22px;
+  --radius-lg: 28px;
   --radius-full: 9999px;
 }
 
@@ -72,8 +72,16 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--bg-page);
-  color: var(--color-ink-800);
+  background-color: #fafbfd;
+  background-image: 
+    radial-gradient(circle at 14% 10%, rgba(6, 182, 212, 0.15), transparent 32rem),
+    radial-gradient(circle at 86% 18%, rgba(16, 185, 129, 0.12), transparent 36rem),
+    radial-gradient(circle at 48% 46%, rgba(245, 158, 11, 0.09), transparent 34rem),
+    radial-gradient(circle at 12% 76%, rgba(14, 165, 233, 0.13), transparent 34rem),
+    radial-gradient(circle at 88% 88%, rgba(6, 182, 212, 0.12), transparent 36rem);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--color-ink-950);
   font-family: var(--font-sans);
   font-size: 0.98rem;
   line-height: 1.65;
@@ -121,16 +129,19 @@ a:hover {
 
 /* Announcement Banner */
 .top-banner {
-  background: var(--gradient-banner);
-  color: #ffffff;
-  font-size: 0.84rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  color: #0369a1;
+  font-size: 0.82rem;
   font-weight: 600;
   padding: 8px 16px;
   text-align: center;
 }
 
 .top-banner a {
-  color: #ffffff;
+  color: #0284c7;
   text-decoration: underline;
   margin-left: 6px;
   font-weight: 700;
@@ -143,11 +154,11 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border);
-  box-shadow: var(--shadow-xs);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.75);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
 }
 
 .header-inner {
@@ -174,8 +185,8 @@ a:hover {
 
 .brand-title {
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.25rem;
+  font-weight: 700;
+  font-size: 1.35rem;
   color: var(--color-ink-950);
   letter-spacing: -0.02em;
 }
@@ -189,7 +200,7 @@ a:hover {
 .nav {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 8px;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -197,26 +208,19 @@ a:hover {
 .nav a {
   color: var(--color-ink-800);
   position: relative;
-  padding: 4px 0;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  transition: all 0.2s ease;
 }
 
 .nav a.active {
-  color: var(--color-blue-700);
+  color: #ffffff !important;
+  background: #0f172a;
 }
 
-.nav a.active::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2.5px;
-  background: var(--color-blue-700);
-  border-radius: 2px;
-}
-
-.nav a:hover {
-  color: var(--color-blue-700);
+.nav a:hover:not(.active) {
+  background: rgba(240, 249, 255, 0.85);
+  color: #0284c7;
 }
 
 .nav-actions {
@@ -441,14 +445,15 @@ a:hover {
   width: fit-content;
   max-width: max-content;
   gap: 6px;
-  padding: 8px 16px;
-  border-radius: var(--radius-card);
-  font-size: 0.88rem;
-  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.86rem;
+  font-weight: 600;
   transition: all 0.2s ease;
   border: 1px solid transparent;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -457,32 +462,37 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-blue-700);
+  background: #0f172a;
   color: #ffffff !important;
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.2);
 }
 
 .btn-primary:hover {
-  background: var(--color-blue-800);
+  background: #1e293b;
+  box-shadow: 0 6px 16px -2px rgba(15, 23, 42, 0.25);
 }
 
 .btn-primary-html {
-  background: var(--color-teal-650);
+  background: #0284c7;
   color: #ffffff !important;
+  box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.25);
 }
 
 .btn-primary-html:hover {
-  background: var(--color-emerald-700);
+  background: #0369a1;
 }
 
 .btn-outline {
   background: #ffffff;
   color: var(--color-ink-800);
-  border-color: var(--color-border);
+  border-color: #cbd5e1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .btn-outline:hover {
-  border-color: var(--color-blue-700);
-  color: var(--color-blue-700);
+  border-color: #0284c7;
+  color: #0284c7;
+  box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.12);
 }
 
 /* Status Badge - Compact Inline Pill */
@@ -564,27 +574,29 @@ a:hover {
 }
 
 .feature-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   border-radius: var(--radius-card);
-  padding: 22px;
-  box-shadow: var(--shadow-xs);
-  transition: all 0.2s ease;
+  padding: 24px;
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .feature-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
-  border-color: var(--color-brand-200);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.1);
+  border-color: #bae6fd;
 }
 
 .feature-card h3 {
   font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: var(--color-ink-950);
   margin: 8px 0 6px;
   line-height: 1.4;
@@ -606,17 +618,26 @@ a:hover {
   margin-bottom: 8px;
 }
 
-/* Resource Card */
-.resource-card {
-  background: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
-  padding: 20px;
-  margin-bottom: 14px;
-  box-shadow: var(--shadow-xs);
+/* Resource Card & Publication Card */
+.resource-card, .pub-card {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.85) !important;
+  border-radius: var(--radius-card) !important;
+  padding: 24px !important;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.05) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.resource-card:hover, .pub-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.1) !important;
+  border-color: #bae6fd !important;
 }
 
 .resource-header {
@@ -654,9 +675,12 @@ a:hover {
 
 /* Footer (Sticky Bottom via Flex Layout) */
 .site-footer {
-  padding: 40px 0 24px;
-  background: var(--color-ink-950);
-  color: #94a3b8;
+  padding: 36px 0 24px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(226, 232, 240, 0.8);
+  color: #64748b;
   font-size: 0.85rem;
   flex-shrink: 0;
   margin-top: auto;
@@ -679,14 +703,22 @@ a:hover {
 .footer-brand {
   font-family: var(--font-display);
   font-size: 1.05rem;
-  font-weight: 800;
-  color: #ffffff;
+  font-weight: 700;
+  color: var(--color-ink-950);
   margin-bottom: 2px;
 }
 
 .site-footer p {
   margin: 0;
   color: #64748b;
+}
+
+.site-footer a {
+  color: #475569;
+}
+
+.site-footer a:hover {
+  color: #0284c7;
 }
 
 /* Responsive Breakpoints */
