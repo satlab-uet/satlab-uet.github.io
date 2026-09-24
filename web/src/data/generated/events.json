@@ -18,12 +18,12 @@
   },
   {
     "id": "event-monograph-release-2026",
-    "title": "Release of Academic Monograph: 'Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp'",
+    "title": "Release of Academic Monograph: 'Optimal SAT Encodings for Combinatorial Optimization Problems'",
     "title_vi": "Phát hành sách chuyên khảo: 'Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp'",
     "date": "2026-04-10",
     "category": "Publication Release",
     "badge": "FLAGSHIP MONOGRAPH",
-    "summary": "SATLab officially releases the comprehensive 116-page academic monograph synthesizing theoretical foundations and practical software engineering for optimal SAT encodings in combinatorial optimization, available in online HTML edition and PDF.",
+    "summary": "SATLab officially releases the comprehensive 116-page academic monograph 'Optimal SAT Encodings for Combinatorial Optimization Problems' (Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp), available in online HTML edition and open-access PDF.",
     "summary_vi": "SATLab chính thức ra mắt cuốn sách chuyên khảo dài 116 trang tổng hợp nền tảng lý thuyết và kỹ thuật biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp, đọc trực tuyến và tải PDF miễn phí.",
     "tags": [
       "sat-monograph",

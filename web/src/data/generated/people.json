@@ -22,12 +22,12 @@
       "id": "kieu-van-tuyen",
       "name": "M.Sc. Kieu Van Tuyen",
       "name_en": "M.Sc. Kieu Van Tuyen",
-      "title": "Lead Researcher / PhD Candidate",
-      "role_badge": "LEAD RESEARCHER / PHD CANDIDATE",
+      "title": "Lab Coordinator / PhD Candidate",
+      "role_badge": "LAB COORDINATOR / PHD CANDIDATE",
       "affiliation": "Faculty of Information Technology, UET-VNU",
       "email": "tuyenkv@vnu.edu.vn",
       "office": "Building E3, 144 Xuan Thuy, Cau Giay, Hanoi",
-      "bio": "M.Sc. Kieu Van Tuyen is a PhD candidate and lead researcher at SATLab UET. He leads research in SAT encodings for Industrial Scheduling, Assembly Line Balancing, Social Golfer, 2D Strip Packing, and Real-Time Railway Rescheduling via MaxSAT-DDD, with first-author papers in RAIRO-OR, CIT, Pesquisa Operacional, and JCO.",
+      "bio": "M.Sc. Kieu Van Tuyen is a PhD candidate and Lab Coordinator at SATLab UET. He coordinates research in SAT encodings for Industrial Scheduling, Assembly Line Balancing, Social Golfer, 2D Strip Packing, and Real-Time Railway Rescheduling via MaxSAT-DDD, with first-author papers in RAIRO-OR, CIT, Pesquisa Operacional, and JCO.",
       "avatar": "/assets/images/people/kieu_van_tuyen.png",
       "research_interests": [
         "SAT/MaxSAT Encodings",
@@ -98,7 +98,7 @@
       "role_badge": "SYSTEMS & ALGORITHMS ARCHITECT",
       "role": "Systems & Algorithms Architect",
       "affiliation": "SATLab UET",
-      "current_status": "PhD Candidate & Lab Lead Researcher",
+      "current_status": "PhD Candidate & Lab Coordinator",
       "featured_publications": [
         "kieu-2026-social-golfer-rairo",
         "kieu-2025-strip-packing-pesquisa"

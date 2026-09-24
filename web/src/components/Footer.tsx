@@ -13,7 +13,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
     { label: 'Research Topics', route: 'research' },
     { label: 'Projects & Solvers', route: 'projects' },
     { label: 'Faculty & Researchers', route: 'people' },
-    { label: 'SAT Monograph (Sách)', route: 'book' },
+    { label: 'SAT Monograph', route: 'book' },
     { label: 'Events & News Briefs', route: 'events' },
   ];
 
@@ -52,7 +52,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
               </p>
               <p className="flex items-center gap-2.5">
                 <Icon name="groups" className="h-4 w-4 shrink-0 text-sky-600" />
-                <span>Head of Lab: Dr. To Van Khanh · Lead Researcher: M.Sc. Kieu Van Tuyen</span>
+                <span>Head of Lab: Dr. To Van Khanh · Lab Coordinator: M.Sc. Kieu Van Tuyen</span>
               </p>
             </div>
           </div>

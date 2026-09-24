@@ -299,7 +299,7 @@ export const AdminPage: React.FC = () => {
               <Icon name="lock" className="h-6 w-6" />
             </div>
             <h1 className="mt-4 font-editorial text-2xl font-bold text-slate-950">
-              SLSCM Lab Admin Portal
+              SATLab UET Admin Portal
             </h1>
             <p className="mt-1 font-editorial text-xs text-slate-500">
               Authenticate via Supabase to manage publications, news briefs, and lab data.
@@ -322,7 +322,7 @@ export const AdminPage: React.FC = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="minhvd@neu.edu.vn"
+                placeholder="khanhtv@vnu.edu.vn"
                 className="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 font-editorial text-sm text-slate-900 placeholder:text-slate-400 focus-ring"
               />
             </div>

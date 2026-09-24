@@ -103,11 +103,6 @@ export const ProjectsPage: React.FC = () => {
               <h2 className="font-editorial text-xl font-bold text-slate-950 leading-snug">
                 {project.title_en}
               </h2>
-              {project.title_vi && (
-                <p className="mt-1 font-editorial text-xs text-slate-500 italic">
-                  {project.title_vi}
-                </p>
-              )}
 
               <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed">
                 {project.description_en}

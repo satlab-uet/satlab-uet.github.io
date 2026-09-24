@@ -1,5 +1,5 @@
 // ==============================================================================
-// SLSCM Lab — TypeScript Domain & Presentation Models
+// SATLab UET — TypeScript Domain & Presentation Models
 // ==============================================================================
 
 // Research Pillars Taxonomy

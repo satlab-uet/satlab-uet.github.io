@@ -18,8 +18,8 @@ export const LabLifePage: React.FC = () => {
           Lab Life &amp; Community
         </h1>
         <p className="mt-4 font-editorial text-lg text-slate-600 leading-relaxed max-w-3xl">
-          Follow our daily research life, international seminar celebrations, lab gathering moments,
-          and public outreach directly synchronized from our Facebook Fanpage (@slscm.lab).
+          Follow our daily research life, seminar celebrations, academic milestones,
+          and student achievements directly from our Facebook Fanpage (@satlab.uet).
         </p>
       </div>
 
@@ -30,16 +30,16 @@ export const LabLifePage: React.FC = () => {
             Join the Discussion on Facebook
           </h3>
           <p className="font-editorial text-xs text-slate-600 mt-1">
-            Follow official announcements, workshop registrations, and student recruitment calls.
+            Follow official announcements, paper acceptances, solver releases, and student recruitment calls.
           </p>
         </div>
         <a
-          href="https://www.facebook.com/slscm.lab"
+          href="https://www.facebook.com/satlab.uet/"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2.5 font-editorial text-xs font-bold text-white shadow-sm hover:bg-sky-950 transition"
         >
-          <span>Visit @slscm.lab</span>
+          <span>Visit @satlab.uet</span>
           <Icon name="open_in_new" className="h-3.5 w-3.5" />
         </a>
       </div>
@@ -56,7 +56,7 @@ export const LabLifePage: React.FC = () => {
                 <span className="rounded-lg bg-sky-100 text-sky-900 px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase">
                   {post.type.replace('_', ' ')}
                 </span>
-                <span className="font-mono text-xs text-slate-400">SLSCM Social Feed</span>
+                <span className="font-mono text-xs text-slate-400">SATLab Social Feed</span>
               </div>
 
               <h3 className="font-editorial text-xl font-bold text-slate-950 leading-snug">

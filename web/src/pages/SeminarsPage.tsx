@@ -54,9 +54,8 @@ export const SeminarsPage: React.FC = () => {
           Seminars &amp; Research Talks
         </h1>
         <p className="mt-4 font-editorial text-lg text-slate-600 leading-relaxed max-w-3xl">
-          SLSCM Lab hosts regular scholarly presentations, guest lectures, and doctoral defenses featuring
-          prominent researchers from Singapore Management University, VNU-HUS, HUST, University of Udine,
-          and CIRRELT Montréal.
+          SATLab UET hosts regular scholarly presentations, guest lectures, and research colloquia featuring
+          breakthroughs in automated reasoning, propositional satisfiability, and combinatorial optimization.
         </p>
       </div>
 

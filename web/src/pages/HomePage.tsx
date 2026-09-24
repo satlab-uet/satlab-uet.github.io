@@ -84,7 +84,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           {/* Lab Core Lead Card */}
           <div className="mt-8 mx-auto max-w-2xl rounded-2xl border border-slate-200/90 bg-white/85 p-4 backdrop-blur-md shadow-xs text-left">
             <p className="font-editorial text-xs sm:text-sm text-slate-800">
-              <strong className="text-slate-950">Key Faculty &amp; Researchers:</strong> Dr. To Van Khanh, M.Sc. Kieu Van Tuyen, M.Sc. Student Truong Xuan Hieu, M.Sc. Vu Thanh Huong, M.Sc. Student Dao Xuan Nghia, Nguyen Kim Trung Duc
+              <strong className="text-slate-950">Key Faculty &amp; Researchers:</strong> Dr. To Van Khanh (Head of Lab), M.Sc. Kieu Van Tuyen (Lab Coordinator), M.Sc. Student Truong Xuan Hieu, M.Sc. Vu Thanh Huong, M.Sc. Student Dao Xuan Nghia, Nguyen Kim Trung Duc
             </p>
             <div className="mt-1.5 flex items-center justify-between text-xs text-slate-500 font-mono">
               <span>VNU University of Engineering and Technology (UET-VNU)</span>
@@ -191,20 +191,23 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
 
               <h2 className="mt-4 font-editorial text-3xl sm:text-4xl font-bold text-slate-950 leading-tight">
-                Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp
+                Optimal SAT Encodings for Combinatorial Optimization Problems
               </h2>
+              <p className="mt-1 font-editorial text-xs text-slate-500 italic">
+                Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp
+              </p>
 
               <p className="mt-3 font-editorial text-base text-slate-700 leading-relaxed">
-                Cuốn sách chuyên khảo dài 116 trang tổng hợp toàn diện các kỹ thuật biểu diễn mệnh đề tối ưu
-                cho các bài toán tối ưu hóa tổ hợp kinh điển và công nghiệp: từ kỹ thuật bộ đếm tuần tự mới (NSC),
-                ràng buộc lực lượng hình thang/bậc thang, xếp hình 2D (Strip Packing, Bin Packing),
-                cân bằng dây chuyền sản xuất (SALBP), đến điều hành lịch trình tàu hỏa và gán nhãn khoảng cách đồ thị.
+                A comprehensive 116-page academic monograph synthesizing propositional satisfiability theory
+                and practical solver engineering for combinatorial optimization: from New Sequential Counter (NSC)
+                variants, trapezoidal and ladder cardinality constraints, 2D Strip &amp; Bin Packing,
+                to industrial assembly line balancing (SALBP-Power), railway train rescheduling, and distance graph labeling.
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2 font-mono text-xs text-slate-600">
-                <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">116 trang</span>
-                <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">11 Chương chuyên khảo</span>
-                <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">Mã nguồn LaTeX &amp; C++</span>
+                <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">116 Pages</span>
+                <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">11 Research Chapters</span>
+                <span className="rounded-lg bg-white border border-slate-200 px-3 py-1 shadow-xs">LaTeX &amp; C++ Sources</span>
               </div>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -213,7 +216,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   className="inline-flex items-center gap-2 rounded-2xl bg-sky-900 px-6 py-3.5 font-editorial text-sm font-bold text-white shadow-lift hover:bg-sky-950 transition hover:-translate-y-0.5 focus-ring"
                 >
                   <Icon name="menu_book" className="h-4 w-4 text-cyan-300" />
-                  <span>Đọc bản trực tuyến (Online HTML) ↗</span>
+                  <span>Read Online (HTML Reader) ↗</span>
                 </a>
 
                 <a
@@ -221,7 +224,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   className="inline-flex items-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3.5 font-editorial text-sm font-bold text-slate-800 shadow-xs hover:bg-slate-50 transition hover:-translate-y-0.5 focus-ring"
                 >
                   <Icon name="download" className="h-4 w-4 text-sky-700" />
-                  <span>Tải PDF (106 Trang)</span>
+                  <span>Download Monograph PDF (116p)</span>
                 </a>
 
                 <button
@@ -229,17 +232,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   onClick={() => onNavigate('book')}
                   className="inline-flex items-center gap-1.5 font-editorial text-sm font-bold text-sky-800 hover:text-sky-950 px-3 py-2"
                 >
-                  <span>Chi tiết mục lục &amp; ấn bản</span>
+                  <span>Explore Table of Contents</span>
                   <Icon name="arrow_forward" className="h-4 w-4" />
                 </button>
               </div>
             </div>
 
             <div className="flex justify-center">
-              <a href="./read.html" title="Đọc sách SAT trực tuyến" className="group block relative">
+              <a href="./read.html" title="Read SAT Monograph Online" className="group block relative">
                 <img
                   src="./assets/images/book-cover.webp"
-                  alt="SAT Book Monograph Cover"
+                  alt="Optimal SAT Encodings for Combinatorial Optimization Problems"
                   className="h-80 w-auto rounded-2xl object-cover shadow-2xl ring-1 ring-slate-900/10 transition-transform duration-300 group-hover:scale-105"
                 />
                 <span className="absolute bottom-3 right-3 rounded-xl bg-slate-950/80 px-2.5 py-1 font-mono text-[10px] font-bold text-white backdrop-blur-sm">

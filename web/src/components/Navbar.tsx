@@ -26,7 +26,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) =
     { label: 'Topics', route: 'research' },
     { label: 'Projects', route: 'projects' },
     { label: 'People', route: 'people' },
-    { label: 'Monograph (Sách)', route: 'book', badge: '116p' },
+    { label: 'Monograph', route: 'book', badge: '116p' },
     { label: 'News & Events', route: 'events', badge: 'News' },
   ];
 

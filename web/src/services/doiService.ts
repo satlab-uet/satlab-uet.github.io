@@ -90,7 +90,7 @@ export async function fetchDoiMetadata(rawInput: string): Promise<DoiMetadata> {
   try {
     const crossrefRes = await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}`, {
       headers: {
-        'User-Agent': 'SLSCMBot/1.0 (mailto:minhvd@neu.edu.vn)',
+        'User-Agent': 'SATLabBot/1.0 (mailto:khanhtv@vnu.edu.vn)',
       },
     });
 

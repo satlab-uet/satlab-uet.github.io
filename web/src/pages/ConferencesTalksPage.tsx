@@ -95,8 +95,8 @@ export const ConferencesTalksPage: React.FC = () => {
           Conferences &amp; Proceedings
         </h1>
         <p className="mt-4 font-editorial text-lg text-slate-600 leading-relaxed max-w-3xl">
-          Peer-reviewed papers and oral presentations delivered by SLSCM Lab researchers at prestigious international
-          conferences, including IJCAI (CORE A*), COMOSA, CITA (Springer LNNS), SOICT, and CSoNet.
+          Peer-reviewed papers and oral presentations delivered by SATLab UET researchers at prestigious international
+          conferences, including ICAART, CITA (Springer LNNS), KSE, ISCIT, and CSoNet.
         </p>
       </div>
 
@@ -287,7 +287,7 @@ export const ConferencesTalksPage: React.FC = () => {
                 </div>
 
                 <a
-                  href="mailto:minhvd@neu.edu.vn?subject=Inquiry%20regarding%20SLSCM%20Conference%20Paper"
+                  href="mailto:khanhtv@vnu.edu.vn?subject=Inquiry%20regarding%20SATLab%20Conference%20Paper"
                   className="inline-flex items-center gap-1 font-editorial text-xs font-bold text-sky-700 hover:text-sky-900 transition"
                 >
                   <span>Inquire with Authors</span>
