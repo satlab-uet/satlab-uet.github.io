@@ -1,0 +1,81 @@
+[
+  {
+    "id": "encodings_solvers",
+    "title": "Encodings & Solver Architecture",
+    "title_en": "Encodings & Solver Architecture",
+    "description": "Developing New Sequential Counter (NSC) variants, Cardinality constraints (AMO/AMK/ALK), Pseudo-Boolean translations, and high-performance solver libraries in the SCLib ecosystem.",
+    "topics": [
+      "New Sequential Counter (NSC)",
+      "Staircase & Ladder AMO/AMK",
+      "Pseudo-Boolean (PB) Encodings",
+      "Incremental SAT Solving",
+      "Symmetry Breaking Predicates",
+      "SCLib Solver Ecosystem"
+    ],
+    "featured_venues": [
+      "Computational Optimization and Applications (COAP)",
+      "ICAART",
+      "Constraints",
+      "Journal of Automated Reasoning"
+    ]
+  },
+  {
+    "id": "line_balancing_scheduling",
+    "title": "Industrial Scheduling & Line Balancing",
+    "title_en": "Industrial Scheduling & Line Balancing",
+    "description": "Designing exact decision algorithms for Power Peak Minimization in Simple and U-shaped Assembly Line Balancing (SALBP / UALBP), Job-Shop Scheduling, and Railway Train Rescheduling via MaxSAT-DDD.",
+    "topics": [
+      "Power Peak Minimization",
+      "Simple & U-Shaped Assembly Line Balancing",
+      "MaxSAT Dynamic Decoupled Domain (DDD)",
+      "Railway Train Rescheduling",
+      "Precedence Propagation",
+      "Hybrid AMO Encodings"
+    ],
+    "featured_venues": [
+      "Journal of Combinatorial Optimization (JCO)",
+      "Engineering Optimization",
+      "CSoNet",
+      "Cybernetics and Information Technologies"
+    ]
+  },
+  {
+    "id": "packing_cutting",
+    "title": "2D Packing & Cutting Optimization",
+    "title_en": "2D Packing & Cutting Optimization",
+    "description": "Formulating compact SAT and MaxSAT models with non-overlapping spatial constraints and rotation capabilities for 2D Strip Packing, 2D Bin Packing, and Cutting Stock Problems.",
+    "topics": [
+      "2D Strip Packing Problem (2DSPP)",
+      "2D Bin Packing Problem (2DBPP)",
+      "Single Stock Size Cutting Stock (2D-SSSCSP)",
+      "Non-overlapping Constraints",
+      "Exact vs MIP/CPLEX Benchmarks"
+    ],
+    "featured_venues": [
+      "Pesquisa Operacional",
+      "Knowledge and Systems Engineering (KSE)",
+      "Journal of Computer Science and Cybernetics (JCSC)"
+    ]
+  },
+  {
+    "id": "graph_labeling_fap",
+    "title": "Graph Labeling & Frequency Assignment",
+    "title_en": "Graph Labeling & Frequency Assignment",
+    "description": "Formulating specialized SAT encodings and exact solvers for graph embedding, frequency assignment problems (FAP), bandwidth coloring, and distance-constrained vertex labelings.",
+    "topics": [
+      "Cyclic Antibandwidth & Antibandwidth",
+      "Radio-k & k-Safe Labeling",
+      "Bandwidth Coloring & Multicoloring",
+      "Minimum Order Frequency Assignment (FAP)",
+      "2D Bandwidth Minimization",
+      "No-Hole Anti-k-Labeling"
+    ],
+    "featured_venues": [
+      "Computational Optimization and Applications (COAP)",
+      "RAIRO - Operations Research",
+      "IEEE Latin America Transactions",
+      "Wireless Networks",
+      "Discrete Applied Mathematics"
+    ]
+  }
+]

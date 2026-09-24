@@ -1,0 +1,18 @@
+[
+  {
+    "id": "talk-icaart-2025",
+    "title": "Sequential counter encoding for staircase at-most-one constraints",
+    "conference": "ICAART 2025",
+    "speaker": "M.Sc. Student Truong Xuan Hieu",
+    "year": 2025,
+    "location": "Porto, Portugal / Hybrid"
+  },
+  {
+    "id": "talk-iscit-2025",
+    "title": "Solving at-Least Sequence Constraints in Nurse Rostering Problem Using SAT",
+    "conference": "ISCIT 2025",
+    "speaker": "M.Sc. Student Dao Xuan Nghia",
+    "year": 2025,
+    "location": "IEEE ISCIT"
+  }
+]

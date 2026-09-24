@@ -7,6 +7,8 @@
 /build/
 /_site/
 /tmp/
+web/node_modules/
+web/dist/
 
 # LaTeX generated files
 *.aux

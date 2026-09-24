@@ -46,6 +46,11 @@ jobs:
             fi
             ./scripts/build-book.sh
 
+      - name: Set up Node.js for modern web app
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - name: Validate PDF and assemble site
         run: |
           ./scripts/check-pdf.sh build/main.pdf

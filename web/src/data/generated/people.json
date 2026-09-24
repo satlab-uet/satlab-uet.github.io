@@ -1,0 +1,399 @@
+{
+  "leadership_and_faculty": [
+    {
+      "id": "to-van-khanh",
+      "name": "Dr. To Van Khanh",
+      "name_en": "Dr. To Van Khanh",
+      "title": "Senior Lecturer / Head of SATLab",
+      "role_badge": "HEAD OF SATLAB / SENIOR LECTURER",
+      "affiliation": "Faculty of Information Technology, UET-VNU",
+      "email": "khanhtv@vnu.edu.vn",
+      "office": "Building E3, 144 Xuan Thuy, Cau Giay, Hanoi",
+      "bio": "Dr. To Van Khanh is the Head of SATLab and Senior Lecturer at the Faculty of Information Technology, VNU University of Engineering and Technology (UET-VNU). He specializes in Formal Automated Reasoning, SAT/MaxSAT/PB Encodings, Software Verification, Symbolic Execution, and Combinatorial Optimization, authoring publications in COAP, RAIRO-OR, and ICAART.",
+      "avatar": "/assets/images/people/to_van_khanh.png",
+      "research_interests": [
+        "Satisfiability (SAT/MaxSAT/PB)",
+        "Software Verification",
+        "Combinatorial Optimization",
+        "Automated Reasoning"
+      ]
+    },
+    {
+      "id": "kieu-van-tuyen",
+      "name": "M.Sc. Kieu Van Tuyen",
+      "name_en": "M.Sc. Kieu Van Tuyen",
+      "title": "Lead Researcher / PhD Candidate",
+      "role_badge": "LEAD RESEARCHER / PHD CANDIDATE",
+      "affiliation": "Faculty of Information Technology, UET-VNU",
+      "email": "tuyenkv@vnu.edu.vn",
+      "office": "Building E3, 144 Xuan Thuy, Cau Giay, Hanoi",
+      "bio": "M.Sc. Kieu Van Tuyen is a PhD candidate and lead researcher at SATLab UET. He leads research in SAT encodings for Industrial Scheduling, Assembly Line Balancing, Social Golfer, 2D Strip Packing, and Real-Time Railway Rescheduling via MaxSAT-DDD, with first-author papers in RAIRO-OR, CIT, Pesquisa Operacional, and JCO.",
+      "avatar": "/assets/images/people/kieu_van_tuyen.png",
+      "research_interests": [
+        "SAT/MaxSAT Encodings",
+        "Assembly Line Balancing",
+        "2D Packing & Cutting",
+        "Railway Rescheduling",
+        "Exact Solvers"
+      ]
+    },
+    {
+      "id": "truong-xuan-hieu",
+      "name": "M.Sc. Student Truong Xuan Hieu",
+      "name_en": "M.Sc. Student Truong Xuan Hieu",
+      "title": "M.Sc. Student / Senior Researcher",
+      "role_badge": "SENIOR RESEARCHER / MSC CANDIDATE",
+      "affiliation": "Faculty of Information Technology, UET-VNU",
+      "email": "hieutx@vnu.edu.vn",
+      "office": "Building E3, 144 Xuan Thuy, Cau Giay, Hanoi",
+      "bio": "M.Sc. student at UET-VNU and primary developer of the SCLib architecture. First author of the breakthrough Cyclic Antibandwidth paper in Computational Optimization and Applications (COAP, Q1 ISI) and staircase cardinality counter algorithms in ICAART 2025.",
+      "avatar": "/assets/images/people/truong_xuan_hieu.png",
+      "research_interests": [
+        "Cardinality Encodings (AMO/AMK)",
+        "Sequential Counters",
+        "Cyclic Antibandwidth",
+        "C++ Solver Design"
+      ]
+    },
+    {
+      "id": "vu-thanh-huong",
+      "name": "M.Sc. Vu Thanh Huong",
+      "name_en": "M.Sc. Vu Thanh Huong",
+      "title": "Researcher / Lecturer",
+      "role_badge": "FACULTY RESEARCHER",
+      "affiliation": "Faculty of Information Technology, UET-VNU",
+      "email": "huongvt@vnu.edu.vn",
+      "office": "Building E3, 144 Xuan Thuy, Cau Giay, Hanoi",
+      "bio": "Researcher at SATLab specializing in Pseudo-Boolean constraints, distance-constrained graph labelings (Radio-k Labeling, k-Safe Labeling), incremental SAT solving algorithms, and formal verification methods.",
+      "avatar": "/assets/images/people/vu_thanh_huong.png",
+      "research_interests": [
+        "Incremental SAT",
+        "Radio-k Labeling",
+        "Safe Labeling",
+        "Pseudo-Boolean Optimization"
+      ]
+    },
+    {
+      "id": "dao-xuan-nghia",
+      "name": "M.Sc. Student Dao Xuan Nghia",
+      "name_en": "M.Sc. Student Dao Xuan Nghia",
+      "title": "M.Sc. Student / Researcher",
+      "role_badge": "MSC RESEARCHER",
+      "affiliation": "Faculty of Information Technology, UET-VNU",
+      "email": "nghiadx@vnu.edu.vn",
+      "office": "Building E3, 144 Xuan Thuy, Cau Giay, Hanoi",
+      "bio": "Researcher in sequence constraints, frequency assignment problems (MO-FAP), cellular network optimization, and automated decision solvers in IEEE Latin America Transactions and Constraints.",
+      "avatar": "/assets/images/people/dao_xuan_nghia.png",
+      "research_interests": [
+        "Sequence Constraints",
+        "Frequency Assignment (FAP)",
+        "Telecommunications Optimization"
+      ]
+    }
+  ],
+  "web_tech_lead": [
+    {
+      "id": "kieu-van-tuyen-lead",
+      "name": "M.Sc. Kieu Van Tuyen",
+      "role_badge": "SYSTEMS & ALGORITHMS ARCHITECT",
+      "role": "Systems & Algorithms Architect",
+      "affiliation": "SATLab UET",
+      "current_status": "PhD Candidate & Lab Lead Researcher",
+      "featured_publications": [
+        "kieu-2026-social-golfer-rairo",
+        "kieu-2025-strip-packing-pesquisa"
+      ],
+      "research_interests": [
+        "Automated Reasoning",
+        "Distributed Solver Frameworks",
+        "Algorithm Engineering"
+      ],
+      "email": "tuyenkv@vnu.edu.vn"
+    }
+  ],
+  "hall_of_fame": [
+    {
+      "id": "hof-1",
+      "name": "Truong Xuan Hieu",
+      "name_en": "Truong Xuan Hieu",
+      "achievement": "First author of Q1 ISI Springer Paper (COAP) during Master studies",
+      "achievement_en": "Authored Q1 ISI Springer Paper (COAP) with novel SAT encodings for Cyclic Antibandwidth",
+      "destination_institution": "VNU University of Engineering and Technology",
+      "country": "Vietnam",
+      "year": 2026,
+      "award_type": "Research Excellence Award",
+      "field": "Combinatorial Optimization"
+    },
+    {
+      "id": "hof-2",
+      "name": "Nguyen Kim Trung Duc",
+      "name_en": "Nguyen Kim Trung Duc",
+      "achievement": "Valedictorian / Outstanding Undergraduate Researcher with 3 international papers",
+      "achievement_en": "Published 3 peer-reviewed international papers (RAIRO-OR, Pesquisa, CITA) as undergraduate (K68CS3)",
+      "destination_institution": "VNU University of Engineering and Technology",
+      "country": "Vietnam",
+      "year": 2026,
+      "award_type": "Best Student Researcher Award",
+      "field": "Graph Labeling & SAT"
+    },
+    {
+      "id": "hof-3",
+      "name": "Nguyen Tan Nguyen",
+      "name_en": "Nguyen Tan Nguyen",
+      "achievement": "Co-author in RAIRO - Operations Research (Q3 ISI) during undergraduate program",
+      "achievement_en": "Co-authored high-impact operations research breakthrough for the Social Golfer Problem",
+      "destination_institution": "VNU University of Engineering and Technology",
+      "country": "Vietnam",
+      "year": 2025,
+      "award_type": "Undergraduate Research Fellow",
+      "field": "Combinatorial Optimization"
+    }
+  ],
+  "graduate_and_undergraduate_student_researchers": [
+    {
+      "id": "nguyen-kim-trung-duc",
+      "name": "Nguyen Kim Trung Duc",
+      "name_en": "Nguyen Kim Trung Duc",
+      "major": "Computer Science (K68CS3)",
+      "institution": "UET-VNU",
+      "email": "ducnkt_68@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Bandwidth Coloring (Pesquisa 2026)",
+        "Bandwidth Multicoloring (RAIRO-OR)",
+        "k-Safe Labeling (CITA 2026)"
+      ],
+      "research_interests": [
+        "Bandwidth Coloring",
+        "Multicoloring",
+        "Safe Labeling",
+        "Incremental SAT"
+      ]
+    },
+    {
+      "id": "le-quy-duong",
+      "name": "Le Quy Duong",
+      "name_en": "Le Quy Duong",
+      "major": "Computer Science (K66CS)",
+      "institution": "UET-VNU",
+      "email": "duonglq_66@vnu.edu.vn",
+      "current_status": "Alumnus / Co-Author",
+      "featured_publications": [
+        "2D Strip Packing in Pesquisa Operacional (2025)"
+      ],
+      "research_interests": [
+        "2D Strip Packing",
+        "Spatial Constraint Encodings"
+      ]
+    },
+    {
+      "id": "hoang-linh-chi",
+      "name": "Hoang Linh Chi",
+      "name_en": "Hoang Linh Chi",
+      "major": "Computer Science (K67CS)",
+      "institution": "UET-VNU",
+      "email": "chihl_67@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "2D Bin Packing (KSE 2025)",
+        "Cutting Stock Problem (JCSC 2026)"
+      ],
+      "research_interests": [
+        "2D Bin Packing",
+        "Cutting Stock Problem",
+        "MaxSAT"
+      ]
+    },
+    {
+      "id": "nguyen-tan-nguyen",
+      "name": "Nguyen Tan Nguyen",
+      "name_en": "Nguyen Tan Nguyen",
+      "major": "Computer Science High-Quality Program (K67CC)",
+      "institution": "UET-VNU",
+      "email": "nguyennt_67@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Social Golfer Problem in RAIRO - Operations Research (2026)"
+      ],
+      "research_interests": [
+        "Symmetry Breaking",
+        "Social Golfer Problem"
+      ]
+    },
+    {
+      "id": "nguyen-hong-quan",
+      "name": "Nguyen Hong Quan",
+      "name_en": "Nguyen Hong Quan",
+      "major": "Computer Engineering (K67C)",
+      "institution": "UET-VNU",
+      "email": "quannh_67@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Nurse Rostering Sequence Constraints (ISCIT 2025)"
+      ],
+      "research_interests": [
+        "Nurse Rostering",
+        "Sequence Constraints in SAT"
+      ]
+    },
+    {
+      "id": "hoang-gia-bao",
+      "name": "Hoang Gia Bao",
+      "name_en": "Hoang Gia Bao",
+      "major": "Information Technology (K68IT20)",
+      "institution": "UET-VNU",
+      "email": "baohg_68@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Power Peak Minimization in Assembly Lines (JCO 2026, EngOpt 2026)"
+      ],
+      "research_interests": [
+        "Assembly Line Balancing",
+        "Power Peak Minimization",
+        "Makespan Optimization"
+      ]
+    },
+    {
+      "id": "nguyen-chi-phong",
+      "name": "Nguyen Chi Phong",
+      "name_en": "Nguyen Chi Phong",
+      "major": "Information Technology (K69IT1)",
+      "institution": "UET-VNU",
+      "email": "phongnc_69@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Assembly Line Balancing SAT Encodings in JCO (2026)"
+      ],
+      "research_interests": [
+        "Assembly Line Balancing",
+        "SAT Cumulative Constraints"
+      ]
+    },
+    {
+      "id": "pham-ngoc-hai-duong",
+      "name": "Pham Ngoc Hai Duong",
+      "name_en": "Pham Ngoc Hai Duong",
+      "major": "Computer Science (K68CS3)",
+      "institution": "UET-VNU",
+      "email": "duongpnh_68@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "No-Hole Anti-k-Labeling (DMAA / VJCS 2026)"
+      ],
+      "research_interests": [
+        "No-Hole Anti-k-Labeling",
+        "Graph Labeling Algorithms"
+      ]
+    },
+    {
+      "id": "do-duc-long",
+      "name": "Do Duc Long",
+      "name_en": "Do Duc Long",
+      "major": "Computer Science (K69CS2)",
+      "institution": "UET-VNU",
+      "email": "longdd_69@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Exact k-Safe Labeling via Incremental SAT (CITA 2026)"
+      ],
+      "research_interests": [
+        "k-Safe Labeling",
+        "Incremental SAT Solvers"
+      ]
+    },
+    {
+      "id": "dang-anh-phuong",
+      "name": "Dang Anh Phuong",
+      "name_en": "Dang Anh Phuong",
+      "major": "Information Technology (K69IT5)",
+      "institution": "UET-VNU",
+      "email": "phuongda_69@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Minimum Order Frequency Assignment Problem (IEEE Latin America Trans 2026)"
+      ],
+      "research_interests": [
+        "Frequency Assignment Problems (FAP)",
+        "Cellular Network Optimization"
+      ]
+    },
+    {
+      "id": "nguyen-huu-tan",
+      "name": "Nguyen Huu Tan",
+      "name_en": "Nguyen Huu Tan",
+      "major": "Computer Science (K67CS1)",
+      "institution": "UET-VNU",
+      "email": "tannh_67@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Railway Train Rescheduling via MaxSAT-DDD (CSoNet 2026)"
+      ],
+      "research_interests": [
+        "MaxSAT Dynamic Decoupled Domain",
+        "Railway Train Rescheduling"
+      ]
+    },
+    {
+      "id": "dao-van-duc",
+      "name": "Dao Van Duc",
+      "name_en": "Dao Van Duc",
+      "major": "Computer Science (K69CS5)",
+      "institution": "UET-VNU",
+      "email": "ducdv_69@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "Radio-k Labeling of General Graphs (Wireless Networks 2026)"
+      ],
+      "research_interests": [
+        "Radio-k Labeling",
+        "Channel Assignment in Wireless Networks"
+      ]
+    },
+    {
+      "id": "pham-quang-minh",
+      "name": "Pham Quang Minh",
+      "name_en": "Pham Quang Minh",
+      "major": "Information Technology (K69IT5)",
+      "institution": "UET-VNU",
+      "email": "minhpq_69@vnu.edu.vn",
+      "current_status": "Active Student Researcher",
+      "featured_publications": [
+        "2D Bandwidth Minimization Problem (Discrete Applied Math 2026)"
+      ],
+      "research_interests": [
+        "2D Bandwidth Minimization",
+        "Geometric Graph Embeddings"
+      ]
+    }
+  ],
+  "alumni": [
+    {
+      "id": "alumni-1",
+      "name": "Le Quy Duong",
+      "name_en": "Le Quy Duong",
+      "period": "2021 – 2025",
+      "former_role": "Undergraduate Researcher (K66CS)",
+      "current_position": "Software Engineer & Research Fellow",
+      "institution": "Hanoi, Vietnam",
+      "email": ""
+    }
+  ],
+  "global_academic_partners": [
+    {
+      "id": "uet-vnu",
+      "name": "VNU University of Engineering and Technology (UET-VNU)",
+      "country": "Vietnam",
+      "institution": "VNU University of Engineering and Technology (UET-VNU)",
+      "research_focus": "Automated Reasoning, SAT Encodings & Optimization",
+      "joint_papers_count": 21
+    },
+    {
+      "id": "vnu-hus",
+      "name": "VNU University of Science (VNU-HUS)",
+      "country": "Vietnam",
+      "institution": "VNU University of Science (VNU-HUS)",
+      "research_focus": "Discrete Mathematics & Graph Algorithms",
+      "joint_papers_count": 8
+    }
+  ]
+}

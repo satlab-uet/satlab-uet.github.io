@@ -1,0 +1,86 @@
+[
+  {
+    "id": "event-coap-cyclic-antibandwidth-accepted",
+    "title": "SATLab Paper on Cyclic Antibandwidth Accepted in COAP (Q1 ISI Springer)",
+    "title_vi": "Bài báo về Cyclic Antibandwidth của SATLab được chấp nhận đăng trên tạp chí COAP (Q1 ISI Springer)",
+    "date": "2026-03-15",
+    "category": "Scientific Breakthrough",
+    "badge": "Q1 ISI ACCEPTANCE",
+    "summary": "Our paper 'Solving Cyclic Antibandwidth Problem by SAT' authored by Truong Xuan Hieu and Dr. To Van Khanh has been formally accepted for publication in Computational Optimization and Applications (COAP, Springer).",
+    "summary_vi": "Công trình nghiên cứu 'Solving Cyclic Antibandwidth Problem by SAT' của Trương Xuân Hiếu và TS. Tô Văn Khánh chính thức được chấp nhận đăng trên tạp chí Computational Optimization and Applications (COAP, Springer, Q1 ISI).",
+    "tags": [
+      "cyclic-antibandwidth",
+      "coap",
+      "springer",
+      "q1-isi"
+    ],
+    "featured": true
+  },
+  {
+    "id": "event-monograph-release-2026",
+    "title": "Release of Academic Monograph: 'Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp'",
+    "title_vi": "Phát hành sách chuyên khảo: 'Biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp'",
+    "date": "2026-04-10",
+    "category": "Publication Release",
+    "badge": "FLAGSHIP MONOGRAPH",
+    "summary": "SATLab officially releases the comprehensive 116-page academic monograph synthesizing theoretical foundations and practical software engineering for optimal SAT encodings in combinatorial optimization, available in online HTML edition and PDF.",
+    "summary_vi": "SATLab chính thức ra mắt cuốn sách chuyên khảo dài 116 trang tổng hợp nền tảng lý thuyết và kỹ thuật biểu diễn SAT tối ưu cho các bài toán tối ưu hóa tổ hợp, đọc trực tuyến và tải PDF miễn phí.",
+    "tags": [
+      "sat-monograph",
+      "academic-book",
+      "open-access",
+      "uet-vnu"
+    ],
+    "featured": true
+  },
+  {
+    "id": "event-jco-major-revisions-salbp",
+    "title": "Power Peak Line Balancing Manuscript Received Major Revision in JCO (Springer)",
+    "title_vi": "Bản thảo tối thiểu hóa đỉnh công suất trên dây chuyền lắp ráp nhận Major Revision tại JCO (Springer)",
+    "date": "2026-06-02",
+    "category": "Scientific Breakthrough",
+    "badge": "JOURNAL PROGRESS",
+    "summary": "Our research on 'Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing' by Kieu Van Tuyen, Nguyen Chi Phong, Hoang Gia Bao, and Dr. To Van Khanh received positive reviewer reports and Major Revision in Journal of Combinatorial Optimization.",
+    "summary_vi": "Nghiên cứu về biểu diễn SAT cho bài toán tối thiểu hóa công suất đỉnh trong cân bằng chuyền nhận đánh giá rất tích cực và đang hoàn thiện Major Revision tại Journal of Combinatorial Optimization (Springer).",
+    "tags": [
+      "line-balancing",
+      "jco",
+      "energy-minimization",
+      "major-revision"
+    ],
+    "featured": true
+  },
+  {
+    "id": "event-cita-2026-acceptance-safe-labeling",
+    "title": "Exact k-Safe Labeling via Incremental SAT Accepted at CITA 2026",
+    "title_vi": "Công trình k-Safe Labeling qua SAT gia tăng được chấp nhận tại hội nghị CITA 2026",
+    "date": "2026-05-20",
+    "category": "Conference Presentation",
+    "badge": "CONFERENCE ACCEPTANCE",
+    "summary": "The paper 'Exact k-Safe Labeling via Incremental SAT Solving' co-authored by Vu Thanh Huong, Nguyen Kim Trung Duc, Do Duc Long, and Dr. To Van Khanh has been accepted for presentation at CITA 2026.",
+    "summary_vi": "Bài báo về thuật toán giải chính xác k-Safe Labeling bằng SAT gia tăng được chấp nhận báo cáo tại hội nghị CITA 2026.",
+    "tags": [
+      "cita-2026",
+      "incremental-sat",
+      "safe-labeling"
+    ],
+    "featured": false
+  },
+  {
+    "id": "event-no-hole-anti-k-submission",
+    "title": "No-Hole Anti-k-Labeling Exact Approach Submitted to VJCS / DMAA",
+    "title_vi": "Nộp bản thảo nghiên cứu No-Hole Anti-k-Labeling tới tạp chí VJCS / DMAA",
+    "date": "2026-02-18",
+    "category": "Research Submission",
+    "badge": "MANUSCRIPT SUBMISSION",
+    "summary": "Pham Ngoc Hai Duong, Dao Xuan Nghia, and Dr. To Van Khanh finalized and submitted their exact SAT framework solving no-hole anti-k-labeling of graphs, establishing optimal span values for complex graph classes.",
+    "summary_vi": "Nhóm nghiên cứu Phạm Ngọc Hải Dương, Đào Xuân Nghĩa và TS. Tô Văn Khánh hoàn thiện nộp bản thảo giải chính xác No-Hole Anti-k-Labeling của đồ thị.",
+    "tags": [
+      "no-hole-labeling",
+      "vjcs",
+      "dmaa",
+      "graph-labeling"
+    ],
+    "featured": false
+  }
+]

@@ -39,6 +39,21 @@ fi
 
 mkdir -p "${site_output}/downloads"
 cp -R "${site_source}/." "${site_output}/"
+
+if [[ -d "${repo_root}/web" && -f "${repo_root}/web/package.json" ]]; then
+  printf 'Building modern React Vite application for SATLab...\n'
+  if command -v npm >/dev/null 2>&1; then
+    (
+      cd "${repo_root}/web"
+      if [[ ! -d "node_modules" ]]; then
+        npm ci || npm install
+      fi
+      npm run build
+    )
+    cp -R "${repo_root}/web/dist/." "${site_output}/"
+  fi
+fi
+
 cp "${pdf_source}" "${site_output}/downloads/sat-book.pdf"
 cp "${pdf_source}" "${site_output}/downloads/sat-book-v${version}.pdf"
 python3 "${script_dir}/generate-html-book.py" "${site_output}/read.html"

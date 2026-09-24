@@ -1,0 +1,23 @@
+[
+  {
+    "id": "achieve-coap",
+    "title": "Paper Accepted in Computational Optimization and Applications (Q1 ISI)",
+    "date": "2026",
+    "description": "Groundbreaking exact SAT algorithm for Cyclic Antibandwidth published in prestigious Springer journal COAP.",
+    "category": "Publication"
+  },
+  {
+    "id": "achieve-monograph",
+    "title": "Published 116-Page Monograph on Optimal SAT Encodings",
+    "date": "2026",
+    "description": "Comprehensive reference monograph for automated reasoning and combinatorial optimization at UET-VNU.",
+    "category": "Monograph"
+  },
+  {
+    "id": "achieve-students",
+    "title": "Over 10 Undergraduates Co-Authoring International Peer-Reviewed Papers",
+    "date": "2025–2026",
+    "description": "Exceptional student research mentorship with undergraduate co-authors in RAIRO-OR, Pesquisa, KSE, ISCIT, and CITA.",
+    "category": "Mentorship"
+  }
+]

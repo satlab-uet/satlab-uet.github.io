@@ -1,0 +1,632 @@
+[
+  {
+    "id": "truong-2026-cyclic-antibandwidth-coap",
+    "title": "Solving Cyclic Antibandwidth Problem by SAT",
+    "authors": [
+      "Truong Xuan Hieu",
+      "To Van Khanh"
+    ],
+    "venue": "Computational Optimization and Applications (COAP), Springer, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q1 ISI JOURNAL",
+    "doi": "10.1007/s10589-026-00620-1",
+    "link": "https://link.springer.com/journal/10589",
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "cyclic-antibandwidth",
+      "antibandwidth",
+      "graph-embedding"
+    ],
+    "abstract": "The cyclic antibandwidth problem (CABP) seeks to embed the vertices of a graph G onto a cycle of length |V| such that the minimum distance between adjacent vertices is maximized. We propose a comprehensive SAT formulation incorporating novel staircase cardinality encodings and symmetry breaking predicates, establishing new optimality records and proving bounds on previously unsolved benchmark graph families.",
+    "bibtex": "@article{truong2026cyclic,\n  title={Solving Cyclic Antibandwidth Problem by SAT},\n  author={Truong, Xuan Hieu and To, Van Khanh},\n  journal={Computational Optimization and Applications},\n  publisher={Springer},\n  year={2026}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Truong Xuan Hieu",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "kieu-2026-social-golfer-rairo",
+    "title": "An efficient SAT encoding for solving the Social Golfer Problem",
+    "authors": [
+      "Kieu Van Tuyen",
+      "Nguyen Tan Nguyen",
+      "To Van Khanh"
+    ],
+    "venue": "RAIRO - Operations Research, Vol. 60, No. 1, pp. 173–199, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q3 ISI JOURNAL",
+    "doi": "10.1051/ro/2026012",
+    "link": "https://www.rairo-ro.org/",
+    "research_pillar": "encodings_solvers",
+    "primary_pillar_id": "encodings_solvers",
+    "keywords": [
+      "social-golfer",
+      "symmetry-breaking",
+      "cardinality-constraints"
+    ],
+    "abstract": "We present an efficient propositional satisfiability (SAT) encoding for the Social Golfer Problem (SGP, CSPLib prob016). By systematically combining lexicographical symmetry breaking with compact sequential counter encodings, our solver solves challenging open instances and outpaces commercial CP and MIP systems.",
+    "bibtex": "@article{kieu2026sgp,\n  title={An efficient SAT encoding for solving the Social Golfer Problem},\n  author={Kieu, Van Tuyen and Nguyen, Tan Nguyen and To, Van Khanh},\n  journal={RAIRO - Operations Research},\n  volume={60},\n  number={1},\n  pages={173--199},\n  year={2026}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Kieu Van Tuyen",
+      "Nguyen Tan Nguyen",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "kieu-2025-task-scheduling-cit",
+    "title": "A Compact SAT Encoding for Non-preemptive Task Scheduling on Multiple Identical Resources",
+    "authors": [
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ],
+    "venue": "Cybernetics and Information Technologies, Vol. 25, No. 3, 2025",
+    "year": 2025,
+    "type": "Journal",
+    "badge": "Q2 SCOPUS JOURNAL",
+    "doi": "10.2478/cait-2025-0028",
+    "link": "https://doi.org/10.2478/cait-2025-0028",
+    "research_pillar": "line_balancing_scheduling",
+    "primary_pillar_id": "line_balancing_scheduling",
+    "keywords": [
+      "scheduling",
+      "task-scheduling",
+      "parallel-resources"
+    ],
+    "abstract": "We present a compact Boolean satisfiability encoding for non-preemptive task scheduling on multiple identical parallel resources. The proposed model significantly reduces auxiliary clause generation while preserving propagation strength.",
+    "bibtex": "@article{kieu2025task,\n  title={A Compact SAT Encoding for Non-preemptive Task Scheduling on Multiple Identical Resources},\n  author={Kieu, Van Tuyen and To, Van Khanh},\n  journal={Cybernetics and Information Technologies},\n  volume={25},\n  number={3},\n  year={2025}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "kieu-2025-strip-packing-pesquisa",
+    "title": "Efficient SAT and MaxSAT techniques for solving the Two-Dimensional Strip Packing Problem",
+    "authors": [
+      "Kieu Van Tuyen",
+      "Le Quy Duong",
+      "To Van Khanh"
+    ],
+    "venue": "Pesquisa Operacional, Vol. 45, e297231, 2025",
+    "year": 2025,
+    "type": "Journal",
+    "badge": "Q4 SCOPUS JOURNAL",
+    "doi": "10.1590/0101-7438.2025.045.00297231",
+    "link": "https://doi.org/10.1590/0101-7438.2025.045.00297231",
+    "research_pillar": "packing_cutting",
+    "primary_pillar_id": "packing_cutting",
+    "keywords": [
+      "strip-packing",
+      "2d-packing",
+      "maxsat-optimization"
+    ],
+    "abstract": "We develop exact decision procedures for the 2D Strip Packing Problem based on SAT and MaxSAT. Our formulations employ non-overlapping relative position variables and dynamic height bounds, finding optimal solutions across established OR benchmark sets faster than integer programming solvers.",
+    "bibtex": "@article{kieu2025packing,\n  title={Efficient SAT and MaxSAT techniques for solving the Two-Dimensional Strip Packing Problem},\n  author={Kieu, Van Tuyen and Le, Quy Duong and To, Van Khanh},\n  journal={Pesquisa Operacional},\n  volume={45},\n  pages={e297231},\n  year={2025}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Kieu Van Tuyen",
+      "Le Quy Duong",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "truong-2025-staircase-amo-icaart",
+    "title": "Sequential counter encoding for staircase at-most-one constraints",
+    "authors": [
+      "Truong Xuan Hieu",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ],
+    "venue": "Proc. 17th International Conference on Agents and Artificial Intelligence (ICAART 2025), Vol. 2, pp. 164–175",
+    "year": 2025,
+    "type": "Conference",
+    "badge": "ICAART 2025 (RANK B)",
+    "doi": "10.5220/0013149800003890",
+    "link": "https://www.scitepress.org/",
+    "research_pillar": "encodings_solvers",
+    "primary_pillar_id": "encodings_solvers",
+    "keywords": [
+      "staircase-amo",
+      "sequential-counter",
+      "cardinality-constraints"
+    ],
+    "abstract": "In this paper, we formulate a new sequential counter encoding specifically designed for staircase at-most-one (AMO) constraints. The encoding halves auxiliary variables compared to standard sequential counters while maintaining arc consistency via unit propagation.",
+    "bibtex": "@inproceedings{truong2025staircase,\n  title={Sequential counter encoding for staircase at-most-one constraints},\n  author={Truong, Xuan Hieu and Kieu, Van Tuyen and To, Van Khanh},\n  booktitle={Proceedings of the 17th International Conference on Agents and Artificial Intelligence (ICAART 2025)},\n  volume={2},\n  pages={164--175},\n  year={2025}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Truong Xuan Hieu",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "truong-2025-nurse-rostering-iscit",
+    "title": "Solving at-Least Sequence Constraints in Nurse Rostering Problem Using SAT",
+    "authors": [
+      "Truong Xuan Hieu",
+      "Nguyen Hong Quan",
+      "Dao Xuan Nghia",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ],
+    "venue": "24th International Symposium on Communications and Information Technologies (ISCIT 2025), IEEE, 2025",
+    "year": 2025,
+    "type": "Conference",
+    "badge": "ISCIT 2025 (RANK B)",
+    "doi": "10.1109/ISCIT62345.2025.10753421",
+    "link": "https://ieeexplore.ieee.org/",
+    "research_pillar": "encodings_solvers",
+    "primary_pillar_id": "encodings_solvers",
+    "keywords": [
+      "sequence-constraints",
+      "nurse-rostering",
+      "roster-scheduling"
+    ],
+    "abstract": "Nurse Rostering Problems require strict adherence to at-least and at-most sequence constraints across consecutive shifts. We introduce specialized SAT encodings that model sliding sequence windows with minimal clause inflation.",
+    "bibtex": "@inproceedings{truong2025iscit,\n  title={Solving at-Least Sequence Constraints in Nurse Rostering Problem Using SAT},\n  author={Truong, Xuan Hieu and Nguyen, Hong Quan and Dao, Xuan Nghia and Kieu, Van Tuyen and To, Van Khanh},\n  booktitle={24th International Symposium on Communications and Information Technologies (ISCIT 2025)},\n  year={2025}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Truong Xuan Hieu",
+      "Nguyen Hong Quan",
+      "Dao Xuan Nghia",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "kieu-2025-2d-bin-packing-kse",
+    "title": "SAT-Based Approaches for Two-Dimensional Bin Packing: A Comprehensive Comparison with MIP and CP Methods",
+    "authors": [
+      "Kieu Van Tuyen",
+      "Hoang Linh Chi",
+      "To Van Khanh"
+    ],
+    "venue": "17th International Conference on Knowledge and Systems Engineering (KSE 2025), IEEE, 2025",
+    "year": 2025,
+    "type": "Conference",
+    "badge": "KSE 2025 (SCOPUS)",
+    "doi": "10.1109/KSE63342.2025.10834190",
+    "link": "https://ieeexplore.ieee.org/",
+    "research_pillar": "packing_cutting",
+    "primary_pillar_id": "packing_cutting",
+    "keywords": [
+      "bin-packing",
+      "mip-cp-comparison",
+      "2d-packing"
+    ],
+    "abstract": "We evaluate propositional satisfiability (SAT) against state-of-the-art Mixed Integer Programming (Gurobi/CPLEX) and Constraint Programming (CP-SAT/Chuffed) formulations for the 2D Bin Packing Problem. Empirical tests show SAT models achieve faster proof of optimality on tightly-constrained instances.",
+    "bibtex": "@inproceedings{kieu2025kse,\n  title={SAT-Based Approaches for Two-Dimensional Bin Packing: A Comprehensive Comparison with MIP and CP Methods},\n  author={Kieu, Van Tuyen and Hoang, Linh Chi and To, Van Khanh},\n  booktitle={17th International Conference on Knowledge and Systems Engineering (KSE 2025)},\n  year={2025}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Kieu Van Tuyen",
+      "Hoang Linh Chi",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "huong-2026-safe-labeling-cita",
+    "title": "Exact k-Safe Labeling via Incremental SAT Solving",
+    "authors": [
+      "Vu Thanh Huong",
+      "Nguyen Kim Trung Duc",
+      "Do Duc Long",
+      "Duong Thi Huong",
+      "Tran Ngoc Thuan",
+      "To Van Khanh"
+    ],
+    "venue": "13th Conference on Information Technology and its Applications (CITA 2026), Accepted",
+    "year": 2026,
+    "type": "Conference",
+    "badge": "CITA 2026 (ACCEPTED)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "safe-labeling",
+      "incremental-sat",
+      "graph-labeling"
+    ],
+    "abstract": "We formulate the k-safe labeling problem as an incremental SAT solving process. By reusing learned clauses across sequential search iterations for the optimal span, our solver achieves superior runtime performance compared to static models.",
+    "bibtex": "@inproceedings{huong2026cita,\n  title={Exact k-Safe Labeling via Incremental SAT Solving},\n  author={Vu, Thanh Huong and Nguyen, Kim Trung Duc and Do, Duc Long and Duong, Thi Huong and Tran, Ngoc Thuan and To, Van Khanh},\n  booktitle={13th Conference on Information Technology and its Applications (CITA 2026)},\n  year={2026}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Vu Thanh Huong",
+      "Nguyen Kim Trung Duc",
+      "Do Duc Long",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "kieu-2026-salbp-power-jco",
+    "title": "Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing",
+    "authors": [
+      "Kieu Van Tuyen",
+      "Nguyen Chi Phong",
+      "Hoang Gia Bao",
+      "To Van Khanh"
+    ],
+    "venue": "Journal of Combinatorial Optimization (JCO), Springer, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q2/Q3 ISI (MAJOR REVISIONS)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "line_balancing_scheduling",
+    "primary_pillar_id": "line_balancing_scheduling",
+    "keywords": [
+      "assembly-line-balancing",
+      "power-peak",
+      "energy-minimization"
+    ],
+    "abstract": "Modern automated manufacturing requires minimizing peak energy demand on assembly lines while honoring cycle time and precedence constraints. We introduce compact SAT formulations with cumulative power encodings, outperforming CP and MIP solvers on standard SALBP benchmarks.",
+    "bibtex": "@article{kieu2026jco,\n  title={Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing},\n  author={Kieu, Van Tuyen and Nguyen, Chi Phong and Hoang, Gia Bao and To, Van Khanh},\n  journal={Journal of Combinatorial Optimization},\n  publisher={Springer},\n  year={2026},\n  note={Under Major Revisions}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Kieu Van Tuyen",
+      "Nguyen Chi Phong",
+      "Hoang Gia Bao",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "truong-2026-ladder-amk-constraints",
+    "title": "SAT Encoding for Set of At-Most-K Cardinality Constraints with Ladder Shape",
+    "authors": [
+      "Truong Xuan Hieu",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ],
+    "venue": "Constraints, Springer, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q3 ISI (MAJOR REVISIONS)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "encodings_solvers",
+    "primary_pillar_id": "encodings_solvers",
+    "keywords": [
+      "ladder-amk",
+      "cardinality-constraints",
+      "sequential-counter"
+    ],
+    "abstract": "We explore structural properties of overlapping cardinality constraints having ladder or staircase topologies. A novel shared register structure preserves unit propagation properties while dramatically slashing the total variable count.",
+    "bibtex": "@article{truong2026constraints,\n  title={SAT Encoding for Set of At-Most-K Cardinality Constraints with Ladder Shape},\n  author={Truong, Xuan Hieu and Kieu, Van Tuyen and To, Van Khanh},\n  journal={Constraints},\n  publisher={Springer},\n  year={2026},\n  note={Under Major Revisions}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Truong Xuan Hieu",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "dao-2026-fap-ieee",
+    "title": "A SAT-Based Exact Approach for the Minimum Order Frequency Assignment Problem",
+    "authors": [
+      "Dao Xuan Nghia",
+      "Dang Anh Phuong",
+      "To Van Khanh"
+    ],
+    "venue": "IEEE Latin America Transactions, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q2 ISI (MAJOR REVISIONS)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "frequency-assignment",
+      "minimum-order-fap",
+      "telecommunication"
+    ],
+    "abstract": "The Minimum Order Frequency Assignment Problem (MO-FAP) is an NP-hard problem in cellular networks. We devise exact SAT decision formulations using ladder-shaped distance constraints, solving large-scale telecommunication instances to provable optimality.",
+    "bibtex": "@article{dao2026ieee,\n  title={A SAT-Based Exact Approach for the Minimum Order Frequency Assignment Problem},\n  author={Dao, Xuan Nghia and Dang, Anh Phuong and To, Van Khanh},\n  journal={IEEE Latin America Transactions},\n  year={2026},\n  note={Under Major Revisions}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Dao Xuan Nghia",
+      "Dang Anh Phuong",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "duong-2026-no-hole-anti-k-dmaa",
+    "title": "An exact approach solving no hole anti-k-labeling of graphs",
+    "authors": [
+      "Pham Ngoc Hai Duong",
+      "Dao Xuan Nghia",
+      "To Van Khanh"
+    ],
+    "venue": "Discrete Mathematics, Algorithms and Applications (DMAA) / VJCS, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q3 SCOPUS (SUBMITTED)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "no-hole-labeling",
+      "anti-k-labeling",
+      "graph-labeling"
+    ],
+    "abstract": "No-hole anti-k-labeling requires finding an injective vertex labeling with consecutive integers (no gaps or holes) such that distance-d neighbors satisfy span inequalities. We introduce an exact SAT encoding establishing exact values for trees, grids, and cycles.",
+    "bibtex": "@article{duong2026dmaa,\n  title={An exact approach solving no hole anti-k-labeling of graphs},\n  author={Pham, Ngoc Hai Duong and Dao, Xuan Nghia and To, Van Khanh},\n  journal={Discrete Mathematics, Algorithms and Applications},\n  publisher={World Scientific},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Pham Ngoc Hai Duong",
+      "Dao Xuan Nghia",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "duc-2026-bandwidth-coloring-pesquisa",
+    "title": "Sat encodings for bandwidth coloring: a systematic design study",
+    "authors": [
+      "Nguyen Kim Trung Duc",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ],
+    "venue": "Pesquisa Operacional, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q4 SCOPUS (SUBMITTED)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "bandwidth-coloring",
+      "vertex-coloring",
+      "distance-constraints"
+    ],
+    "abstract": "Bandwidth coloring generalizes graph coloring by imposing edge-specific separation distances between color assignments. We conduct an exhaustive evaluation of direct, support, and order SAT encodings coupled with symmetry breaking clauses.",
+    "bibtex": "@article{duc2026bandwidth,\n  title={Sat encodings for bandwidth coloring: a systematic design study},\n  author={Nguyen, Kim Trung Duc and Kieu, Van Tuyen and To, Van Khanh},\n  journal={Pesquisa Operacional},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Nguyen Kim Trung Duc",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "kieu-2026-cutting-stock-jcsc",
+    "title": "Solving the Two-Dimensional Single Stock Size Cutting Stock Problem with SAT and MaxSAT",
+    "authors": [
+      "Kieu Van Tuyen",
+      "Hoang Linh Chi",
+      "To Van Khanh"
+    ],
+    "venue": "Journal of Computer Science and Cybernetics (JCSC), 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "JCSC (SUBMITTED)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "packing_cutting",
+    "primary_pillar_id": "packing_cutting",
+    "keywords": [
+      "cutting-stock",
+      "2d-cutting",
+      "maxsat-optimization"
+    ],
+    "abstract": "We present exact SAT and MaxSAT models for the 2D Single Stock Size Cutting Stock Problem (2D-SSSCSP). Our approach models spatial item interactions with compact non-overlap clauses and minimizes scrap area.",
+    "bibtex": "@article{kieu2026jcsc,\n  title={Solving the Two-Dimensional Single Stock Size Cutting Stock Problem with SAT and MaxSAT},\n  author={Kieu, Van Tuyen and Hoang, Linh Chi and To, Van Khanh},\n  journal={Journal of Computer Science and Cybernetics},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Kieu Van Tuyen",
+      "Hoang Linh Chi",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "kieu-2026-train-rescheduling-csonet",
+    "title": "An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings",
+    "authors": [
+      "Kieu Van Tuyen",
+      "Nguyen Huu Tan",
+      "To Van Khanh"
+    ],
+    "venue": "15th International Conference on Computational Social Networks (CSoNet 2026), Submitted",
+    "year": 2026,
+    "type": "Conference",
+    "badge": "CSONET 2026 (SUBMITTED)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "line_balancing_scheduling",
+    "primary_pillar_id": "line_balancing_scheduling",
+    "keywords": [
+      "train-rescheduling",
+      "maxsat-ddd",
+      "railway-networks"
+    ],
+    "abstract": "We introduce MaxSAT-DDD, a railway train rescheduling framework that combines Dynamic Decoupled Domain (DDD) temporal reasoning with weighted Partial MaxSAT formulations. Experiments on dense corridor lines show real-time response times under unexpected track delays.",
+    "bibtex": "@inproceedings{kieu2026csonet,\n  title={An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings},\n  author={Kieu, Van Tuyen and Nguyen, Huu Tan and To, Van Khanh},\n  booktitle={15th International Conference on Computational Social Networks (CSoNet 2026)},\n  year={2026}\n}",
+    "is_featured": true,
+    "highlighted_authors": [
+      "Kieu Van Tuyen",
+      "Nguyen Huu Tan",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "huong-2026-radio-labeling-wireless",
+    "title": "An exact approach for Radio–k labeling of general graphs",
+    "authors": [
+      "Vu Thanh Huong",
+      "Dao Van Duc",
+      "To Van Khanh"
+    ],
+    "venue": "Wireless Networks, Springer, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q2 ISI (MANUSCRIPT)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "radio-labeling",
+      "channel-assignment",
+      "wireless-networks"
+    ],
+    "abstract": "Radio-k labeling assigns non-negative integers to vertices such that labels differ by at least k+1-d(u,v). We provide the first comprehensive exact SAT formulation for general graphs, settling open problems on large diameter topologies.",
+    "bibtex": "@article{huong2026radio,\n  title={An exact approach for Radio-k labeling of general graphs},\n  author={Vu, Thanh Huong and Dao, Van Duc and To, Van Khanh},\n  journal={Wireless Networks},\n  publisher={Springer},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Vu Thanh Huong",
+      "Dao Van Duc",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "minh-2026-2d-bandwidth-dam",
+    "title": "Exact SAT Solving for the Two-Dimensional Bandwidth Minimization Problem",
+    "authors": [
+      "Pham Quang Minh",
+      "Dao Xuan Nghia",
+      "To Van Khanh"
+    ],
+    "venue": "Discrete Applied Mathematics, Elsevier, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q2 ISI (MANUSCRIPT)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "2d-bandwidth",
+      "grid-embedding",
+      "matrix-bandwidth"
+    ],
+    "abstract": "The 2D Bandwidth Minimization Problem seeks to embed graph vertices onto a 2D integer grid while minimizing maximum Euclidean edge length. We present an exact SAT decision procedure leveraging geometric bounding boxes.",
+    "bibtex": "@article{minh2026bandwidth,\n  title={Exact SAT Solving for the Two-Dimensional Bandwidth Minimization Problem},\n  author={Pham, Quang Minh and Dao, Xuan Nghia and To, Van Khanh},\n  journal={Discrete Applied Mathematics},\n  publisher={Elsevier},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Pham Quang Minh",
+      "Dao Xuan Nghia",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "duc-2026-bandwidth-multicoloring-rairo",
+    "title": "Providing optimality of the bandwidth multicoloring problem by SAT",
+    "authors": [
+      "Nguyen Kim Trung Duc",
+      "To Van Khanh"
+    ],
+    "venue": "RAIRO - Operations Research, EDP Sciences, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q3 ISI (MANUSCRIPT)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "multicoloring",
+      "bandwidth-multicoloring",
+      "exact-sat"
+    ],
+    "abstract": "In bandwidth multicoloring, each vertex requires a set of distinct colors subject to distance constraints. We design order encodings that exploit multi-interval relaxations, solving challenging instances from the literature.",
+    "bibtex": "@article{duc2026multicoloring,\n  title={Providing optimality of the bandwidth multicoloring problem by SAT},\n  author={Nguyen, Kim Trung Duc and To, Van Khanh},\n  journal={RAIRO - Operations Research},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Nguyen Kim Trung Duc",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "bao-2026-ualbp-engopt",
+    "title": "Makespan minimization for Simple Assembly Line Balancing Problem with power peak consumption constraints: modeling and solving in SAT",
+    "authors": [
+      "Hoang Gia Bao",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ],
+    "venue": "Engineering Optimization, Taylor & Francis, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q2 ISI (MANUSCRIPT)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "line_balancing_scheduling",
+    "primary_pillar_id": "line_balancing_scheduling",
+    "keywords": [
+      "salbp",
+      "makespan-minimization",
+      "power-peak"
+    ],
+    "abstract": "We investigate joint makespan and peak electrical demand optimization in assembly line manufacturing. By mapping the coupled scheduling domain into SAT cardinality networks, our method finds provably optimal configurations.",
+    "bibtex": "@article{bao2026salbp,\n  title={Makespan minimization for Simple Assembly Line Balancing Problem with power peak consumption constraints: modeling and solving in SAT},\n  author={Hoang, Gia Bao and Kieu, Van Tuyen and To, Van Khanh},\n  journal={Engineering Optimization},\n  publisher={Taylor & Francis},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Hoang Gia Bao",
+      "Kieu Van Tuyen",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "truong-2026-antibandwidth-dam",
+    "title": "Minimum-Span Antibandwidth and Cyclic Antibandwidth Labeling Problems",
+    "authors": [
+      "Truong Xuan Hieu",
+      "To Van Khanh"
+    ],
+    "venue": "Discrete Applied Mathematics, Elsevier, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q2 ISI (MANUSCRIPT)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "graph_labeling_fap",
+    "primary_pillar_id": "graph_labeling_fap",
+    "keywords": [
+      "antibandwidth",
+      "cyclic-antibandwidth",
+      "minimum-span"
+    ],
+    "abstract": "We explore minimum-span variations of the antibandwidth problem on graphs. A comprehensive SAT-based constraint pipeline establishes theoretical upper and lower bounds for standard benchmark classes.",
+    "bibtex": "@article{truong2026antibandwidth,\n  title={Minimum-Span Antibandwidth and Cyclic Antibandwidth Labeling Problems},\n  author={Truong, Xuan Hieu and To, Van Khanh},\n  journal={Discrete Applied Mathematics},\n  publisher={Elsevier},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Truong Xuan Hieu",
+      "To Van Khanh"
+    ]
+  },
+  {
+    "id": "dao-2026-sequence-constraints-sat",
+    "title": "Solving Sequence Constraints in SAT",
+    "authors": [
+      "Dao Xuan Nghia",
+      "To Van Khanh"
+    ],
+    "venue": "Constraints / Journal of Automated Reasoning, Springer, 2026",
+    "year": 2026,
+    "type": "Journal",
+    "badge": "Q2/Q3 ISI (MANUSCRIPT)",
+    "doi": null,
+    "link": null,
+    "research_pillar": "encodings_solvers",
+    "primary_pillar_id": "encodings_solvers",
+    "keywords": [
+      "sequence-constraints",
+      "automated-reasoning",
+      "sat-encoding"
+    ],
+    "abstract": "Sequence constraints arise in scheduling, car sequencing, and employee rostering. We conduct a systematic analysis of decomposition methods into Boolean formulas, proving generalized arc consistency conditions for our novel encodings.",
+    "bibtex": "@article{dao2026sequence,\n  title={Solving Sequence Constraints in SAT},\n  author={Dao, Xuan Nghia and To, Van Khanh},\n  journal={Constraints},\n  publisher={Springer},\n  year={2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Dao Xuan Nghia",
+      "To Van Khanh"
+    ]
+  }
+]

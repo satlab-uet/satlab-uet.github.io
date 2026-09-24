@@ -1,0 +1,24 @@
+[
+  {
+    "id": "sem-1",
+    "title": "Cardinality and Pseudo-Boolean Encodings in Modern SAT Solvers",
+    "speaker": "Dr. To Van Khanh",
+    "affiliation": "SATLab UET",
+    "date": "2026-03-20",
+    "venue": "Room 302, Building E3, UET-VNU",
+    "venue_type": "Hybrid",
+    "status": "Archived",
+    "abstract": "An overview of translation techniques from AMO, AMK, and general Pseudo-Boolean inequalities to CNF clauses maintaining generalized arc consistency."
+  },
+  {
+    "id": "sem-2",
+    "title": "Solving Industrial Scheduling & Line Balancing with MaxSAT",
+    "speaker": "M.Sc. Kieu Van Tuyen",
+    "affiliation": "SATLab UET",
+    "date": "2026-04-15",
+    "venue": "Room 302, Building E3, UET-VNU",
+    "venue_type": "Hybrid",
+    "status": "Archived",
+    "abstract": "Formulations for Simple Assembly Line Balancing (SALBP) with power peak limits and precedence propagation."
+  }
+]

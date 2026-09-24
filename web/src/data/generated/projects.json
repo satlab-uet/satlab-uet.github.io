@@ -1,0 +1,212 @@
+[
+  {
+    "id": "sclib-solver",
+    "title_en": "SCLib: Shared Counter Library & Solver Ecosystem",
+    "title_vi": "Hệ sinh thái thư viện bộ đếm chia sẻ SCLib cho SAT",
+    "category": "Core Solvers",
+    "category_en": "Core Solvers",
+    "sponsor": "VNU University of Engineering and Technology (UET-VNU)",
+    "period": "2024 – Present",
+    "status": "Active",
+    "research_domain": "Automated Reasoning & Encodings",
+    "leads": [
+      {
+        "name": "M.Sc. Student Truong Xuan Hieu",
+        "role": "Lead Architect",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Dr. To Van Khanh",
+        "role": "Principal Investigator",
+        "affiliation": "UET-VNU"
+      }
+    ],
+    "description_en": "High-performance C++ solver library implementing New Sequential Counter (NSC) variants, ladder-shaped AMO/AMK cardinality encodings, and Pseudo-Boolean translations. SCLib provides optimal clause representations for large-scale industrial satisfiability instances.",
+    "outcomes": [
+      "New Sequential Counter (NSC) implementation with halved auxiliary variable overhead",
+      "Staircase and ladder cardinality constraint translations maintaining unit propagation",
+      "Published in COAP (Q1 ISI) and ICAART 2025"
+    ],
+    "tags": [
+      "sclib",
+      "cardinality-constraints",
+      "sequential-counters",
+      "sat-solver"
+    ]
+  },
+  {
+    "id": "maxsat-ddd-railway",
+    "title_en": "MaxSAT-DDD: Real-Time Railway Train Rescheduling System",
+    "title_vi": "Hệ thống điều hành và lập lại lịch trình tàu hỏa thời gian thực bằng MaxSAT-DDD",
+    "category": "Industrial Applications",
+    "category_en": "Industrial Applications",
+    "sponsor": "National Research Initiative",
+    "period": "2025 – Present",
+    "status": "Active",
+    "research_domain": "Industrial Scheduling & Operations Research",
+    "leads": [
+      {
+        "name": "M.Sc. Kieu Van Tuyen",
+        "role": "Lead Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Nguyen Huu Tan",
+        "role": "Co-Investigator",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Dr. To Van Khanh",
+        "role": "Principal Investigator",
+        "affiliation": "UET-VNU"
+      }
+    ],
+    "description_en": "Real-time railway rescheduling system combining Dynamic Decoupled Domain (DDD) temporal reasoning with weighted Partial MaxSAT formulations. Outperforms CP and MIP solvers under dynamic disturbance scenarios on single-track and multi-track corridors.",
+    "outcomes": [
+      "Precedence propagation and dynamic domain pruning reducing resolution search trees by up to 80%",
+      "Sub-second re-optimization across complex passenger and freight traffic networks",
+      "Submitted to CSoNet 2026"
+    ],
+    "tags": [
+      "train-rescheduling",
+      "maxsat-ddd",
+      "railway-networks",
+      "dynamic-scheduling"
+    ]
+  },
+  {
+    "id": "salbp-power",
+    "title_en": "SALBP-Power: Assembly Line Power Peak Minimization",
+    "title_vi": "Tối thiểu hóa đỉnh công suất điện trên dây chuyền lắp ráp công nghiệp",
+    "category": "Manufacturing & Scheduling",
+    "category_en": "Manufacturing & Scheduling",
+    "sponsor": "UET-VNU",
+    "period": "2025 – Present",
+    "status": "Active",
+    "research_domain": "Manufacturing & Energy Optimization",
+    "leads": [
+      {
+        "name": "M.Sc. Kieu Van Tuyen",
+        "role": "Lead Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Nguyen Chi Phong",
+        "role": "Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Hoang Gia Bao",
+        "role": "Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Dr. To Van Khanh",
+        "role": "Principal Investigator",
+        "affiliation": "UET-VNU"
+      }
+    ],
+    "description_en": "SAT encodings for minimizing peak energy consumption and makespan in Simple and U-shaped Assembly Line Balancing Problems (SALBP / UALBP). Addresses industrial peak-shaving needs while enforcing strict precedence and cycle-time boundaries.",
+    "outcomes": [
+      "First exact SAT formulation for power peak constrained line balancing",
+      "Proven superior to CPLEX and CP-SAT on benchmark problem libraries",
+      "Under Major Revision at Journal of Combinatorial Optimization (JCO) & Engineering Optimization"
+    ],
+    "tags": [
+      "line-balancing",
+      "salbp",
+      "power-peak",
+      "energy-efficiency"
+    ]
+  },
+  {
+    "id": "sat-packing-cutting",
+    "title_en": "SAT-Packing: 2D Strip Packing & Cutting Stock Solvers",
+    "title_vi": "Bộ giải SAT cho bài toán xếp hình 2 chiều và cắt vật liệu tối ưu",
+    "category": "Spatial Optimization",
+    "category_en": "Spatial Optimization",
+    "sponsor": "UET-VNU",
+    "period": "2024 – Present",
+    "status": "Active",
+    "research_domain": "Geometric Optimization & Cutting Stock",
+    "leads": [
+      {
+        "name": "M.Sc. Kieu Van Tuyen",
+        "role": "Lead Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Le Quy Duong",
+        "role": "Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Hoang Linh Chi",
+        "role": "Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Dr. To Van Khanh",
+        "role": "Principal Investigator",
+        "affiliation": "UET-VNU"
+      }
+    ],
+    "description_en": "Compact SAT and MaxSAT encodings for 2D Strip Packing, 2D Bin Packing, and Cutting Stock Problems. Integrates order encodings with non-overlapping bounding constraints to establish new optimal solutions for open instances.",
+    "outcomes": [
+      "Published in Pesquisa Operacional (2025) and IEEE KSE 2025",
+      "Optimal stock utilization algorithm submitted to JCSC 2026",
+      "Significant speedups over mixed-integer programming (MIP)"
+    ],
+    "tags": [
+      "strip-packing",
+      "bin-packing",
+      "cutting-stock",
+      "2d-packing"
+    ]
+  },
+  {
+    "id": "sat-graph-labeling",
+    "title_en": "SAT-Graph: Exact Graph Labeling & Frequency Assignment",
+    "title_vi": "Giải pháp SAT chính xác cho gán nhãn đồ thị và phân bổ tần số vô tuyến",
+    "category": "Graph Theory & Telecom",
+    "category_en": "Graph Theory & Telecom",
+    "sponsor": "UET-VNU",
+    "period": "2024 – Present",
+    "status": "Active",
+    "research_domain": "Graph Embeddings & Wireless Communications",
+    "leads": [
+      {
+        "name": "M.Sc. Student Truong Xuan Hieu",
+        "role": "Lead Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "M.Sc. Student Dao Xuan Nghia",
+        "role": "Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Nguyen Kim Trung Duc",
+        "role": "Researcher",
+        "affiliation": "UET-VNU"
+      },
+      {
+        "name": "Dr. To Van Khanh",
+        "role": "Principal Investigator",
+        "affiliation": "UET-VNU"
+      }
+    ],
+    "description_en": "Exact decision algorithms for Antibandwidth, Cyclic Antibandwidth, Radio-k Labeling, Bandwidth Multicoloring, and Order Frequency Allocation using SAT and incremental solving pipelines.",
+    "outcomes": [
+      "Published in Computational Optimization and Applications (COAP, Q1 ISI)",
+      "Published in IEEE Latin America Transactions, RAIRO-OR, and CITA 2026",
+      "Settled decades-old open problems on hypercubes, grid graphs, and cycle embeddings"
+    ],
+    "tags": [
+      "cyclic-antibandwidth",
+      "antibandwidth",
+      "radio-labeling",
+      "frequency-assignment"
+    ]
+  }
+]
