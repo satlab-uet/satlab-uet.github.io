@@ -38,10 +38,10 @@
       "Dang Anh Phuong",
       "To Van Khanh"
     ],
-    "venue": "IEEE Latin America Transactions, 2026",
+    "venue": "IEEE Latin America Transactions, 2026 (Accepted)",
     "year": 2026,
     "type": "Journal",
-    "badge": "Q2 ISI (MAJOR REVISIONS)",
+    "badge": "Q2 ISI JOURNAL (ACCEPTED)",
     "doi": null,
     "link": null,
     "research_pillar": "graph_labeling_fap",
@@ -52,7 +52,7 @@
       "telecommunication"
     ],
     "abstract": "The Minimum Order Frequency Assignment Problem (MO-FAP) is an NP-hard problem in cellular networks. We devise exact SAT decision formulations using ladder-shaped distance constraints, solving large-scale telecommunication instances to provable optimality.",
-    "bibtex": "@article{dao2026ieee,\n  title={A SAT-Based Exact Approach for the Minimum Order Frequency Assignment Problem},\n  author={Dao, Xuan Nghia and Dang, Anh Phuong and To, Van Khanh},\n  journal={IEEE Latin America Transactions},\n  year={2026},\n  note={Under Major Revisions}\n}",
+    "bibtex": "@article{dao2026ieee,\n  title={A SAT-Based Exact Approach for the Minimum Order Frequency Assignment Problem},\n  author={Dao, Xuan Nghia and Dang, Anh Phuong and To, Van Khanh},\n  journal={IEEE Latin America Transactions},\n  year={2026},\n  note={Accepted for publication}\n}",
     "is_featured": false,
     "highlighted_authors": [
       "Dao Xuan Nghia",
@@ -70,10 +70,10 @@
       "Nguyen Huu Tan",
       "To Van Khanh"
     ],
-    "venue": "15th International Conference on Computational Social Networks (CSoNet 2026), Submitted",
+    "venue": "15th International Conference on Computational Social Networks (CSoNet 2026), Accepted",
     "year": 2026,
     "type": "Conference",
-    "badge": "CSONET 2026 (SUBMITTED)",
+    "badge": "CSONET 2026 (ACCEPTED)",
     "doi": null,
     "link": null,
     "research_pillar": "line_balancing_scheduling",
@@ -84,7 +84,7 @@
       "railway-networks"
     ],
     "abstract": "We introduce MaxSAT-DDD, a railway train rescheduling framework that combines Dynamic Decoupled Domain (DDD) temporal reasoning with weighted Partial MaxSAT formulations. Experiments on dense corridor lines show real-time response times under unexpected track delays.",
-    "bibtex": "@inproceedings{kieu2026csonet,\n  title={An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings},\n  author={Kieu, Van Tuyen and Nguyen, Huu Tan and To, Van Khanh},\n  booktitle={15th International Conference on Computational Social Networks (CSoNet 2026)},\n  year={2026}\n}",
+    "bibtex": "@inproceedings{kieu2026csonet,\n  title={An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings},\n  author={Kieu, Van Tuyen and Nguyen, Huu Tan and To, Van Khanh},\n  booktitle={15th International Conference on Computational Social Networks (CSoNet 2026)},\n  year={2026},\n  note={Accepted for presentation}\n}",
     "is_featured": true,
     "highlighted_authors": [
       "Kieu Van Tuyen",
@@ -195,10 +195,10 @@
       "Hoang Gia Bao",
       "To Van Khanh"
     ],
-    "venue": "Journal of Combinatorial Optimization (JCO), Springer, 2026",
+    "venue": "Journal of Combinatorial Optimization (JCO), Springer, 2026 (Accepted)",
     "year": 2026,
     "type": "Journal",
-    "badge": "Q2/Q3 ISI (MAJOR REVISIONS)",
+    "badge": "Q2 ISI JOURNAL (ACCEPTED)",
     "doi": null,
     "link": null,
     "research_pillar": "line_balancing_scheduling",
@@ -209,14 +209,16 @@
       "energy-minimization"
     ],
     "abstract": "Modern automated manufacturing requires minimizing peak energy demand on assembly lines while honoring cycle time and precedence constraints. We introduce compact SAT formulations with cumulative power encodings, outperforming CP and MIP solvers on standard SALBP benchmarks.",
-    "bibtex": "@article{kieu2026jco,\n  title={Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing},\n  author={Kieu, Van Tuyen and Nguyen, Chi Phong and Hoang, Gia Bao and To, Van Khanh},\n  journal={Journal of Combinatorial Optimization},\n  publisher={Springer},\n  year={2026},\n  note={Under Major Revisions}\n}",
+    "bibtex": "@article{kieu2026jco,\n  title={Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing},\n  author={Kieu, Van Tuyen and Nguyen, Chi Phong and Hoang, Gia Bao and To, Van Khanh},\n  journal={Journal of Combinatorial Optimization},\n  publisher={Springer},\n  year={2026},\n  note={Accepted for publication}\n}",
     "is_featured": true,
     "highlighted_authors": [
       "Kieu Van Tuyen",
       "Nguyen Chi Phong",
       "Hoang Gia Bao",
       "To Van Khanh"
-    ]
+    ],
+    "citations": 0,
+    "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=kq2ht6wAAAAJ&amp;pagesize=100&amp;citation_for_view=kq2ht6wAAAAJ:XiVPGOgt02cC"
   },
   {
     "id": "nguyen-2026-compact-sat-and-maxsat",
@@ -894,40 +896,6 @@
     ],
     "citations": 0,
     "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=kq2ht6wAAAAJ&amp;pagesize=100&amp;citation_for_view=kq2ht6wAAAAJ:kRWSkSYxWN8C"
-  },
-  {
-    "id": "kieu-2025-compact-sat-encoding-for",
-    "title": "Compact SAT Encoding for Power Peak Minimization",
-    "authors": [
-      "T Van Kieu",
-      "PC Nguyen",
-      "BG Hoang",
-      "K Van To"
-    ],
-    "venue": "arXiv preprint arXiv:2512.11435 (JOCO accepted), 2025",
-    "year": 2025,
-    "type": "Preprint",
-    "badge": null,
-    "doi": null,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=kq2ht6wAAAAJ&amp;pagesize=100&amp;citation_for_view=kq2ht6wAAAAJ:XiVPGOgt02cC",
-    "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=kq2ht6wAAAAJ&amp;pagesize=100&amp;citation_for_view=kq2ht6wAAAAJ:XiVPGOgt02cC",
-    "research_pillar": "line_balancing_scheduling",
-    "primary_pillar_id": "line_balancing_scheduling",
-    "keywords": [
-      "scheduling",
-      "line-balancing",
-      "industrial-optimization"
-    ],
-    "abstract": null,
-    "bibtex": "@article{kieu2025for,\n  title = {Compact SAT Encoding for Power Peak Minimization},\n  author = {T Van Kieu and PC Nguyen and BG Hoang and K Van To},\n  journal = {arXiv preprint arXiv:2512.11435 (JOCO accepted), 2025},\n  year = {2025},\n}",
-    "is_featured": false,
-    "highlighted_authors": [
-      "T Van Kieu",
-      "PC Nguyen",
-      "BG Hoang",
-      "K Van To"
-    ],
-    "citations": 0
   },
   {
     "id": "trinh-2024-analysing-conflict-of-interest",

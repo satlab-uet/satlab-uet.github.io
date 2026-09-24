@@ -275,17 +275,17 @@ publications = [
     "id": "kieu-2026-salbp-power-jco",
     "title": "Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing",
     "authors": ["Kieu Van Tuyen", "Nguyen Chi Phong", "Hoang Gia Bao", "To Van Khanh"],
-    "venue": "Journal of Combinatorial Optimization (JCO), Springer, 2026",
+    "venue": "Journal of Combinatorial Optimization (JCO), Springer, 2026 (Accepted)",
     "year": 2026,
     "type": "Journal",
-    "badge": "Q2/Q3 ISI (MAJOR REVISIONS)",
+    "badge": "Q2 ISI JOURNAL (ACCEPTED)",
     "doi": None,
     "link": None,
     "research_pillar": "line_balancing_scheduling",
     "primary_pillar_id": "line_balancing_scheduling",
     "keywords": ["assembly-line-balancing", "power-peak", "energy-minimization"],
     "abstract": "Modern automated manufacturing requires minimizing peak energy demand on assembly lines while honoring cycle time and precedence constraints. We introduce compact SAT formulations with cumulative power encodings, outperforming CP and MIP solvers on standard SALBP benchmarks.",
-    "bibtex": "@article{kieu2026jco,\n  title={Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing},\n  author={Kieu, Van Tuyen and Nguyen, Chi Phong and Hoang, Gia Bao and To, Van Khanh},\n  journal={Journal of Combinatorial Optimization},\n  publisher={Springer},\n  year={2026},\n  note={Under Major Revisions}\n}",
+    "bibtex": "@article{kieu2026jco,\n  title={Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing},\n  author={Kieu, Van Tuyen and Nguyen, Chi Phong and Hoang, Gia Bao and To, Van Khanh},\n  journal={Journal of Combinatorial Optimization},\n  publisher={Springer},\n  year={2026},\n  note={Accepted for publication}\n}",
     "is_featured": True,
     "highlighted_authors": ["Kieu Van Tuyen", "Nguyen Chi Phong", "Hoang Gia Bao", "To Van Khanh"]
   },
@@ -311,17 +311,17 @@ publications = [
     "id": "dao-2026-fap-ieee",
     "title": "A SAT-Based Exact Approach for the Minimum Order Frequency Assignment Problem",
     "authors": ["Dao Xuan Nghia", "Dang Anh Phuong", "To Van Khanh"],
-    "venue": "IEEE Latin America Transactions, 2026",
+    "venue": "IEEE Latin America Transactions, 2026 (Accepted)",
     "year": 2026,
     "type": "Journal",
-    "badge": "Q2 ISI (MAJOR REVISIONS)",
+    "badge": "Q2 ISI JOURNAL (ACCEPTED)",
     "doi": None,
     "link": None,
     "research_pillar": "graph_labeling_fap",
     "primary_pillar_id": "graph_labeling_fap",
     "keywords": ["frequency-assignment", "minimum-order-fap", "telecommunication"],
     "abstract": "The Minimum Order Frequency Assignment Problem (MO-FAP) is an NP-hard problem in cellular networks. We devise exact SAT decision formulations using ladder-shaped distance constraints, solving large-scale telecommunication instances to provable optimality.",
-    "bibtex": "@article{dao2026ieee,\n  title={A SAT-Based Exact Approach for the Minimum Order Frequency Assignment Problem},\n  author={Dao, Xuan Nghia and Dang, Anh Phuong and To, Van Khanh},\n  journal={IEEE Latin America Transactions},\n  year={2026},\n  note={Under Major Revisions}\n}",
+    "bibtex": "@article{dao2026ieee,\n  title={A SAT-Based Exact Approach for the Minimum Order Frequency Assignment Problem},\n  author={Dao, Xuan Nghia and Dang, Anh Phuong and To, Van Khanh},\n  journal={IEEE Latin America Transactions},\n  year={2026},\n  note={Accepted for publication}\n}",
     "is_featured": False,
     "highlighted_authors": ["Dao Xuan Nghia", "Dang Anh Phuong", "To Van Khanh"]
   },
@@ -383,17 +383,17 @@ publications = [
     "id": "kieu-2026-train-rescheduling-csonet",
     "title": "An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings",
     "authors": ["Kieu Van Tuyen", "Nguyen Huu Tan", "To Van Khanh"],
-    "venue": "15th International Conference on Computational Social Networks (CSoNet 2026), Submitted",
+    "venue": "15th International Conference on Computational Social Networks (CSoNet 2026), Accepted",
     "year": 2026,
     "type": "Conference",
-    "badge": "CSONET 2026 (SUBMITTED)",
+    "badge": "CSONET 2026 (ACCEPTED)",
     "doi": None,
     "link": None,
     "research_pillar": "line_balancing_scheduling",
     "primary_pillar_id": "line_balancing_scheduling",
     "keywords": ["train-rescheduling", "maxsat-ddd", "railway-networks"],
     "abstract": "We introduce MaxSAT-DDD, a railway train rescheduling framework that combines Dynamic Decoupled Domain (DDD) temporal reasoning with weighted Partial MaxSAT formulations. Experiments on dense corridor lines show real-time response times under unexpected track delays.",
-    "bibtex": "@inproceedings{kieu2026csonet,\n  title={An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings},\n  author={Kieu, Van Tuyen and Nguyen, Huu Tan and To, Van Khanh},\n  booktitle={15th International Conference on Computational Social Networks (CSoNet 2026)},\n  year={2026}\n}",
+    "bibtex": "@inproceedings{kieu2026csonet,\n  title={An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings},\n  author={Kieu, Van Tuyen and Nguyen, Huu Tan and To, Van Khanh},\n  booktitle={15th International Conference on Computational Social Networks (CSoNet 2026)},\n  year={2026},\n  note={Accepted for presentation}\n}",
     "is_featured": True,
     "highlighted_authors": ["Kieu Van Tuyen", "Nguyen Huu Tan", "To Van Khanh"]
   },
@@ -853,7 +853,7 @@ projects = [
     "outcomes": [
       "Precedence propagation and dynamic domain pruning reducing resolution search trees by up to 80%",
       "Sub-second re-optimization across complex passenger and freight traffic networks",
-      "Submitted to CSoNet 2026"
+      "Accepted at CSoNet 2026"
     ],
     "tags": ["train-rescheduling", "maxsat-ddd", "railway-networks", "dynamic-scheduling"]
   },
@@ -877,7 +877,7 @@ projects = [
     "outcomes": [
       "First exact SAT formulation for power peak constrained line balancing",
       "Proven superior to CPLEX and CP-SAT on benchmark problem libraries",
-      "Under Major Revision at Journal of Combinatorial Optimization (JCO) & Engineering Optimization"
+      "Accepted for publication in Journal of Combinatorial Optimization (JCO, Springer)"
     ],
     "tags": ["line-balancing", "salbp", "power-peak", "energy-efficiency"]
   },
@@ -961,15 +961,15 @@ events = [
     "featured": True
   },
   {
-    "id": "event-jco-major-revisions-salbp",
-    "title": "Power Peak Line Balancing Manuscript Received Major Revision in JCO (Springer)",
-    "title_vi": "Bản thảo tối thiểu hóa đỉnh công suất trên dây chuyền lắp ráp nhận Major Revision tại JCO (Springer)",
+    "id": "event-jco-acceptance-salbp",
+    "title": "Power Peak Line Balancing Paper Accepted in Journal of Combinatorial Optimization (JCO Springer)",
+    "title_vi": "Bài báo Tối thiểu hóa đỉnh công suất trên dây chuyền lắp ráp được chấp nhận tại tạp chí JCO (Springer)",
     "date": "2026-06-02",
     "category": "Scientific Breakthrough",
-    "badge": "JOURNAL PROGRESS",
-    "summary": "Our research on 'Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing' by Kieu Van Tuyen, Nguyen Chi Phong, Hoang Gia Bao, and Dr. To Van Khanh received positive reviewer reports and Major Revision in Journal of Combinatorial Optimization.",
-    "summary_vi": "Nghiên cứu về biểu diễn SAT cho bài toán tối thiểu hóa công suất đỉnh trong cân bằng chuyền nhận đánh giá rất tích cực và đang hoàn thiện Major Revision tại Journal of Combinatorial Optimization (Springer).",
-    "tags": ["line-balancing", "jco", "energy-minimization", "major-revision"],
+    "badge": "Q2 ISI ACCEPTANCE",
+    "summary": "Our research on 'Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing' by Kieu Van Tuyen, Nguyen Chi Phong, Hoang Gia Bao, and Dr. To Van Khanh has been officially accepted for publication in the Journal of Combinatorial Optimization (Springer).",
+    "summary_vi": "Nghiên cứu về biểu diễn SAT cho bài toán tối thiểu hóa công suất đỉnh trong cân bằng chuyền của Kiều Văn Tuyên, Nguyễn Chí Phong, Hoàng Gia Bảo và TS. Tô Văn Khánh đã chính thức được chấp nhận đăng trên tạp chí quốc tế uy tín Journal of Combinatorial Optimization (JCO, Springer).",
+    "tags": ["line-balancing", "jco", "energy-minimization", "isi-acceptance", "springer"],
     "featured": True
   },
   {

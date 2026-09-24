@@ -34,19 +34,20 @@
     "featured": true
   },
   {
-    "id": "event-jco-major-revisions-salbp",
-    "title": "Power Peak Line Balancing Manuscript Received Major Revision in JCO (Springer)",
-    "title_vi": "Bản thảo tối thiểu hóa đỉnh công suất trên dây chuyền lắp ráp nhận Major Revision tại JCO (Springer)",
+    "id": "event-jco-acceptance-salbp",
+    "title": "Power Peak Line Balancing Paper Accepted in Journal of Combinatorial Optimization (JCO Springer)",
+    "title_vi": "Bài báo Tối thiểu hóa đỉnh công suất trên dây chuyền lắp ráp được chấp nhận tại tạp chí JCO (Springer)",
     "date": "2026-06-02",
     "category": "Scientific Breakthrough",
-    "badge": "JOURNAL PROGRESS",
-    "summary": "Our research on 'Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing' by Kieu Van Tuyen, Nguyen Chi Phong, Hoang Gia Bao, and Dr. To Van Khanh received positive reviewer reports and Major Revision in Journal of Combinatorial Optimization.",
-    "summary_vi": "Nghiên cứu về biểu diễn SAT cho bài toán tối thiểu hóa công suất đỉnh trong cân bằng chuyền nhận đánh giá rất tích cực và đang hoàn thiện Major Revision tại Journal of Combinatorial Optimization (Springer).",
+    "badge": "Q2 ISI ACCEPTANCE",
+    "summary": "Our research on 'Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing' by Kieu Van Tuyen, Nguyen Chi Phong, Hoang Gia Bao, and Dr. To Van Khanh has been officially accepted for publication in the Journal of Combinatorial Optimization (Springer).",
+    "summary_vi": "Nghiên cứu về biểu diễn SAT cho bài toán tối thiểu hóa công suất đỉnh trong cân bằng chuyền của Kiều Văn Tuyên, Nguyễn Chí Phong, Hoàng Gia Bảo và TS. Tô Văn Khánh đã chính thức được chấp nhận đăng trên tạp chí quốc tế uy tín Journal of Combinatorial Optimization (JCO, Springer).",
     "tags": [
       "line-balancing",
       "jco",
       "energy-minimization",
-      "major-revision"
+      "isi-acceptance",
+      "springer"
     ],
     "featured": true
   },

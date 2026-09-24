@@ -65,7 +65,7 @@
     "outcomes": [
       "Precedence propagation and dynamic domain pruning reducing resolution search trees by up to 80%",
       "Sub-second re-optimization across complex passenger and freight traffic networks",
-      "Submitted to CSoNet 2026"
+      "Accepted at CSoNet 2026"
     ],
     "tags": [
       "train-rescheduling",
@@ -110,7 +110,7 @@
     "outcomes": [
       "First exact SAT formulation for power peak constrained line balancing",
       "Proven superior to CPLEX and CP-SAT on benchmark problem libraries",
-      "Under Major Revision at Journal of Combinatorial Optimization (JCO) & Engineering Optimization"
+      "Accepted for publication in Journal of Combinatorial Optimization (JCO, Springer)"
     ],
     "tags": [
       "line-balancing",

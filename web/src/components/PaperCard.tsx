@@ -125,7 +125,11 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
               {paper.year}
             </span>
             {('badge' in paper && paper.badge) ? (
-              <span className="rounded-lg border border-sky-200 bg-sky-50 px-2 py-0.5 font-mono text-[10px] font-semibold text-sky-800">
+              <span className={`rounded-lg border px-2 py-0.5 font-mono text-[10px] font-semibold ${
+                paper.badge.includes('ACCEPTED')
+                  ? 'border-emerald-300 bg-emerald-50 text-emerald-800 font-bold'
+                  : 'border-sky-200 bg-sky-50 text-sky-800'
+              }`}>
                 {paper.badge}
               </span>
             ) : (

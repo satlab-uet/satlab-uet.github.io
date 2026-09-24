@@ -50,6 +50,14 @@ def normalize_title(title: str) -> str:
     return s
 
 
+# Canonical mappings for titles that may appear shortened or differently on Google Scholar
+TITLE_ALIASES = {
+    normalize_title("Compact SAT Encoding for Power Peak Minimization"): normalize_title(
+        "Compact SAT Encoding for Power Peak Minimization in Assembly Line Balancing"
+    ),
+}
+
+
 def slugify(text: str) -> str:
     """Generate a clean URL/id slug."""
     text = text.lower().strip()
@@ -243,6 +251,8 @@ def sync_publications(repo_root: Path) -> bool:
 
     for item in scholar_items:
         norm = normalize_title(item["title"])
+        if norm in TITLE_ALIASES:
+            norm = TITLE_ALIASES[norm]
         if norm in lookup:
             existing = lookup[norm]
             # Update citations & scholar link
