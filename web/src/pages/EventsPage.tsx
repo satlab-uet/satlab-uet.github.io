@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
 import { EventBrief } from '../types';
 import { useEvents } from '../context/DataContext';
+import { FacebookFeed } from '../components/FacebookFeed';
 
 export const EventsPage: React.FC = () => {
   const events = useEvents();
@@ -14,6 +15,7 @@ export const EventsPage: React.FC = () => {
 
   const categories = [
     { id: 'all', label: 'All News & Briefs' },
+    { id: 'facebook', label: 'Live Facebook Feed' },
     { id: 'workshop', label: 'Workshops & Training' },
     { id: 'breakthrough', label: 'Scientific Breakthroughs' },
     { id: 'placement', label: 'Scholarships & Placements' },
@@ -162,7 +164,8 @@ export const EventsPage: React.FC = () => {
         {/* Category Filter Chips */}
         <div className="flex flex-wrap items-center gap-1.5">
           {categories.map((c) => {
-            const count = getCategoryCount(c.id);
+            const isFacebook = c.id === 'facebook';
+            const count = isFacebook ? null : getCategoryCount(c.id);
             const isSelected = selectedCategory === c.id;
             return (
               <button
@@ -172,18 +175,25 @@ export const EventsPage: React.FC = () => {
                 className={`inline-flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-editorial text-xs font-semibold transition ${
                   isSelected
                     ? 'bg-slate-900 text-white shadow-sm'
+                    : isFacebook
+                    ? 'border border-sky-300 bg-sky-50 text-sky-800 hover:bg-sky-100'
                     : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
                 }`}
               >
+                {isFacebook && (
+                  <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                )}
                 <span>{c.label}</span>
                 <span
                   className={`rounded-full px-1.5 py-0.2 font-mono text-[10px] ${
                     isSelected
                       ? 'bg-slate-800 text-slate-200'
+                      : isFacebook
+                      ? 'bg-emerald-100 text-emerald-900 font-bold'
                       : 'bg-slate-100 text-slate-500'
                   }`}
                 >
-                  {count}
+                  {isFacebook ? 'Live' : count}
                 </span>
               </button>
             );
@@ -191,49 +201,74 @@ export const EventsPage: React.FC = () => {
         </div>
 
         {/* Search Input */}
-        <div className="relative min-w-[260px]">
-          <Icon
-            name="search"
-            className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400"
-          />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search briefs, tags (e.g. EP20)..."
-            className="w-full rounded-xl border border-slate-200 bg-white py-1.5 pl-9 pr-8 font-editorial text-xs text-slate-800 placeholder:text-slate-400 focus-ring"
-          />
-          {searchQuery && (
-            <button
-              type="button"
-              onClick={() => setSearchQuery('')}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 font-mono text-xs"
-            >
-              ×
-            </button>
-          )}
-        </div>
+        {selectedCategory !== 'facebook' && (
+          <div className="relative min-w-[260px]">
+            <Icon
+              name="search"
+              className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400"
+            />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search briefs, tags (e.g. EP20)..."
+              className="w-full rounded-xl border border-slate-200 bg-white py-1.5 pl-9 pr-8 font-editorial text-xs text-slate-800 placeholder:text-slate-400 focus-ring"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 font-mono text-xs"
+              >
+                ×
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
-      {/* Events Grid */}
-      <div className="mt-8 grid gap-6 md:grid-cols-2">
-        {filteredEvents.length === 0 ? (
-          <div className="col-span-2 rounded-2xl border border-slate-200 bg-white/80 p-12 text-center">
-            <p className="font-editorial text-base text-slate-500">
-              No news briefs found matching your search.
+      {/* Content Layout */}
+      {selectedCategory === 'facebook' ? (
+        <div className="mt-8 mx-auto max-w-2xl">
+          <div className="mb-6 rounded-2xl border border-sky-200 bg-gradient-to-r from-sky-50 via-cyan-50/40 to-white p-5 text-center shadow-xs">
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-sky-100 px-3 py-1 font-mono text-[11px] font-bold text-sky-900 mb-2">
+              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>Real-Time Facebook Stream</span>
+            </div>
+            <h3 className="font-editorial text-lg font-bold text-slate-950">
+              Official SATLab UET Fanpage Feed
+            </h3>
+            <p className="mt-1 font-editorial text-xs sm:text-sm text-slate-600 max-w-xl mx-auto">
+              All research seminars, notifications, student awards, and lab activities published at{' '}
+              <a href="https://www.facebook.com/satlab.uet/" target="_blank" rel="noreferrer" className="text-sky-700 underline font-semibold">
+                facebook.com/satlab.uet
+              </a>{' '}
+              are synchronized live below.
             </p>
-            <button
-              type="button"
-              onClick={() => {
-                setSelectedCategory('all');
-                setSearchQuery('');
-              }}
-              className="mt-3 text-xs font-semibold text-sky-700 hover:underline"
-            >
-              Reset filters
-            </button>
           </div>
-        ) : (
+          <FacebookFeed height={780} />
+        </div>
+      ) : (
+        <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_380px] items-start">
+          {/* Left Column: Academic Briefs */}
+          <div className="space-y-6">
+            {filteredEvents.length === 0 ? (
+              <div className="rounded-2xl border border-slate-200 bg-white/80 p-12 text-center">
+                <p className="font-editorial text-base text-slate-500">
+                  No news briefs found matching your search.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSelectedCategory('all');
+                    setSearchQuery('');
+                  }}
+                  className="mt-3 text-xs font-semibold text-sky-700 hover:underline"
+                >
+                  Reset filters
+                </button>
+              </div>
+            ) : (
           filteredEvents.map((item) => {
             const hasVi = Boolean(item.content_vi || item.summary_vi);
             const isVi = langMap[item.id] === 'vi' && hasVi;
@@ -374,7 +409,23 @@ export const EventsPage: React.FC = () => {
             );
           })
         )}
-      </div>
+          </div>
+
+          {/* Desktop Sticky Sidebar for Live Facebook Stream */}
+          <aside className="hidden lg:block sticky top-24">
+            <FacebookFeed height={680} />
+          </aside>
+
+          {/* Mobile Facebook Feed Section */}
+          <div className="block lg:hidden mt-10">
+            <div className="mb-4">
+              <p className="font-mono text-xs font-bold uppercase tracking-widest text-sky-700">Official Social Channel</p>
+              <h3 className="font-editorial text-xl font-bold text-slate-950">Live from Facebook Fanpage</h3>
+            </div>
+            <FacebookFeed height={650} />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
